@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class StaticController extends Controller
 {
+    public static function exito()
+    {
+        return view('exito');
+    }
     public static function faq()
     {
         return view('preguntas-frecuentes');

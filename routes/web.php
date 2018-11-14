@@ -12,6 +12,7 @@
 */
 Route::get('/', 'StaticController@index');
 Route::get('faq', 'StaticController@faq');
+Route::get('exito', 'StaticController@exito');
 
 Route::get('login', 'LoginController@show');
 Route::get('register', 'RegisterController@show');

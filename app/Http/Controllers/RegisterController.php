@@ -28,6 +28,6 @@ class RegisterController extends Controller
         $datos = request()->all();
         $datos['password'] = Hash::make(request()->input('password'));
         $user = User::create($datos);
-        return redirect('login');
+        return redirect('exito');
     }
 }
