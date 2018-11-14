@@ -30,15 +30,15 @@ USE `mobili`;
 -- Table structure for table `usuarios`
 --
 
-DROP TABLE IF EXISTS `usuarios`;
-CREATE TABLE `usuarios` (
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
   `id` int(10) UNSIGNED NOT NULL,
-  `nombre` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `apellido` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `first_name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `last_name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
   `password` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `fecha_nac` datetime NOT NULL,
-  `telefono` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `birthdate` datetime NOT NULL,
+  `phone` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
   `dni` int(10) UNSIGNED DEFAULT NULL,
   `avatar` blob
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -47,7 +47,7 @@ CREATE TABLE `usuarios` (
 -- Dumping data for table `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `email`, `password`, `fecha_nac`, `telefono`, `dni`, `avatar`) VALUES
+INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`, `password`, `birthdate`, `phone`, `dni`, `avatar`) VALUES
 (1, 'Damian', 'Bertazza', 'damian.bertazza@gmail.com', '$2y$10$/o/oQnZs0WgRJoZFhyWrPeWh8xFwSO.FOjcWhqyHxUm1BmQXktVki', '1988-12-01 00:00:00', NULL, NULL, NULL);
 
 --
@@ -57,7 +57,7 @@ INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `email`, `password`, `fecha_
 --
 -- Indexes for table `usuarios`
 --
-ALTER TABLE `usuarios`
+ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id` (`id`),
   ADD UNIQUE KEY `email` (`email`),
@@ -70,7 +70,7 @@ ALTER TABLE `usuarios`
 --
 -- AUTO_INCREMENT for table `usuarios`
 --
-ALTER TABLE `usuarios`
+ALTER TABLE `users`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
