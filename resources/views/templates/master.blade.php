@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-@include ('parts/part-head')
+@include ('partials.head')
 <body>
-    @include ('parts/part-header')
+    @include ('partials.header')
     
     @yield('content')
 
-    @include ('parts/part-footer')
+    @include ('partials.footer')
 
-    @include ('parts/part-scripts')
+    @include ('partials.scripts')
 </body>
 </html>
