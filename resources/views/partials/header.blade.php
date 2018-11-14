@@ -41,8 +41,8 @@
             <a class="toggleUserMenu" href="javascript:void(0)"><i class="fas fa-user"></i></a>
             <div class="userMenu mobile">
                 <ul>
-                    <li><a href="login.php">Ingresar</a></li>
-                    <li><a href="register.php">Registrarse</a></li>
+                    <li><a href="login">Ingresar</a></li>
+                    <li><a href="register">Registrarse</a></li>
                 </ul>
             </div>
             <?php // } ?>

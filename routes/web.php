@@ -15,3 +15,4 @@ Route::get('faq', 'StaticController@faq');
 
 Route::get('login', 'LoginController@show');
 Route::get('register', 'RegisterController@show');
+Route::post('register', 'RegisterController@store');
