@@ -12,9 +12,17 @@
             
             <h2 class="alt-title">Registrarme</h2>
             <p class="register-info">Disfrutá del 1-click checkout, accedé a tus pedidos y gestioná tu cuenta.</p>
+
+          @if (count($errors))
+            <div class="alert alert-danger">
+              @foreach ($errors->all() as $error)
+                <p>{{ $error }}</p>
+              @endforeach
+            </div>
+          @endif
+        
             <form action="#" method="post" enctype="multipart/form-data" class="form">
               @csrf
-              
 
               <!-- EMAIL -->
               <div class="form-item">
@@ -50,21 +58,16 @@
               </div>
 
               <!-- FECHA DE NACIMIENTO -->
-              <div class="form-group wrap column">
-                <label for="birthdate" class="form-label">Fecha de nacimiento <span style="color:red;">*</span></label>
-                <div class="form-group">
-                  <input type="date" name="birthdate" value="{{ old('birthdate') }}">
-                </div>
+              <div class="form-item">
+                  <label for="birthdate" class="form-label">Fecha de nacimiento <span style="color:red;">*</span></label>
+                <input type="date" name="birthdate" value="{{ old('birthdate') }}" id="birthdate">
               </div>
 
               <!-- TELÉFONO -->
-              <div class="form-group wrap telefono">
-                <div class="form-item numero">
-                  <label for="telefono" class="form-label">Teléfono</label>
-                  <input type="text" id="telefono" name="phone" class="form-field" value="{{ old('phone') }}" >
-                </div>
+              <div class="form-item numero">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="text" id="telefono" name="phone" class="form-field" value="{{ old('phone') }}">
               </div>
-
 
               <!-- DNI -->
               <div class="form-item">
