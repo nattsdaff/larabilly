@@ -28,16 +28,16 @@
         <!--cierra .bloqueIzq-->
         <div class="bloqueDer">
             <a href="#"><i class="fas fa-search"></i></a>
-            <?php // if($_SESSION || isset($_COOKIE["cookie_recordar"])){ ?>
+            @if (isset($_SESSION) || isset($_COOKIE["cookie_recordar"]))
             <a class="toggleUserMenu" href="javascript:void(0)"><i class="far fa-user"></i></a>
             <div class="userMenu mobile">
-                <p>Hola <?php // echo (isset($_COOKIE["cookie_nombre"]))?$_COOKIE["cookie_nombre"]:$_SESSION["nombre"]; ?></p>
+                <p>Hola {{ Auth::check(isset($_COOKIE["cookie_nombre"])) ? $_COOKIE["cookie_nombre"] : $_SESSION["nombre"] }}</p>
                 <ul>
                     <li><a href="mi-cuenta.php">Mi cuenta</a></li>
                     <li><a href="logout.php">Cerrar sesión</a></li>
                 </ul>
             </div>
-             <?php //} else { ?>
+            @else
             <a class="toggleUserMenu" href="javascript:void(0)"><i class="fas fa-user"></i></a>
             <div class="userMenu mobile">
                 <ul>
@@ -45,7 +45,7 @@
                     <li><a href="register">Registrarse</a></li>
                 </ul>
             </div>
-            <?php // } ?>
+            @endif
             <a href="#"><i class="fas fa-shopping-bag"></i></a>
         </div>
         <!--cierra. bloqueDer-->

@@ -39,7 +39,7 @@
       <div class="container">
         <div class="aside">
           <p><a href="#">¿Olvidaste tu contraseña?</a></p><br><br>
-          <p>¿No tenés una cuenta en mobili?    <a href="register.php">Crear una</a></p><br><br>
+          <p>¿No tenés una cuenta en mobili? <a href="register">Crear una</a></p><br><br>
         </div>
       </div>
     </section>
