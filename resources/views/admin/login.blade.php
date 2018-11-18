@@ -1,6 +1,8 @@
-@extends('admin.master')
-@section('title', 'Acceso al CMS')
-@section('content')
+<!DOCTYPE html>
+<html lang="en">
+    @include('admin.partials.head')
+    @section('title', 'Acceso al CMS')
+<body class="bg-dark">
     <div class="container">
         <div class="card card-login mx-auto mt-5">
         <div class="card-header">Login</div>
@@ -34,4 +36,7 @@
             </div>
         </div>
     </div>
-@endsection
+    @include('admin.partials.scripts')
+</body>
+</html>
+
