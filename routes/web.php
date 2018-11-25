@@ -11,9 +11,7 @@ Route::get('faq', 'StaticController@faq');
 
 Route::get('exito', 'StaticController@exito');
 
-// Route::get('register', 'RegisterController@show');
-// Route::post('register', 'RegisterController@store');
-
+Route::get('logout', 'Auth\LoginController@logout');
 
 // Rutas del panel de admin
 Route::get('cms-mobili/', 'admin\AdminIndexController@show');

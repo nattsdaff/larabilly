@@ -13,7 +13,7 @@
         <div class="bloqueIzq">
             <a class="toggle" href="javascript:void(0)"><i class="fas fa-bars"></i></a>
             <div class="logo">
-                <h1><a href="/"><img src="assets/img/logo.png" alt="Mobili Logo" title="Mobili - Tienda de Muebles"></a></h1>
+                <h1><a href="/"><img src="\assets/img/logo.png" alt="Mobili Logo" title="Mobili - Tienda de Muebles"></a></h1>
             </div>
             <div class="menu mobile">
                 <ul>
@@ -25,16 +25,17 @@
                 </ul>
             </div>
         </div>
+
         <!--cierra .bloqueIzq-->
         <div class="bloqueDer">
             <a href="#"><i class="fas fa-search"></i></a>
-            @if (isset($_SESSION) || isset($_COOKIE["cookie_recordar"]))
+            @auth
             <a class="toggleUserMenu" href="javascript:void(0)"><i class="far fa-user"></i></a>
             <div class="userMenu mobile">
-                <p>Hola {{ Auth::check(isset($_COOKIE["cookie_nombre"])) ? $_COOKIE["cookie_nombre"] : $_SESSION["nombre"] }}</p>
+            <p>Hola {{ Auth::user()->first_name }}</p>
                 <ul>
                     <li><a href="mi-cuenta.php">Mi cuenta</a></li>
-                    <li><a href="logout.php">Cerrar sesión</a></li>
+                    <li><a href="logout">Cerrar sesión</a></li>
                 </ul>
             </div>
             @else
@@ -45,7 +46,7 @@
                     <li><a href="register">Registrarse</a></li>
                 </ul>
             </div>
-            @endif
+            @endauth
             <a href="#"><i class="fas fa-shopping-bag"></i></a>
         </div>
         <!--cierra. bloqueDer-->

@@ -124,11 +124,12 @@
         background: $blanco;
         padding: 1rem 2rem;
         z-index: 99;
+        width:20rem;
         &:after {
             content: "";
             position: absolute;
             top: -1.5rem;
-            left: 6.3rem;
+            left: 13.7rem;
             border-style: solid;
             border-width: 0 10px 15px 10px;
             border-color: transparent transparent $blanco transparent;
@@ -137,7 +138,7 @@
             content: "";
             position: absolute;
             top: -1.6rem;
-            left: 6.3rem;
+            left: 13.7rem;
             border-style: solid;
             border-width: 0 10px 15px 10px;
             border-color: transparent transparent #848382 transparent;
@@ -147,6 +148,7 @@
         }
         p {
             font-size:1.6em;
+            text-align: center;
         }
         ul {
             margin: 0;
@@ -204,9 +206,6 @@
         }
         .userMenu {
             top:7.2rem;
-            &:after, &:before {
-                left:6.8rem;
-            }
             ul {
                 li {
                     a {
@@ -241,7 +240,7 @@
             top:7.2rem;
             padding: 1rem 3rem;
             &:after, &:before {
-                left:7rem;
+                left:11.1rem;
             }
             ul {
                 li {
@@ -303,7 +302,7 @@
         .userMenu {
             top:6.3rem;
             &:after, &:before {
-                left:5.8rem;
+                left:9.2rem;
             }
             ul {
                 li {

@@ -15,7 +15,7 @@
                 {{-- E-MAIL --}}
                 <div class="form-item">
                     <label for="email" class="form-label">Email <span style="color:red;">*</span></label>
-                    <input id="email" type="email" class="form-field{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+                    <input id="email" type="email" class="form-field{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
 
                     @if ($errors->has('email'))
                         <span class="form-error" role="alert">
@@ -28,7 +28,7 @@
                     {{-- NOMBRE --}}
                     <div class="form-item" id="nombre">
                         <label for="first_name" class="form-label">Nombre <span style="color:red;">*</span></label>
-                        <input id="first_name" type="text" class="form-field{{ $errors->has('first_name') ? ' is-invalid' : '' }}" name="first_name" value="{{ old('first_name') }}" required autofocus>
+                        <input id="first_name" type="text" class="form-field{{ $errors->has('first_name') ? ' is-invalid' : '' }}" name="first_name" value="{{ old('first_name') }}" required>
 
                         @if ($errors->has('first_name'))
                             <span class="form-error" role="alert">
@@ -39,7 +39,7 @@
                     {{-- APELLIDO --}}
                     <div class="form-item" id="apellido">
                         <label for="last_name" class="form-label">Apellido <span style="color:red;">*</span></label>
-                        <input id="last_name" type="text" class="form-field{{ $errors->has('last_name') ? ' is-invalid' : '' }}" name="last_name" value="{{ old('last_name') }}" required autofocus>
+                        <input id="last_name" type="text" class="form-field{{ $errors->has('last_name') ? ' is-invalid' : '' }}" name="last_name" value="{{ old('last_name') }}" required>
 
                         @if ($errors->has('last_name'))
                             <span class="form-error" role="alert">
@@ -56,7 +56,7 @@
                         <input id="password" type="password" class="form-field{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeholder="Al menos 6 caracteres">
 
                         @if ($errors->has('password'))
-                            <span class="invalid-feedback" role="alert">
+                            <span class="form-error" role="alert">
                                 <strong>{{ $errors->first('password') }}</strong>
                             </span>
                         @endif
@@ -67,6 +67,48 @@
                         <input id="password-confirm" type="password" class="form-field" name="password_confirmation" required>
                     </div>
                 </div>
+
+                
+                <div class="form-group wrap">
+                    {{-- DNI --}}
+                    <div class="form-item">
+                        <label for="dni" class="form-label">DNI <span style="color:red;">*</span></label>
+                        <input id="dni" type="text" class="form-field{{ $errors->has('dni') ? ' is-invalid' : '' }}" name="dni" value="{{ old('dni') }}" placeholder="Sin puntos ni guiones" required>
+    
+                        @if ($errors->has('dni'))
+                            <span class="form-error" role="alert">
+                                <strong>{{ $errors->first('dni') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                    {{-- TELEFONO --}}
+                    <div class="form-item">
+                        <label for="phone" class="form-label">Teléfono <span style="color:red;">*</span></label>
+                        <input id="phone" type="text" class="form-field{{ $errors->has('phone') ? ' is-invalid' : '' }}" name="phone" value="{{ old('phone') }}" placeholder="Sin espacios ni guiones">
+    
+                        @if ($errors->has('phone'))
+                            <span class="form-error" role="alert">
+                                <strong>{{ $errors->first('phone') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+                
+
+                {{-- FECHA DE NACIMIENTO --}}
+                <div class="form-item">
+                    <label for="birthday" class="form-label">Fecha de nacimiento <span style="color:red;">*</span></label>
+                    <input id="birthday" type="date" class="form-field{{ $errors->has('birthday') ? ' is-invalid' : '' }}" name="birthday" value="{{ old('birthday') }}">
+
+                    @if ($errors->has('birthday'))
+                        <span class="form-error" role="alert">
+                            <strong>{{ $errors->first('birthday') }}</strong>
+                        </span>
+                    @endif
+                </div>
+
+                
+
                 <input type="submit" value="Crear cuenta" class="submit-btn verde">
             </form>
         </div>

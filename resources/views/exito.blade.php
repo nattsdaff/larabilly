@@ -6,9 +6,10 @@
     <section class="exito">
       <div class="container">
         <div class="container-exito">
-          <h2 class="alt-title">Bienvenida/o</h2>
+        <h2 class="alt-title">Bienvenida/o {{ Auth::user()->first_name }}</h2>
           <p class="exito-message">Te has registrado con éxito en mobili.com </p>
-          <a href="login.php" class="btn gris">Ingresar</a><br>
+          {{-- LINK AL SHOP CUANDO ESTÉ --}}
+          <a href="#" class="btn gris">Ingresar a la tienda</a><br>
         </div>
       </div>
     </section>
