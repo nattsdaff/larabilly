@@ -14,7 +14,7 @@ class StaticController extends Controller
     {
         return view('preguntas-frecuentes');
     }
-    public static function index()
+    public function index()
     {
         return view('index');
     }

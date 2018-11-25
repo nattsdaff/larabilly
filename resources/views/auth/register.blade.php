@@ -1,0 +1,75 @@
+@extends('templates/master')
+
+@section('title', 'm o b i l i • Registro')
+
+@section('content')
+<section class="register">
+    <div class="container">
+        <div style="text-align:center;"><p>¿Ya tenés cuenta en Mobili? <a href="login">Ingresar</a></p></div>
+        <div class="container-form">
+            <h2 class="alt-title">Registrarme</h2>
+            <p class="register-info">Disfrutá del 1-click checkout, accedé a tus pedidos y gestioná tu cuenta.</p>
+
+            <form method="POST" action="{{ route('register') }}">
+                @csrf
+                {{-- E-MAIL --}}
+                <div class="form-item">
+                    <label for="email" class="form-label">Email <span style="color:red;">*</span></label>
+                    <input id="email" type="email" class="form-field{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+
+                    @if ($errors->has('email'))
+                        <span class="form-error" role="alert">
+                            <strong>{{ $errors->first('email') }}</strong>
+                        </span>
+                    @endif
+                </div>
+                
+                <div class="form-group wrap">
+                    {{-- NOMBRE --}}
+                    <div class="form-item" id="nombre">
+                        <label for="first_name" class="form-label">Nombre <span style="color:red;">*</span></label>
+                        <input id="first_name" type="text" class="form-field{{ $errors->has('first_name') ? ' is-invalid' : '' }}" name="first_name" value="{{ old('first_name') }}" required autofocus>
+
+                        @if ($errors->has('first_name'))
+                            <span class="form-error" role="alert">
+                                <strong>{{ $errors->first('first_name') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                    {{-- APELLIDO --}}
+                    <div class="form-item" id="apellido">
+                        <label for="last_name" class="form-label">Apellido <span style="color:red;">*</span></label>
+                        <input id="last_name" type="text" class="form-field{{ $errors->has('last_name') ? ' is-invalid' : '' }}" name="last_name" value="{{ old('last_name') }}" required autofocus>
+
+                        @if ($errors->has('last_name'))
+                            <span class="form-error" role="alert">
+                                <strong>{{ $errors->first('last_name') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+
+                <div class="form-group wrap">
+                    {{-- CONTRASEÑA --}}
+                    <div class="form-item">
+                        <label for="password" class="form-label">Contraseña <span style="color:red;">*</span></label>
+                        <input id="password" type="password" class="form-field{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeholder="Al menos 6 caracteres">
+
+                        @if ($errors->has('password'))
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $errors->first('password') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                    {{-- CONFIRMAR CONTRASEÑA --}}
+                    <div class="form-item">
+                        <label for="password-confirm" class="form-label">Confirmar contraseña <span style="color:red;">*</span></label>
+                        <input id="password-confirm" type="password" class="form-field" name="password_confirmation" required>
+                    </div>
+                </div>
+                <input type="submit" value="Crear cuenta" class="submit-btn verde">
+            </form>
+        </div>
+    </div>
+</section>
+@endsection
