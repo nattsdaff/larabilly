@@ -1,5 +1,5 @@
 @extends('admin.master')
-@section('title', 'Panel de Control')
+@section('title', 'Mobili - Dashboard')
 
 @section('breadcrumb')
     <!-- Breadcrumbs-->
