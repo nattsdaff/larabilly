@@ -14,8 +14,10 @@ Route::get('exito', 'StaticController@exito');
 Route::get('logout', 'Auth\LoginController@logout');
 
 // Rutas del panel de admin
-Route::get('cms-mobili/', 'admin\AdminIndexController@show');
-Route::get('cms-mobili/login', 'admin\AdminLoginController@show');
 
-
-
+Route::prefix('admin')->group(function() {
+    Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+    Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+    Route::get('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
+    Route::get('/', 'AdminController@index')->name('admin.index');
+});
