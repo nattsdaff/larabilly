@@ -6,19 +6,8 @@
         <div class="card card-login mx-auto mt-5">
         <div class="card-header">Login</div>
             <div class="card-body">
-                <form method="POST" action="{{ route('admin.login.submit') }}">
+                <form method="POST" action="{{ route('admin.login.submit') }}" novalidate>
                 @csrf
-                @if ($errors->any())
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
-
-
                 <div class="form-group">
                     <div class="form-label-group">
                     <input type="email" id="inputEmail" class="form-control" name="email" placeholder="Usuario" required="required" autofocus="autofocus" value="{{ old('email') }}">

@@ -1,7 +1,7 @@
 <!-- Sidebar -->
 <ul class="sidebar navbar-nav">
     <li class="nav-item active">
-        <a class="nav-link" href="admin">
+        <a class="nav-link" href="/admin">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
         </a>
@@ -28,8 +28,8 @@
             <span>Productos</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="productosDropdown">
-            <a class="dropdown-item" href="#">Listado de Productos</a>
-            <a class="dropdown-item" href="#">Agregar Producto</a>
+            <a class="dropdown-item" href="/admin/products">Listado de Productos</a>
+            <a class="dropdown-item" href="/admin/products/create">Agregar Producto</a>
         </div>
     </li>
     <li class="nav-item dropdown">

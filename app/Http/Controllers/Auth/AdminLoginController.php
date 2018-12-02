@@ -35,7 +35,7 @@ class AdminLoginController extends Controller
         return redirect()->intended(route('admin.index'));
       } 
       // if unsuccessful, then redirect back to the login with the form data
-        return back()->withInput($request->only('email', 'remember'));
+        return back()->withErrors(['email'=> 'Los datos ingresados son incorrectos.'])->withInput($request->only('email', 'remember'));
     }
     
     public function logout()

@@ -33,7 +33,7 @@
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="admin/logout" role="button">
+            <a class="nav-link" href="\admin/logout" role="button">
                 <i class="fas fa-sign-out-alt"></i>
             </a>
         </li>
