@@ -38,8 +38,8 @@
                 <span>Categorías</span>
             </a>
             <div class="dropdown-menu" aria-labelledby="categoriasDropdown">
-                <a class="dropdown-item" href="#">Listado de Categorías</a>
-                <a class="dropdown-item" href="#">Agregar Categoría</a>
+                <a class="dropdown-item" href="/admin/categories">Listado de Categorías</a>
+                <a class="dropdown-item" href="/admin/categories/create">Agregar Categoría</a>
             </div>
         </li>
     <li class="nav-item">

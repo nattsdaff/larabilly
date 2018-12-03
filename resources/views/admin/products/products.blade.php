@@ -1,5 +1,5 @@
 @extends('admin.master')
-@section('title', 'Mobili - Agregar Producto')
+@section('title', 'Mobili - Productos')
 
 @section('breadcrumb')
 <!-- Breadcrumbs-->
@@ -20,8 +20,9 @@
         <div class="card">
             <img class="card-img-top" src="\../storage/{{$product->picture}}" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">{{$product->name}}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">{{$product->price}}</h6>
+                <h4 class="card-title">{{$product->name}}</h4>
+                <h5 class="card-subtitle mb-2 text-muted">{{$product->category->name}}</h5>
+                <h6 class="card-subtitle my-2">$ {{$product->price}}</h6>
                 <p class="card-text">{{$product->description}}</p>
             </div>
             <div class="acciones" style="border-top: 1px solid rgba(0,0,0,.125);display: flex;justify-content: space-between;padding: 0.5rem 1.25rem;">

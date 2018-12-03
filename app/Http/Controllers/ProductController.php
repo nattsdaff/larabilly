@@ -26,9 +26,9 @@ class ProductController extends Controller
     public function store()
     {
         request()->validate([
-    		'name' => 'required|alpha_dash|min:3|max:150',
+    		'name' => 'required|string|min:3|max:150|unique:products',
             'description' => 'string|max:500|nullable',
-            'price' => 'required|numeric|digits_between:1,10',
+            'price' => 'required|integer|digits_between:1,10',
             'picture' => 'image|max:2000',
         ]);
         
@@ -42,7 +42,7 @@ class ProductController extends Controller
             $datos['picture'] = $nombre;
         }
 
-        $movie = Product::create($datos);
+        $product = Product::create($datos);
         
         return view('admin.products.products-success');
     }
@@ -57,9 +57,9 @@ class ProductController extends Controller
     {
         $product = Product::find($id);
         request()->validate([
-    		'name' => 'required|alpha_dash|min:3|max:150',
+    		'name' => 'required|string|min:3|max:150|unique:products',
             'description' => 'string|max:500|nullable',
-            'price' => 'required|numeric|digits_between:1,10',
+            'price' => 'required|integer|digits_between:1,10',
             'picture' => 'image|max:2000',
         ]);
 

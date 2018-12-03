@@ -5,10 +5,10 @@
 <!-- Breadcrumbs-->
 <ol class="breadcrumb">
     <li class="breadcrumb-item">
-        <a href="admin/products">Productos</a>
+        <a href="products">Productos</a>
     </li>
     <li class="breadcrumb-item">
-        <a href="admin/products/create">Agregar Producto</a>
+        <a href="products/create">Agregar Producto</a>
     </li>
     <li class="breadcrumb-item active">Producto Cargado</li>
 </ol>
