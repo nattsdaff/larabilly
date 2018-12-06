@@ -6,6 +6,10 @@ Auth::routes();
 // Rutas del front
 Route::get('/', 'StaticController@index');
 
+Route::get('product', 'StaticController@product');
+
+Route::get('store', 'StaticController@store');
+
 Route::get('faq', 'StaticController@faq');
 
 Route::get('exito', 'StaticController@exito');

@@ -1029,3 +1029,296 @@ section.init {
     -ms-flex-direction: row;
     flex-direction: row;
     margin: 4rem auto 4rem; } }
+
+.container {
+  text-align: left;
+  width: 90%;
+  margin-top: 5%; }
+
+.route {
+  display: none;
+  margin: 0; }
+  .route p {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    color: #413F3D;
+    font-weight: bold; }
+  .route .product-name {
+    font-weight: normal; }
+
+.product .slick-dots li button:before {
+  color: #b1d398;
+  font-size: 3rem; }
+
+section {
+  margin-bottom: 10%; }
+
+.name h2 {
+  font-size: 3em;
+  margin-bottom: 2%; }
+
+.name .price {
+  font-size: 2.6em;
+  font-family: 'Georgia';
+  font-style: italic;
+  margin-top: 0; }
+
+.name .pay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .name .pay .cuotas {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    white-space: nowrap; }
+  .name .pay i {
+    line-height: 1.5em;
+    color: #087FE0;
+    font-size: 1.5em; }
+  .name .pay p {
+    margin: 0 0 0 2%;
+    font-size: 1.4em;
+    font-weight: bold; }
+  .name .pay a {
+    margin-left: 5%;
+    text-decoration: underline;
+    white-space: nowrap; }
+
+.colors h5 {
+  font-size: 1.4em; }
+
+.colors .circulos {
+  text-align: left;
+  margin-bottom: 8%; }
+  .colors .circulos #color1 {
+    background-color: #D94A6A; }
+  .colors .circulos #color2 {
+    background-color: #EF6A3C; }
+  .colors .circulos #color3 {
+    background-color: #3E9186; }
+  .colors .circulos #color4 {
+    background-color: #FFE64E; }
+  .colors .circulos .circulo {
+    border-radius: 50%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 3.5em;
+    width: 3.5em;
+    margin-right: 4%; }
+
+.colors .submit-btn {
+  font-size: 1.4em; }
+
+.description p {
+  font-size: 1.6em;
+  color: #413F3D; }
+
+.opiniones h3 {
+  font-size: 1.6em; }
+
+.opiniones .estrellas {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #FFE64E;
+  font-size: 1.2em;
+  margin-right: 2%; }
+  .opiniones .estrellas i {
+    margin-right: 3%; }
+
+.opiniones .opinion-nombre {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 1.6em;
+  margin: 5% 0 0 2%;
+  font-family: 'Georgia';
+  font-weight: normal;
+  font-style: italic; }
+
+.opiniones p {
+  margin-top: 2%;
+  font-size: 1.6em; }
+
+.opiniones .submit-btn.gris {
+  background: #F5F5F5;
+  color: #413F3D;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 20%; }
+
+.relacionados {
+  display: none; }
+  .relacionados .relacionado {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 0.4% 5% 0;
+    width: 23em; }
+  .relacionados .relacionado:nth-child(5n) {
+    margin-right: 0; }
+  .relacionados h6 {
+    font-size: 2em;
+    font-weight: 100; }
+  .relacionados img {
+    width: 100%;
+    height: 23em;
+    margin-bottom: 5%; }
+  .relacionados .product-name {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    color: #413F3D;
+    background-color: #FFFFFF;
+    font-weight: normal;
+    opacity: 0.5;
+    width: 7%;
+    height: 35px;
+    font-size: 1.7em; }
+  .relacionados p {
+    font-family: 'Georgia';
+    font-size: 1.4em;
+    color: #707070;
+    margin: 0 0 2% 0;
+    text-align: center; }
+  .relacionados .price {
+    font-style: italic; }
+
+@media all and (min-width: 768px) {
+  .colors input {
+    margin: 0; }
+  .opiniones input {
+    margin: 0; } }
+
+@media all and (min-width: 991px) {
+  .relacionados, .route {
+    display: block; }
+  .product {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 350px;
+    height: 350px; }
+    .product img {
+      width: 100%;
+      height: auto; }
+  .name-colors-description {
+    width: 52%;
+    margin-left: 7%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .name-colors-description .name {
+      margin-bottom: 2%; }
+      .name-colors-description .name .pay {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .name-colors-description .name .pay a {
+          margin: 0; }
+    .name-colors-description .colors {
+      width: 60%;
+      margin-bottom: 0; }
+      .name-colors-description .colors h5 {
+        margin: 0 0 3% 0; }
+      .name-colors-description .colors .circulos {
+        margin-bottom: 6%; }
+      .name-colors-description .colors input {
+        width: 100%; }
+    .name-colors-description .description {
+      margin-bottom: 0; }
+  .opiniones .opinion h6 {
+    margin-top: 2%; }
+  .opiniones input {
+    margin: 0; } }
+
+.products {
+  display: block; }
+
+.categoria {
+  margin-bottom: 4%; }
+  .categoria h1 {
+    margin: 5% 0 5% 0;
+    font-size: 4em; }
+
+.descripcion-orden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .descripcion-orden p {
+    font-weight: bold;
+    font-size: 1.6em; }
+  .descripcion-orden select {
+    display: none;
+    width: 60%;
+    height: 50px;
+    font-size: 2em; }
+
+.productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .productos .producto {
+    width: 16em; }
+    .productos .producto img {
+      height: 16em; }
+    .productos .producto .product-name {
+      width: 5em;
+      font-size: 1.4em; }
+
+.store {
+  display: none;
+  margin-bottom: 15%; }
+
+@media all and (min-width: 991px) {
+  .categoria select {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+  .store {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .productos .producto {
+    width: 23.5em; }
+    .productos .producto img {
+      height: 23.5em; }
+    .productos .producto .product-name {
+      font-size: 2em; } }

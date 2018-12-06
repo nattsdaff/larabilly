@@ -17,7 +17,7 @@
             </div>
             <div class="menu mobile">
                 <ul>
-                    <li><a href="#">Productos</a></li>
+                    <li><a href="/store">Productos</a></li>
                     <li><a href="#">Ambientes</a></li>
                     <li><a href="#">Ideas</a></li>
                     <li><a href="faq">FAQ</a></li>
