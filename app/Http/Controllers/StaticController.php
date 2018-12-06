@@ -10,6 +10,10 @@ class StaticController extends Controller
     {
         return view('exito');
     }
+    public static function store()
+    {
+        return view('store');
+    }
     public static function faq()
     {
         return view('preguntas-frecuentes');
@@ -17,5 +21,9 @@ class StaticController extends Controller
     public function index()
     {
         return view('index');
+    }
+    public static function product()
+    {
+        return view('product');
     }
 }
