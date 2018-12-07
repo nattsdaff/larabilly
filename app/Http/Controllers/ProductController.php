@@ -20,7 +20,8 @@ class ProductController extends Controller
 
     public function create()
     {
-        return view('admin.products.add-product');
+        $categories = \App\Category::all();
+        return view('admin.products.add-product', compact('categories'));
     }
 
     public function store()
@@ -30,6 +31,7 @@ class ProductController extends Controller
             'description' => 'string|max:500|nullable',
             'price' => 'required|integer|digits_between:1,10',
             'picture' => 'image|max:2000',
+            'category_id' => 'required',
         ]);
         
         $datos = request()->all();

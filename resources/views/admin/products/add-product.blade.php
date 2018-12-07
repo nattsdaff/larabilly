@@ -57,6 +57,22 @@
                 </div>
             </div>
             <div class="form-group row">
+                <label for="category_id" class="col-sm-2 col-form-label">Categoría</label>
+                <div class="col-sm-10">
+                    <select name="category_id" id="category_id" class="form-control{{ $errors->has('category_id') ? ' is-invalid' : '' }}">
+                        <option value="" disabled {{ (!old('category_id')) ? "selected" : "" }}>Elegir Categoría</option>
+                        @foreach ($categories as $category)
+                        <option value="{{$category->id}}" {{ (old('category_id') == $category->id) ? "selected" : "" }}>{{$category->name}}</option>
+                        @endforeach
+                    </select>
+                    @if ($errors->has('category_id'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('category_id') }}</strong>
+                        </span>
+                    @endif
+                </div>
+            </div>
+            <div class="form-group row">
                 <label for="picture" class="col-sm-2 col-form-label">Foto del producto</label>
                 <div class="col-sm-10">
                     <input type="file" class="form-control{{ $errors->has('picture') ? ' is-invalid' : '' }}" name="picture" id="picture">
