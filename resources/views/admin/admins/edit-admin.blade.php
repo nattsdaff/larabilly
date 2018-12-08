@@ -20,7 +20,7 @@
             <div class="form-group row">
                 <label for="name" class="col-sm-2 col-form-label">Email</label>
                 <div class="col-sm-10">
-                    <input type="text" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="email" placeholder="nombre@email.com" value="{{ old('email') }}" required>
+                    <input type="text" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="email" value="{{ old('email', $admin->email) }}">
                     @if ($errors->has('email'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('email') }}</strong>
@@ -34,8 +34,8 @@
                 <br>
                 <br>
                 <label for="password" class="col-sm-2 col-form-label">Contraseña</label>
-                <div class="col-sm-5">
-                    <input type="password" name="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" id="password" placeholder="Al menos 6 caracteres" value="{{ old('password') }}" required>
+                <div class="col-sm-4">
+                    <input type="password" name="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" id="password" placeholder="Al menos 6 caracteres" value="{{ old('password') }}">
                     @if ($errors->has('password'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('password') }}</strong>
@@ -47,8 +47,8 @@
                     @endif
                 </div>
                 <label for="password-confirm" class="col-sm-2 col-form-label">Confirmar contraseña</label>
-                <div class="col-sm-3">
-                    <input type="password" name="password_confirmation" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" id="password-confirm" value="{{ old('password') }}" required>
+                <div class="col-sm-4">
+                    <input type="password" name="password_confirmation" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" id="password-confirm" value="{{ old('password') }}">
                     @if ($errors->has('password'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('password') }}</strong>

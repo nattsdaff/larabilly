@@ -41,6 +41,8 @@
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
                             </form>
+                            @else
+                            <button type="submit" class="btn btn-danger" disabled><i class="far fa-trash-alt"></i></button>
                             @endif
                         </td>
                     </tr>
