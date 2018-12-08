@@ -12,8 +12,8 @@
             <span>Administradores</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="adminDropdown">
-            <a class="dropdown-item" href="#">Listado de Administradores</a>
-            <a class="dropdown-item" href="#">Agregar Administrador</a>
+            <a class="dropdown-item" href="/admin/admins">Listado de Administradores</a>
+            <a class="dropdown-item" href="/admin/create">Agregar Administrador</a>
         </div>
     </li>
     <li class="nav-item">

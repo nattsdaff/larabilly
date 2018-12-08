@@ -36,4 +36,11 @@ Route::prefix('admin')->group(function() {
     Route::get('/categories/{id}/edit', 'CategoryController@edit');
     Route::put('/categories/{id}', 'CategoryController@update')->name('category.update');
     Route::delete('/categories/{id}', 'CategoryController@destroy')->name('category.destroy');
+    // Rutas de Admin
+    Route::get('/admins','AdministratorController@index');
+    Route::get('/create', 'AdministratorController@create');
+    Route::post('/admins', 'AdministratorController@store')->name('admins.store');
+    Route::get('/admins/{id}/edit', 'AdministratorController@edit');
+    Route::put('/admins/{id}', 'AdministratorController@update')->name('admin.update');
+    Route::delete('/admins/{id}', 'AdministratorController@destroy')->name('admin.destroy');
 });
