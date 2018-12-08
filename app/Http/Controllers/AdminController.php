@@ -52,7 +52,7 @@ class AdminController extends Controller
         $newPassword = request()->password;
 
         if(empty($newEmail) && empty($newPassword)){
-            return redirect('admin/admins')->with('status', 'Nada que actualizar');
+            $return = redirect('admin/admins')->with('status', 'Nada que actualizar');
 
         }else if(empty($newEmail)){
             request()->validate([
@@ -61,14 +61,14 @@ class AdminController extends Controller
             $newData = request()->except('email');
             $newData["password"] = Hash::make($newData["password"]);
             $admin->update($newData);
-            return redirect('admin/admins')->with('status', 'Administrador Actualizado');
+            $return = redirect('admin/admins')->with('status', 'Administrador Actualizado');
 
         }else if(empty($newPassword)){
             request()->validate([
                 'email' => 'string|email|max:255',
             ]);
             $admin->update(request()->except('password'));
-            return redirect('admin/admins')->with('status', 'Administrador Actualizado');
+            $return = redirect('admin/admins')->with('status', 'Administrador Actualizado');
 
         }else{
             $newData = request()->validate([
@@ -77,8 +77,9 @@ class AdminController extends Controller
             ]);
             $newData["password"] = Hash::make($newData["password"]);
             $admin->update($newData);
-            return redirect('admin/admins')->with('status', 'Administrador Actualizado');
+            $return = redirect('admin/admins')->with('status', 'Administrador Actualizado');
         }
+        return $return;
     }
     // public function update($id)
     // {
