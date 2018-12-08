@@ -35,11 +35,13 @@
                         <td>{{ $admin->email }}</td>
                         <td><a href="admins/{{$admin->id}}/edit" class="btn btn-warning"><i class="far fa-edit"></i></a></td>
                         <td>
+                            @if ($admin->id!=1)
                             <form action="{{route('admin.destroy', ['id' => $admin->id ])}}" method="POST">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
                             </form>
+                            @endif
                         </td>
                     </tr>
                 @endforeach
