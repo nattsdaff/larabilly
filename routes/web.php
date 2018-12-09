@@ -1,12 +1,14 @@
 <?php
 
+use Gloudemans\Shoppingcart\Facades\Cart;
+
 // Rutas generadas por make:auth
 Auth::routes();
 
 // Rutas del front
 Route::get('/', 'StaticController@index');
 
-Route::get('product', 'StaticController@product');
+Route::get('product/{id}', 'Front\ProductController@show');
 
 Route::get('store', 'StaticController@store');
 
@@ -15,6 +17,13 @@ Route::get('faq', 'StaticController@faq');
 Route::get('exito', 'StaticController@exito');
 
 Route::get('logout', 'Auth\LoginController@logout');
+
+Route::get('/cart', 'CartController@index')->name('cart.index');
+Route::post('/cart/{product}', 'CartController@store')->name('cart.store');
+
+Route::get('empty', function(){
+    Cart::destroy();
+});
 
 // Rutas del panel de admin
 Route::prefix('admin')->group(function() {

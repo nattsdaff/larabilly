@@ -42,7 +42,11 @@
 				<div class="circulo" id="color4"></div>
 			</div>
 
-			<input type="submit" value="AGREGAR AL CARRITO" class="submit-btn verde">
+			{{-- <input type="submit" value="AGREGAR AL CARRITO" class="submit-btn verde"> --}}
+			<form action="{{route('cart.store', $product)}}" method="POST">
+				@csrf
+				<input type="submit" value="AGREGAR AL CARRITO" class="submit-btn verde">
+			</form>
 	</section>
 
 	<section class="description">

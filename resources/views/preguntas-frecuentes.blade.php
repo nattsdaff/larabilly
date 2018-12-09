@@ -1,6 +1,6 @@
 @extends('templates/master')
 
-@section('title', 'm o b i l i • h o m e')
+@section('title', 'm o b i l i • FAQ')
 
 @section('content')
 
