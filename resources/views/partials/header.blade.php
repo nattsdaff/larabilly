@@ -47,7 +47,7 @@
                 </ul>
             </div>
             @endauth
-            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+            <a href="cart"><i class="fas fa-shopping-bag"></i></a>
         </div>
         <!--cierra. bloqueDer-->
     </nav>

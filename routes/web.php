@@ -10,6 +10,8 @@ Route::get('product', 'StaticController@product');
 
 Route::get('store', 'StaticController@store');
 
+Route::get('cart', 'StaticController@cart');
+
 Route::get('faq', 'StaticController@faq');
 
 Route::get('exito', 'StaticController@exito');
