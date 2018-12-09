@@ -17,10 +17,10 @@
             </div>
             <div class="menu mobile">
                 <ul>
-                    <li><a href="/store">Productos</a></li>
+                    <li><a href="{{route('shop.index')}}">Productos</a></li>
                     <li><a href="#">Ambientes</a></li>
                     <li><a href="#">Ideas</a></li>
-                    <li><a href="faq">FAQ</a></li>
+                    <li><a href="/faq">FAQ</a></li>
                     <!--<li><a href="#">Contacto</a></li> Oculto temporalmente -->
                 </ul>
             </div>
@@ -47,7 +47,7 @@
                 </ul>
             </div>
             @endauth
-            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+            <a href="{{route('cart.index')}}"><i class="fas fa-shopping-bag"></i></a>
         </div>
         <!--cierra. bloqueDer-->
     </nav>

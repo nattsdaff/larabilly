@@ -1,33 +1,35 @@
 @extends('templates/master')
 
-@section('title', 'm o b i l i • p r o d u c t o')
+@section('title', 'm o b i l i • '.$product->name)
 
 @section('content')
 
 <div class="container">
 
 		<section class="route">
-			<p>Home > Productos > Living room > </p>
-			<p class="product-name">Sillon Byron</p>
+			<p>
+				<a href="/">Home</a>>
+				<a href="{{route('shop.index')}}">Productos</a>>
+				<a href="#">Living room</a>>
+			</p>
+			<p class="product-name">{{$product->name}}</p>
 		</section>
 
 		<!--SLIDER DE PRODUCTO-->
-		<section class="slider product">
-        <div><img src="assets/img/deseados/deseados-3.jpg" alt=""></div>
-        <div><img src="assets/img/deseados/deseados-4.jpg" alt=""></div>
-        <div><img src="assets/img/deseados/deseados-6.jpg" alt=""></div>
-    </section>
+		<section class="slider-producto product">
+			<div class="item"><img src="{{asset($product->picture)}}" alt=""></div>
+		</section>
 
 <div class="name-colors-description">
     <section class="name">
-		<h2>Nombre producto</h2>
-		<p class="price">$100</p>
+		<h2>{{$product->name}}</h2>
+		<p class="price">${{$product->price}}</p>
 		<div class="pay">
 			<div class="cuotas">
 				<i class="far fa-credit-card"></i>
 				<p>HASTA 12 CUOTAS</p>
 			</div>
-			<a href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264">
+			<a href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">
 				<p>Ver medios de pago</p>
 			</a>
 		</div>
@@ -42,12 +44,15 @@
 				<div class="circulo" id="color4"></div>
 			</div>
 
-			<input type="submit" value="AGREGAR AL CARRITO" class="submit-btn verde">
+			{{-- <input type="submit" value="AGREGAR AL CARRITO" class="submit-btn verde"> --}}
+			<form action="{{route('cart.store', $product)}}" method="POST">
+				@csrf
+				<input type="submit" value="AGREGAR AL CARRITO" class="submit-btn verde">
+			</form>
 	</section>
 
 	<section class="description">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+		<p>{{$product->description}}</p>
 	</section>
 </div>
 
@@ -69,33 +74,41 @@
 
 	<section class="relacionados">
 		<h6>PRODUCTOS RELACIONADOS</h6>
-		<div class="relacionado">
-			<img src="assets/img/deseados/deseados-1.jpg" alt="">
-			<p class="product-name">VOLK</p>
-			<p>ST. CHARLES DESK</p>
-			<p class="price">$7500</p>
-		</div>
+		<a href="/product">
+      <div class="relacionado">
+  			<img src="assets/img/deseados/deseados-1.jpg" alt="">
+  			<p class="product-name">VOLK</p>
+  			<p>ST. CHARLES DESK</p>
+  			<p class="price">$7500</p>
+  		</div>
+    </a>
 
-		<div class="relacionado">
-			<img src="assets/img/deseados/deseados-2.jpg" alt="">
-			<p class="product-name">ABC</p>
-			<p>NEW YORK SEDIA VELVET DINING ARM CHAIR</p>
-			<p class="price">$8000</p>
-		</div>
+    <a href="/product">
+  		<div class="relacionado">
+  			<img src="assets/img/deseados/deseados-2.jpg" alt="">
+  			<p class="product-name">ABC</p>
+  			<p>NEW YORK SEDIA VELVET DINING ARM CHAIR</p>
+  			<p class="price">$8000</p>
+  		</div>
+    </a>
 
-		<div class="relacionado">
-			<img src="assets/img/deseados/deseados-1.jpg" alt="">
-			<p class="product-name">VOLK</p>
-			<p>ST. CHARLES DESK</p>
-			<p class="price">$7500</p>
-		</div>
+    <a href="/product">
+      <div class="relacionado">
+  			<img src="assets/img/deseados/deseados-1.jpg" alt="">
+  			<p class="product-name">VOLK</p>
+  			<p>ST. CHARLES DESK</p>
+  			<p class="price">$7500</p>
+  		</div>
+    </a>
 
-		<div class="relacionado">
-			<img src="assets/img/deseados/deseados-2.jpg" alt="">
-			<p class="product-name">ABC</p>
-			<p>NEW YORK SEDIA VELVET DINING ARM CHAIR</p>
-			<p class="price">$8000</p>
-		</div>
+    <a href="/product">
+  		<div class="relacionado">
+  			<img src="assets/img/deseados/deseados-2.jpg" alt="">
+  			<p class="product-name">ABC</p>
+  			<p>NEW YORK SEDIA VELVET DINING ARM CHAIR</p>
+  			<p class="price">$8000</p>
+  		</div>
+    </a>
 
 	</section>
 

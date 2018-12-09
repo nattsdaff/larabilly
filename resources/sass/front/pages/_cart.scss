@@ -1,0 +1,55 @@
+.producto-subtotal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    .item {
+      display: flex;
+      flex-direction: row;
+      background-color: #F7F7F7;
+      padding: 1%;
+      img {
+        width: 10em;
+        height: 10em;
+      }
+      .description {
+        margin-left: 2%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        p {
+          margin: 0;
+        }
+        .name-price {
+          display: flex;
+          justify-content: space-between;
+        }
+        .name {
+          p {
+            display: inline-flex;
+          }
+        }
+        .cantidad {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+    }
+    .totales {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+}
+
+.botones-compra {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  input {
+    margin: 0;
+  }
+}

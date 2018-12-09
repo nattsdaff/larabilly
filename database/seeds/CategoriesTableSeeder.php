@@ -17,7 +17,7 @@ class CategoriesTableSeeder extends Seeder
                 'name' => 'Sin Categoría'
             ],
             [
-                'name' => 'Mesas'
+                'name' => 'Escritorios'
             ],
             [
                 'name' => 'Sillas'
@@ -26,7 +26,7 @@ class CategoriesTableSeeder extends Seeder
                 'name' => 'Camas'
             ],
             [
-                'name' => 'Armarios'
+                'name' => 'Bancos'
             ],
             [
                 'name' => 'Sillones'
