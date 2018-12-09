@@ -40,6 +40,7 @@ class ProductController extends Controller
             $ext = request()->file('picture')->extension();
             $nombre = str_slug(request()->input('name'));
             $nombre = request()->file('picture')->storeAs('products', $nombre.'.'.$ext);
+            $nombre = 'storage/'.$nombre;
 
             $datos['picture'] = $nombre;
         }
@@ -71,7 +72,8 @@ class ProductController extends Controller
             $ext = request()->file('picture')->extension();
             $nombre = str_slug(request()->input('name'));
             $nombre = request()->file('picture')->storeAs('products', $nombre.'.'.$ext);
-
+            $nombre = 'storage/'.$nombre;
+            
             $datos['picture'] = $nombre;
         }
 

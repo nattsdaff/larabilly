@@ -28,7 +28,7 @@
   <section class="relacionados">
 
 		@foreach ($products as $product)
-			<a href="{{route('shop.product', $product->id)}}">
+			<a href="{{route('shop.product', $product->slug)}}">
 					<div class="relacionado">
 							<img src="{{asset($product->picture)}}" alt="">
 							<p class="product-name">VOLK</p>

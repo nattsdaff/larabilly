@@ -13,9 +13,9 @@ class ShopController extends Controller
         return view('shop', compact('products'));
     }
 
-    public function show($id)
+    public function show($slug)
     {   
-        $product = Product::findOrFail($id);
+        $product = Product::where('slug', $slug)->firstOrFail();
         return view('product', compact('product'));
     }
 }

@@ -13,7 +13,7 @@ Route::get('exito', 'StaticController@exito');
 
 // Rutas del Shop
 Route::get('/shop', 'ShopController@index')->name('shop.index');
-Route::get('/shop/{id}', 'ShopController@show')->name('shop.product');
+Route::get('/shop/{product}', 'ShopController@show')->name('shop.product');
 
 // Rutas del Carrito
 Route::get('/cart', 'CartController@index')->name('cart.index');
