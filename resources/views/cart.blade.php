@@ -1,6 +1,6 @@
 @extends('templates/master')
     
-@section('title', 'mobili - Carrito')
+@section('title', 'm o b i l i - Carrito')
 
 @section('content')
 
@@ -23,7 +23,7 @@
         
                 @foreach (Cart::content() as $item)
                     <div class="item">
-                        <a href="product"><img src="{{ asset('storage/products/asdasd.jpeg') }}"></a>
+                        <a href="product"><img src="{{ asset($item->model->picture) }}"></a>
                         <div class="description">
                             <div class="name-price">
                                 <div class="name">

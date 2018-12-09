@@ -1,6 +1,6 @@
 @extends('templates/master')
 
-@section('title', 'm o b i l i • p r o d u c t o')
+@section('title', 'm o b i l i • '.$product->name)
 
 @section('content')
 
@@ -9,23 +9,21 @@
 		<section class="route">
 			<p>
 				<a href="/">Home</a>>
-				<a href="store">Productos</a>>
-				<a href="">Living room</a>>
+				<a href="{{route('shop.index')}}">Productos</a>>
+				<a href="#">Living room</a>>
 			</p>
-			<p class="product-name">Sillon Byron</p>
+			<p class="product-name">{{$product->name}}</p>
 		</section>
 
 		<!--SLIDER DE PRODUCTO-->
-		<section class="slider product">
-        <div><img src="assets/img/deseados/deseados-3.jpg" alt=""></div>
-        <div><img src="assets/img/deseados/deseados-4.jpg" alt=""></div>
-        <div><img src="assets/img/deseados/deseados-6.jpg" alt=""></div>
-    </section>
+		<section class="slider-producto product">
+			<div class="item"><img src="{{asset($product->picture)}}" alt=""></div>
+		</section>
 
 <div class="name-colors-description">
     <section class="name">
-		<h2>Nombre producto</h2>
-		<p class="price">$100</p>
+		<h2>{{$product->name}}</h2>
+		<p class="price">${{$product->price}}</p>
 		<div class="pay">
 			<div class="cuotas">
 				<i class="far fa-credit-card"></i>
@@ -54,8 +52,7 @@
 	</section>
 
 	<section class="description">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+		<p>{{$product->description}}</p>
 	</section>
 </div>
 

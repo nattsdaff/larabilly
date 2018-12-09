@@ -37,6 +37,16 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    setTimeout(function () {
+        $('.slider-producto').slick({
+            arrows: false,
+            dots: true,
+            autoplay: false,
+            infinite: false
+        });
+    }, 300);
+});
 
 /* SETTINGS PARA EL SLIDER DE PRODUCTOS DESEADOS */
 $(document).ready(function () {
