@@ -12,6 +12,8 @@ Route::get('product/{id}', 'Front\ProductController@show');
 
 Route::get('store', 'StaticController@store');
 
+Route::get('cart', 'StaticController@cart');
+
 Route::get('faq', 'StaticController@faq');
 
 Route::get('exito', 'StaticController@exito');

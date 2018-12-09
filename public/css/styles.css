@@ -1151,7 +1151,16 @@ section {
   margin-bottom: 20%; }
 
 .relacionados {
-  display: none; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .relacionados .relacionado {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -1189,7 +1198,7 @@ section {
     background-color: #FFFFFF;
     font-weight: normal;
     opacity: 0.5;
-    width: 7%;
+    width: 6em;
     height: 35px;
     font-size: 1.7em; }
   .relacionados p {
@@ -1267,10 +1276,10 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1281,44 +1290,107 @@ section {
     font-weight: bold;
     font-size: 1.6em; }
   .descripcion-orden select {
-    display: none;
-    width: 60%;
+    width: 230px;
     height: 50px;
     font-size: 2em; }
-
-.productos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  .productos .producto {
-    width: 16em; }
-    .productos .producto img {
-      height: 16em; }
-    .productos .producto .product-name {
-      width: 5em;
-      font-size: 1.4em; }
 
 .store {
   display: none;
   margin-bottom: 15%; }
 
 @media all and (min-width: 991px) {
-  .categoria select {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex; }
+  .descripcion-orden {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin-right: 2%; }
   .store {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-  .productos .producto {
-    width: 23.5em; }
-    .productos .producto img {
-      height: 23.5em; }
-    .productos .producto .product-name {
-      font-size: 2em; } }
+    display: flex; } }
+
+.producto-subtotal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .items .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    background-color: #F7F7F7;
+    padding: 1%; }
+    .items .item img {
+      width: 10em;
+      height: 10em; }
+    .items .item .description {
+      margin-left: 2%;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .items .item .description p {
+        margin: 0; }
+      .items .item .description .name-price {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+      .items .item .description .name p {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex; }
+      .items .item .description .cantidad {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; }
+  .items .totales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+
+.botones-compra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  .botones-compra input {
+    margin: 0; }

@@ -7,7 +7,11 @@
 <div class="container">
 
 		<section class="route">
-			<p>Home > Productos > Living room > </p>
+			<p>
+				<a href="/">Home</a>>
+				<a href="store">Productos</a>>
+				<a href="">Living room</a>>
+			</p>
 			<p class="product-name">Sillon Byron</p>
 		</section>
 
@@ -27,7 +31,7 @@
 				<i class="far fa-credit-card"></i>
 				<p>HASTA 12 CUOTAS</p>
 			</div>
-			<a href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264">
+			<a href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">
 				<p>Ver medios de pago</p>
 			</a>
 		</div>
@@ -73,33 +77,41 @@
 
 	<section class="relacionados">
 		<h6>PRODUCTOS RELACIONADOS</h6>
-		<div class="relacionado">
-			<img src="assets/img/deseados/deseados-1.jpg" alt="">
-			<p class="product-name">VOLK</p>
-			<p>ST. CHARLES DESK</p>
-			<p class="price">$7500</p>
-		</div>
+		<a href="/product">
+      <div class="relacionado">
+  			<img src="assets/img/deseados/deseados-1.jpg" alt="">
+  			<p class="product-name">VOLK</p>
+  			<p>ST. CHARLES DESK</p>
+  			<p class="price">$7500</p>
+  		</div>
+    </a>
 
-		<div class="relacionado">
-			<img src="assets/img/deseados/deseados-2.jpg" alt="">
-			<p class="product-name">ABC</p>
-			<p>NEW YORK SEDIA VELVET DINING ARM CHAIR</p>
-			<p class="price">$8000</p>
-		</div>
+    <a href="/product">
+  		<div class="relacionado">
+  			<img src="assets/img/deseados/deseados-2.jpg" alt="">
+  			<p class="product-name">ABC</p>
+  			<p>NEW YORK SEDIA VELVET DINING ARM CHAIR</p>
+  			<p class="price">$8000</p>
+  		</div>
+    </a>
 
-		<div class="relacionado">
-			<img src="assets/img/deseados/deseados-1.jpg" alt="">
-			<p class="product-name">VOLK</p>
-			<p>ST. CHARLES DESK</p>
-			<p class="price">$7500</p>
-		</div>
+    <a href="/product">
+      <div class="relacionado">
+  			<img src="assets/img/deseados/deseados-1.jpg" alt="">
+  			<p class="product-name">VOLK</p>
+  			<p>ST. CHARLES DESK</p>
+  			<p class="price">$7500</p>
+  		</div>
+    </a>
 
-		<div class="relacionado">
-			<img src="assets/img/deseados/deseados-2.jpg" alt="">
-			<p class="product-name">ABC</p>
-			<p>NEW YORK SEDIA VELVET DINING ARM CHAIR</p>
-			<p class="price">$8000</p>
-		</div>
+    <a href="/product">
+  		<div class="relacionado">
+  			<img src="assets/img/deseados/deseados-2.jpg" alt="">
+  			<p class="product-name">ABC</p>
+  			<p>NEW YORK SEDIA VELVET DINING ARM CHAIR</p>
+  			<p class="price">$8000</p>
+  		</div>
+    </a>
 
 	</section>
 

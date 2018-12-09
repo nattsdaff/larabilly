@@ -137,7 +137,9 @@ section {
 }
 
 .relacionados {
-	display: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	.relacionado {
 		display: inline-flex;
 		flex-direction: column;
@@ -160,14 +162,14 @@ section {
 	.product-name {
 		position: absolute;
 		display: flex;
-    justify-content: center;
-    align-items: flex-end;
+   		justify-content: center;
+    	align-items: flex-end;
 		color: #413F3D;
 		background-color: #FFFFFF;
 		font-weight: normal;
 		opacity: 0.5;
-		width: 7%;
-    height: 35px;
+		width: 6em;
+    	height: 35px;
 		font-size: 1.7em;
 	}
 	p {
