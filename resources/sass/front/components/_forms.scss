@@ -1,3 +1,14 @@
+.alert-error {
+  text-align: left;
+  color:red;
+  font-size:1.2em;
+  font-weight: 600;
+  &.submit {
+    text-align:center;
+    margin-top:1rem;
+    font-size:1.5em;
+  }
+}
 .form {
   &-group{
     display: flex;
@@ -54,9 +65,13 @@
     padding:1.7rem 1rem;
     font-size:1.8em;
     font-weight: $light;
-    border: 0px solid $gris-medio;
+    border: 1px solid $gris-medio;
     margin-bottom: 2rem;
     width: 100%;
+    box-shadow:none;
+    &.is-invalid {
+      border:1px solid red;
+    }
     &.grow{
       flex-grow: 3;
     }

@@ -180,6 +180,16 @@ ul {
   .slider img {
     height: 520px; } }
 
+.alert-error {
+  text-align: left;
+  color: red;
+  font-size: 1.2em;
+  font-weight: 600; }
+  .alert-error.submit {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5em; }
+
 .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,9 +259,13 @@ ul {
   padding: 1.7rem 1rem;
   font-size: 1.8em;
   font-weight: 300;
-  border: 0px solid #707070;
+  border: 1px solid #707070;
   margin-bottom: 2rem;
-  width: 100%; }
+  width: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  .form-field.is-invalid {
+    border: 1px solid red; }
   .form-field.grow {
     -webkit-box-flex: 3;
     -ms-flex-positive: 3;
