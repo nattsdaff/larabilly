@@ -20,7 +20,7 @@
             
             <!-- AVATAR       -->
             <div class="avatar">
-                @if ($datos->avatar){
+                @if ($datos->avatar)
                     <img class="avatar" src="{{asset($datos->avatar)}}" alt="Avatar usuario">                    
                 @else
                 <i class="far fa-smile"></i>
