@@ -60,7 +60,7 @@ class ProductController extends Controller
     {
         $product = Product::find($id);
         request()->validate([
-    		'name' => 'required|string|min:3|max:150|unique:products',
+    		'name' => 'required|string|min:3|max:150|unique:products,name,'.$product->id,
             'description' => 'string|max:500|nullable',
             'price' => 'required|integer|digits_between:1,10',
             'picture' => 'image|max:2000',
