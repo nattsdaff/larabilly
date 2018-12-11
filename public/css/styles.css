@@ -180,6 +180,13 @@ ul {
   .slider img {
     height: 520px; } }
 
+span.alert-error {
+  text-align: left;
+  color: red;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 0rem; }
+
 .alert-error {
   text-align: left;
   color: red;

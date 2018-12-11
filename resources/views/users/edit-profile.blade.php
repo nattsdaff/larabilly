@@ -45,7 +45,7 @@
                     <input id="email" type="email" class="form-field{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email', $profile->email) }}" required>
                     <div class="alert-error"></div>
                     @if ($errors->has('email'))
-                        <span class="form-error" role="alert">
+                        <span class="alert-error" role="alert">
                             <strong>{{ $errors->first('email') }}</strong>
                         </span>
                     @endif
@@ -58,7 +58,7 @@
                         <input id="first_name" type="text" class="form-field{{ $errors->has('first_name') ? ' is-invalid' : '' }}" name="first_name" value="{{ old('first_name', $profile->first_name) }}" required>
                         <div class="alert-error"></div>
                         @if ($errors->has('first_name'))
-                            <span class="form-error" role="alert">
+                            <span class="alert-error" role="alert">
                                 <strong>{{ $errors->first('first_name') }}</strong>
                             </span>
                         @endif
