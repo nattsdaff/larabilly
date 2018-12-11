@@ -65,39 +65,6 @@ class AdminController extends Controller
         $admin->update($datos);
 
         return redirect('admin/admins')->with('status', 'Admnistrador Actualizado');
-
-        // $newEmail = request()->email;
-        // $newPassword = request()->password;
-
-        // if(empty($newEmail) && empty($newPassword)){
-        //     $return = redirect('admin/admins')->with('status', 'Nada que actualizar');
-
-        // }else if(empty($newEmail)){
-        //     request()->validate([
-        //         'password' => 'required|min:6|string',
-        //     ]);
-        //     $newData = request()->except('email');
-        //     $newData["password"] = Hash::make($newData["password"]);
-        //     $admin->update($newData);
-        //     $return = redirect('admin/admins')->with('status', 'Administrador Actualizado');
-
-        // }else if(empty($newPassword)){
-        //     request()->validate([
-        //         'email' => 'string|email|max:255',
-        //     ]);
-        //     $admin->update(request()->except('password'));
-        //     $return = redirect('admin/admins')->with('status', 'Administrador Actualizado');
-
-        // }else{
-        //     $newData = request()->validate([
-        //         'email' => 'required|string|email|max:255',
-        //         'password' => 'required|min:6|string',
-        //     ]);
-        //     $newData["password"] = Hash::make($newData["password"]);
-        //     $admin->update($newData);
-        //     $return = redirect('admin/admins')->with('status', 'Administrador Actualizado');
-        // }
-        // return $return;
     }
 
     public function destroy($id)
