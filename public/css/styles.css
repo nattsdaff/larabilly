@@ -852,6 +852,10 @@ footer {
   text-align: center;
   padding: 2rem;
   background: #F2F2F2; }
+  .container-form .fa-smile {
+    display: block;
+    font-size: 16em;
+    padding: 4rem 1rem; }
 
 .container .aside {
   background: #fff;
