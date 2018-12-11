@@ -38,20 +38,38 @@ class ProfileController extends Controller
         $id = Auth::id();
         $profile = User::find($id);
 
-        
-        $first_name = (!Input::get('first_name')) ? $profile->first_name : $request->validate(['first_name' => 'string|max:255|min:2|regex:/^[a-zA-Z áéíóúÁÉÍÓÚñÑüÜ]*$/']);
-        $last_name = (!Input::get('last_name')) ? $profile->last_name : $request->validate(['last_name' => 'string|max:255|min:2|regex:/^[a-zA-Z áéíóúÁÉÍÓÚñÑüÜ]*$/']);
-        $email = (!Input::get('email')) ? $profile->email : $request->validate(['email' => 'string|email|max:255|unique:users',]);
-        $password = (!Input::get('password')) ? $profile->password : Hash::make($request->validate(['password' => 'string|min:6|confirmed']));
-        $password_confirmation = (!Input::get('password_confirmation')) ? $profile->password_confirmation : $request->password_confirmation;
-        $dni =  (!Input::get('dni')) ? $profile->dni : $request->validate(['dni' => 'integer|digits_between:7,9']);
-        $birthday = (!Input::get('birthday')) ? $profile->birthday : $request->validate(['birthday' => 'date']);
-        $phone = (!Input::get('phone')) ? $profile->phone : $request->validate(['phone' => 'nullable|integer|digits_between:8,13']);
-        
-        $newData = [$first_name, $last_name, $email, $password, $birthday, $phone, $dni];
-        dd($newData);
+        request()->validate([
+            'first_name' => 'string|max:255|min:2|regex:/^[a-zA-Z áéíóúÁÉÍÓÚñÑüÜ]*$/',
+            'last_name' => 'string|max:255|min:2|regex:/^[a-zA-Z áéíóúÁÉÍÓÚñÑüÜ]*$/',
+            'email' => 'string|email|max:255|unique:users',
+            'password' => 'string|min:6|confirmed',
+            'dni' => 'integer|digits_between:7,9',
+            'birthday' => 'date',
+            'phone' => 'nullable|integer|digits_between:8,13',
+            'picture' => 'image|max:2000',
 
-        $profile->update($newData);
+        ]);
+
+        // $first_name = (!Input::get('first_name')) ? $profile->first_name : $request->first_name; 
+        // $last_name = (!Input::get('last_name')) ? $profile->last_name : $request->last_name; 
+        // $email = (!Input::get('email')) ? $profile->email : $request->email; 
+        // $password = (!Input::get('password')) ? $profile->password : $request->password;
+        // $password_confirmation = (!Input::get('password_confirmation')) ? $profile->password_confirmation : $request->password_confirmation;
+        // $dni =  (!Input::get('dni')) ? $profile->dni : $request->dni;
+        // $birthday = (!Input::get('birthday')) ? $profile->birthday : $request->birthday;
+        // $phone = (!Input::get('phone')) ? $profile->phone : $request->phone;
+        
+        if (request()->file('picture')) {
+            $ext = request()->file('picture')->extension();
+            $nombre = str_slug(request()->input('name'));
+            $nombre = request()->file('picture')->storeAs('products', $nombre.'.'.$ext);
+            $nombre = 'storage/'.$nombre;
+
+            $datos['picture'] = $nombre;
+        }
+        $datos = request()->all();
+
+        $profile->update($datos);
         return redirect('profile')->with('status', 'Usuario Actualizado');
     
     }

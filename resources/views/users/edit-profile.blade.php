@@ -23,23 +23,23 @@
                 {{-- <img class="avatar" src="{{asset($producto->picture)}}" alt="Avatar usuario"> --}}
                 <i class="far fa-smile"></i>
                 <h2 class="alt-title">Modificar mis datos</h2>
-                <div style="text-align: center;">
-                    <form method="POST" action="" novalidate class="needs-validation" enctype="multipart/form-data" style="font-size: 1.5em;">Elegir imagen
-                        <input type="file" class="form-control{{ $errors->has('avatar') ? ' is-invalid' : '' }}" name="avatar" id="avatar">
-                        @if ($errors->has('avatar'))
+            </div>
+    
+            <form method="POST" action="{{route('profile.update', ['id' => Auth::id()])}}" novalidate enctype="multipart/form-data">
+                    @csrf
+                    @method('PUT')
+                <div class="form-group row">
+                    <label for="picture" class="col-sm-2 col-form-label">Subir imagen:</label>
+                    <div class="col-sm-10">
+                        <input type="file" class="form-control{{ $errors->has('picture') ? ' is-invalid' : '' }}" name="picture" id="picture">
+                        @if ($errors->has('picture'))
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $errors->first('picture') }}</strong>
                             </span>
                         @endif
-                    </form>
+                    </div>
                 </div>
-            </div>
-    
-
-            <form method="POST" action="{{route('profile.update', ['id' => Auth::id()])}}" novalidate>
-                @csrf
-                @method('PUT')
-                {{-- E-MAIL --}}
+                        {{-- E-MAIL --}}
                 <div class="form-item">
                     <label for="email" class="form-label">Email <span style="color:red;">*</span></label>
                     <input id="email" type="email" class="form-field{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('username') }}" required>
