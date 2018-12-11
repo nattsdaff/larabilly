@@ -34,7 +34,7 @@
             <div class="userMenu mobile">
             <p>Hola {{ Auth::user()->first_name }}</p>
                 <ul>
-                    <li><a href="">Mi cuenta</a></li>
+                    <li><a href="/profile">Mi cuenta</a></li>
                     <li><a href="/logout">Cerrar sesión</a></li>
                 </ul>
             </div>

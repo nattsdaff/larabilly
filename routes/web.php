@@ -7,7 +7,7 @@ Auth::routes();
 Route::get('/logout', 'Auth\LoginController@logout');
 
 // Rutas de User Profile
-Route::get('/profile/{id}','ProfileController@show')->name('profile.show');
+Route::get('/profile','ProfileController@show')->name('profile.show');
 Route::get('/profile/{id}/edit','ProfileController@edit');
 Route::put('/profile/{id}','ProfileController@update')->name('profile.update');
 
