@@ -26,11 +26,6 @@
     <div class="container">
         <div class="container-micuenta">
             <div class="info">
-                @if (session('status'))
-                <div class="alert alert-info">
-                    {{ session('status') }}
-                </div>
-                @endif  
                 <form method="get" action="{{route('profile.edit')}}" novalidate>
                     <h1 class="alt-title">MI CUENTA</h1>
                     <p>Email: {{$datos->email}}</p>
@@ -43,10 +38,16 @@
             </div>
             <!-- AVATAR       -->
             <div class="avatar">
-                {{-- <img class="avatar" src="{{asset($producto->picture)}}" alt="Avatar usuario"> --}}
-                                    
+                @if (session('status'))
+                <div class="alert alert-info alert-success">
+                    {{ session('status') }}
+                </div>
+                @endif  
+                @if ($datos->avatar){
+                    <img class="avatar" src="{{asset($datos->avatar)}}" alt="Avatar usuario">                    
+                @else
                 <i class="far fa-smile"></i>
-                
+                @endif
             </div>
         </div>            
     </div>            
