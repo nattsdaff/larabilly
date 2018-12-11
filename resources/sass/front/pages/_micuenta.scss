@@ -1,3 +1,11 @@
+.avatar {
+  text-align: center;
+  margin: 4rem 2rem;
+  img{
+    margin: 0 auto;
+    width: 300px;
+    }
+  }
 .container-micuenta{
   display:flex;
   flex-direction: column;
@@ -6,13 +14,6 @@
     display: block;
     font-size: 1.8em;
   }
-  .avatar {
-    text-align: center;
-    img{
-      margin: 0 auto;
-      width: 300px;
-      }
-    }
   .info{
     text-align: center;
   }
