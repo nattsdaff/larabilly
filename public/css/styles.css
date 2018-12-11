@@ -884,7 +884,8 @@ footer {
 .container-form {
   text-align: center;
   padding: 2rem;
-  background: #F2F2F2; }
+  background: #F2F2F2;
+  padding: 4rem; }
   .container-form .fa-smile {
     display: block;
     font-size: 16em;
@@ -913,7 +914,8 @@ footer {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 700px;
-    margin: 4rem auto 4rem; } }
+    margin: 4rem auto 4rem;
+    padding: 4rem; } }
 
 .exito {
   height: 40vh;
@@ -925,6 +927,13 @@ footer {
 @media all and (min-width: 768px) {
   .btn.gris {
     width: 300px; } }
+
+.avatar {
+  text-align: center;
+  margin: 4rem 2rem; }
+  .avatar img {
+    margin: 0 auto;
+    width: 300px; }
 
 .container-micuenta {
   display: -webkit-box;
@@ -938,11 +947,6 @@ footer {
   .container-micuenta a {
     display: block;
     font-size: 1.8em; }
-  .container-micuenta .avatar {
-    text-align: center; }
-    .container-micuenta .avatar img {
-      margin: 0 auto;
-      width: 300px; }
   .container-micuenta .info {
     text-align: center; }
   .container-micuenta h1 {

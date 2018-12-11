@@ -16,13 +16,15 @@
 <section class="register">
     <div class="container">
         <div class="container-form">
+            <h1 class="alt-title">Modificar mis datos</h1>
             
             <!-- AVATAR       -->
             <div class="avatar">
-                    
-                {{-- <img class="avatar" src="{{asset($producto->picture)}}" alt="Avatar usuario"> --}}
+                @if ($datos->avatar){
+                    <img class="avatar" src="{{asset($datos->avatar)}}" alt="Avatar usuario">                    
+                @else
                 <i class="far fa-smile"></i>
-                <h2 class="alt-title">Modificar mis datos</h2>
+                @endif
             </div>
     
             <form method="POST" action="{{route('profile.update', ['id' => Auth::id()])}}" novalidate enctype="multipart/form-data">

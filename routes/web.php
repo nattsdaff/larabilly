@@ -8,7 +8,7 @@ Route::get('/logout', 'Auth\LoginController@logout');
 
 // Rutas de User Profile
 Route::get('/profile','ProfileController@show')->name('profile.show');
-Route::get('/profile/edit','ProfileController@edit')->name('profile.edit');;
+Route::get('/profile/edit','ProfileController@edit')->name('profile.edit');
 Route::put('/profile/{id}','ProfileController@update')->name('profile.update');
 
 // Rutas del front (estáticas)
