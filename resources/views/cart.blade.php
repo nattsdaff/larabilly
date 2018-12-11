@@ -53,8 +53,8 @@
                 <h3>No hay items en el carrito</h3>
             @endif
 
-				<div class="subtotal">Subtotal: $300</div>
-				<div class="total">Total: $300</div>
+				<div class="subtotal">Subtotal: $0</div>
+				<div class="total">Total: $0</div>
 		
 
 			<div class="botones-compra">

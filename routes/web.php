@@ -15,6 +15,7 @@ Route::put('/profile/{id}','ProfileController@update')->name('profile.update');
 Route::get('/', 'StaticController@index');
 Route::get('faq', 'StaticController@faq');
 Route::get('exito', 'StaticController@exito');
+Route::get('checkout', 'StaticController@checkout');
 
 // Rutas del Shop
 Route::get('/shop', 'ShopController@index')->name('shop.index');
