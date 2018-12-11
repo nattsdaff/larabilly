@@ -6,6 +6,11 @@ use Gloudemans\Shoppingcart\Facades\Cart;
 Auth::routes();
 Route::get('/logout', 'Auth\LoginController@logout');
 
+// Rutas de User Profile
+Route::get('/profile','ProfileController@show')->name('profile.show');
+Route::get('/profile/{id}/edit','ProfileController@edit');
+Route::put('/profile/{id}','ProfileController@update')->name('profile.update');
+
 // Rutas del front (estáticas)
 Route::get('/', 'StaticController@index');
 Route::get('faq', 'StaticController@faq');

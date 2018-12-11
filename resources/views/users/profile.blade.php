@@ -1,19 +1,57 @@
 @extends('templates/master')
-    
-@section('title', 'm o b i l i - Carrito')
+@section('title', 'm o b i l i • Mi cuenta')
 
+@section('breadcrumb')
+<!-- Breadcrumbs-->
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active">Mi cuenta</li>
+</ol>
+@endsection
 @section('content')
 
-	<div class="container">
+<section class="micuenta">
+        <!-- HOLA, USUARIO       -->
+        <div class="container">
+            <div class="container-micuenta">
+                <div class="info">
+                    <h2 class="alt-title">MI CUENTA</h2>
+                    <h1>Hola, Marta</h1>
+                    <p>Email: {{$datos->email}}</p>
+                    <p>Nombre y apellido: {{$datos->first_name}} {{$datos->last_name}}</p>
+                    <p>Dni: {{$datos->first_name}}</p>
+                    <p>Teléfono: {{$datos->phone}}</p>
+                    <p>Fecha de nacimiento: {{$datos->birthday}}</p>
+                    <a href="#" class="btn verde">Editar</a><br>
+                    <a href="logout.php" class="btn gris-claro">Salir</a><br>
+                </div>
+                <!-- AVATAR       -->
+                <div class="avatar">
+                    <form method="POST" action="{{route('profile.store')}}" novalidate class="needs-validation" enctype="multipart/form-data">
+                        <input type="file" class="form-control{{ $errors->has('picture') ? ' is-invalid' : '' }}" name="picture" id="picture">
+                        @if ($errors->has('picture'))
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $errors->first('picture') }}</strong>
+                            </span>
+                        @endif
+                    </form>
+                    <img class="avatar" src="{{asset($product->picture)}}" alt="Avatar usuario">
+                                        
+                    <i class="far fa-smile"></i>
+                   
+                </div>
+            </div>            
+        </div>            
+    </section>
+
+
+    <div class="container">
 		<section class="title">
             @if (session()->has('success'))
                 {{ session()->get('success') }}
             @endif
-			<h2 class="alt-title">MI CARRITO</h2>
-
+			<h2 class="alt-title">MI CUENTA</h2>
 			<div class="producto-subtotal">
-				<p>PRODUCTO</p>
-				<p>SUBTOTAL</p>
+				<p>DATOS PERSONALES</p>
 			</div>
 		</section>
 
