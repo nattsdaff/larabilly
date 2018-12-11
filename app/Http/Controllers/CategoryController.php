@@ -21,7 +21,7 @@ class CategoryController extends Controller
     public function store()
     {
         request()->validate([
-    		'name' => 'required|alpha_dash|min:3|max:150',
+    		'name' => 'required|alpha_dash|min:3|max:150|unique:categories,name',
         ]);
 
         $category = Category::create(request()->all());
@@ -39,7 +39,7 @@ class CategoryController extends Controller
     {
         $category = Category::find($id);
         request()->validate([
-    		'name' => 'required|alpha_dash|min:3|max:150',
+    		'name' => 'required|alpha_dash|min:3|max:150|unique:categories,name,'.$category->id,
         ]);
 
         $category->update(request()->all());
