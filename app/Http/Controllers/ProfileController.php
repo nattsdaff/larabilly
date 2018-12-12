@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\User;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Input;
 
 class ProfileController extends Controller
 {
-    /**
-     * Where to redirect users after registration.
-     *
-     * @var string
-     */
-    protected $redirectTo = '/exito';
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
     public function show()
     {
@@ -23,41 +23,42 @@ class ProfileController extends Controller
         return view('users.profile', compact('id','datos'));
     }
 
-
-    public function store()
+    public function edit()
     {
-        request()->validate([
-            'picture' => 'image|max:2000',
-        ]);
-        
-        $datos = request()->all();
-
-        if (request()->file('picture')) {
-            $ext = request()->file('picture')->extension();
-            $nombre = str_slug(request()->input('name'));
-            $nombre = request()->file('picture')->storeAs('products', $nombre.'.'.$ext);
-            $nombre = 'storage/'.$nombre;
-
-            $datos['picture'] = $nombre;
-        }
-
-        $product = Product::create($datos);
-        
-        return view('admin.products.products-success');
+        $id = Auth::id();
+        $profile = User::find($id);
+        return view('users.edit-profile', compact('profile'));
     }
 
-    // public function edit($id)
-    // {
-    //     $profile = User::find($id);
-    //     return view('profile', compact('profile'));
-    // }
+    public function update(Request $request)
+    {
+        $id = Auth::id();
+        $profile = User::find($id);
+        
+        $datos = [];
+        $datos[] = (!Input::get('first_name')) ? ['first_name' => $profile->first_name] : request()->validate(['first_name' => 'string|max:255|min:2|regex:/^[a-zA-Z áéíóúÁÉÍÓÚñÑüÜ]*$/']);
+        $datos[] = (!Input::get('last_name')) ? ['last_name' => $profile->last_name] : request()->validate(['last_name' => 'string|max:255|min:2|regex:/^[a-zA-Z áéíóúÁÉÍÓÚñÑüÜ]*$/']); 
+        $datos[] = (!Input::get('email')) ? ['email' => $profile->email] : request()->validate(['email' => 'string|email|max:255|unique:users,email,'.$profile->id]);  
+        $datos[] = (!Input::get('password')) ? ['password' => $profile->password] : Hash::make($request->validate(['password' => 'string|min:6|confirmed']));
+        $datos[] = (!Input::get('dni')) ?['dni' => $profile->dni] : request()->validate(['dni' => 'integer|digits_between:7,9|unique:users,dni,'.$profile->id]); 
+        $datos[] = (!Input::get('birthday')) ? ['birthday' => $profile->birthday] : request()->validate(['birthday' => 'nullable|date']); 
+        $datos[] = (!Input::get('phone')) ? ['phone' => $profile->phone] : request()->validate(['phone' => 'nullable|integer|digits_between:8,13']);
 
-    // public function update($id)
-    // {
-    //     $profile = User::find($id);
-    //     $data = request()->all();
-    //     dd($data);
-    //     return $return;
-    // }
+        $datos = collect($datos);
+        $datos = $datos->collapse()->toArray();
+
+        if (request()->file('avatar')) {
+            request()->validate(['avatar' => 'image|max:2000']);
+            $ext = request()->file('avatar')->extension();
+            $id = $profile->id;
+            $nombre = request()->file('avatar')->storeAs('avatars', $id.'.'.$ext);
+            $nombre = 'storage/'.$nombre;
+
+            $datos['avatar'] = $nombre;
+        }
+
+        $profile->update($datos);
+        return redirect('profile')->with('status', 'Usuario Actualizado');
+    }
 
 }

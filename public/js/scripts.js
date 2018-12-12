@@ -159,7 +159,8 @@ function validateEmailField() {
     let field = document.getElementById('email');
     let status = field.value;
     if (status.length <= 0) {
-        errorMsg[0].innerHTML = 'El campo no puede estar vacío.';
+        // errorMsg[0].innerHTML = 'El campo no puede estar vacío.';
+        errorMsg[0].innerHTML = '<span class="warning-sign">El campo no puede estar vacío.</span>';
         field.classList.add('is-invalid');
         errorCount.email = false;
     } else if (!validateEmail(status)) {
@@ -330,3 +331,4 @@ document.getElementById('submit').addEventListener('mouseover', function(){
 document.getElementById('submit').addEventListener('mouseout', function(){
     errorMsg[7].innerHTML = '';
 });
+
