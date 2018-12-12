@@ -162,7 +162,6 @@ img {
 
 /* PAGES */
 @import "pages/_home";
-@import "pages/_formularios";
 @import "pages/_exito";
 @import "pages/_micuenta";
 @import "pages/_preguntas-frecuentes";
@@ -171,5 +170,6 @@ img {
 @import "pages/_cart";
 @import "pages/_checkout";
 
-@import "pages/_profile";
-@import "pages/_shop";
+@import "pages/__formularios";
+@import "pages/__profile";
+@import "pages/__shop";

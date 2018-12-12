@@ -21,13 +21,23 @@
 {{ session()->get('success') }}
 @endif
 
-<div class="container">
-    <section class="micuenta">
-        <div>
-            <h1 class="alt-title">MI CUENTA</h1>
-        </div>
-        <div class="container-content flex">
-            <div class="container-avatar">
+<section class="micuenta">
+    <!-- HOLA, USUARIO       -->
+    <div class="container">
+        <div class="container-micuenta">
+            <div class="info">
+                <form method="get" action="{{route('profile.edit')}}" novalidate>
+                    <h1 class="alt-title">MI CUENTA</h1>
+                    <p>Email: {{$datos->email}}</p>
+                    <p>Nombre y apellido: {{$datos->first_name}} {{$datos->last_name}}</p>
+                    <p>Dni: {{$datos->dni}}</p>
+                    <p>Teléfono: {{$datos->phone}}</p>
+                    <p>Fecha de nacimiento: {{$datos->birthday}}</p>
+                    <button type="submit" class="btn btn-success" value="submit">Modificar mis datos</button>
+                </form>
+            </div>
+            <!-- AVATAR       -->
+            <div class="avatar">
                 @if (session('status'))
                 <div class="alert alert-info alert-success">
                     {{ session('status') }}
@@ -39,19 +49,7 @@
                 <i class="far fa-smile"></i>
                 @endif
             </div>
-            <div class="container-copy left">
-                <p>Email: {{$datos->email}}</p>
-                <p>Nombre y apellido: {{$datos->first_name}} {{$datos->last_name}}</p>
-                <p>Dni: {{$datos->dni}}</p>
-                <p>Teléfono: {{$datos->phone}}</p>
-                <p>Fecha de nacimiento: {{$datos->birthday}}</p>
-            </div>
-        </div>
-        <div class="container-button">
-            <form method="get" action="{{route('profile.edit')}}" novalidate>
-                <button type="submit" class="btn btn-success" value="submit">Modificar mis datos</button>
-            </form>
-        </div>
-    </section>
-</div>            
+        </div>            
+    </div>            
+</section>
 @endsection

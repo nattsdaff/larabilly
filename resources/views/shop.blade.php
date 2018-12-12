@@ -8,9 +8,9 @@
 
   <section class="breadcrumb">
       <a href="/" class="alt-a">Home</a>
-      <p class="product-name"> > </p>
-  		<a href="{{route('shop.index')}}" class="alt-a">Productos</a>
-      <p class="product-name">> {{$product->category}}</p>
+      <p class="product-name"> > Productos</p>
+  		{{-- <p href="{{route('shop.index')}}" class="alt-a">Productos</p> --}}
+      {{-- <p class="product-name">> {{$product->category}}</p> --}}
   </section>
   
   <section class="shop-header">
