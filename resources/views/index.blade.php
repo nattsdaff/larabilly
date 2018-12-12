@@ -19,42 +19,42 @@
                 <a href="#">
                     <img src="assets/img/deseados/deseados-1.jpg" alt="">
                     <h4 class="deseados-title">St. Charles Desk</h4>
-                    <p class="deseados-price">$13500</p>
+                    <p class="price">$13500</p>
                </a>
             </div>
             <div class="item">
                 <a href="#">
                     <img src="assets/img/deseados/deseados-2.jpg" alt="">
                     <h4 class="deseados-title">New York Violet Dining Arm Chair</h4>
-                    <p class="deseados-price">$14000</p>
+                    <p class="price">$14000</p>
                 </a>
             </div>
             <div class="item">
                 <a href="#">
                     <img src="assets/img/deseados/deseados-3.jpg" alt="">
                     <h4 class="deseados-title">Catre Napper</h4>
-                    <p class="deseados-price">$13000</p>
+                    <p class="price">$13000</p>
                </a>
             </div>
             <div class="item">
                 <a href="#">
                     <img src="assets/img/deseados/deseados-4.jpg" alt="">
                     <h4 class="deseados-title">Sillón Byron</h4>
-                    <p class="deseados-price">$15000</p>
+                    <p class="price">$15000</p>
                 </a>
             </div>
             <div class="item">
                 <a href="#">
                     <img src="assets/img/deseados/deseados-5.jpg" alt="">
                     <h4 class="deseados-title">Banquito Eco</h4>
-                    <p class="deseados-price">$7300</p>
+                    <p class="price">$7300</p>
                </a>
             </div>
             <div class="item">
                 <a href="#">
                     <img src="assets/img/deseados/deseados-6.jpg" alt="">
                     <h4 class="deseados-title">Sillón Amore Mío</h4>
-                    <p class="deseados-price">$16380</p>
+                    <p class="price">$16380</p>
                 </a>
             </div>
         </div>

@@ -6,19 +6,18 @@
 
 <div class="container">
 
-		<section class="route">
-			<p>
-				<a href="/">Home</a>>
-				<a href="{{route('shop.index')}}">Productos</a>>
-				<a href="#">Living room</a>>
-			</p>
-			<p class="product-name">{{$product->name}}</p>
-		</section>
+	<section class="breadcrumb">
+		<a href="/" class="alt-a">Home</a>
+		<p class="product-name"> > </p>
+			<a href="{{route('shop.index')}}" class="alt-a">Productos</a>
+		<p class="product-name">> {{$product->name}}</p>
+	</section>
 
-		<!--SLIDER DE PRODUCTO-->
-		<section class="slider-producto product">
-			<div class="item"><img src="{{asset($product->picture)}}" alt=""></div>
-		</section>
+
+	<!--SLIDER DE PRODUCTO-->
+	<section class="slider-producto product">
+		<div class="item"><img src="{{asset($product->picture)}}" alt=""></div>
+	</section>
 
 <div class="name-colors-description">
     <section class="name">

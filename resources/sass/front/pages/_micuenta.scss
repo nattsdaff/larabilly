@@ -1,11 +1,11 @@
-.avatar {
-  text-align: center;
-  margin: 4rem 2rem;
-  img{
-    margin: 0 auto;
-    width: 300px;
-    }
-  }
+// .avatar {
+//   text-align: center;
+//   margin: 4rem 2rem;
+//   // img{
+//   //   margin: 0 auto;
+//   //   width: 300px;
+//   //   }
+//   }
 .container-micuenta{
   display:flex;
   flex-direction: column;
@@ -35,9 +35,9 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    .avatar img{
-      width: 300px;
-    }
+    // .avatar img{
+    //   width: 300px;
+    // }
     .info{
       flex-direction: column;
       margin-left: 2rem;

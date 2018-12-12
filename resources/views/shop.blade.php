@@ -5,34 +5,34 @@
 @section('content')
 
 <div class="container">
-  <section class="route products">
-    <p>
-  		<a href="/">Home</a>>
-  		<a href="{{route('shop.index')}}">Productos</a>>
-    </p>
-    <p class="product-name">Living room</p>
+
+  <section class="breadcrumb">
+      <a href="/" class="alt-a">Home</a>
+      <p class="product-name"> > </p>
+  		<a href="{{route('shop.index')}}" class="alt-a">Productos</a>
+      <p class="product-name">> {{$product->category}}</p>
+  </section>
+  
+  <section class="shop-header">
+    <h2>Living Room</h2>
+    <div class="description">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
+        <form class="" action="" method="post">
+          <select class="" name="">
+            <option value="">Ordenar por</option>
+          </select>
+        </form>
+      </div>
   </section>
 
-  <section class="categoria">
-    <h1>Living Room</h1>
-    <div class="descripcion-orden">
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
-      <form class="" action="" method="post">
-        <select class="" name="">
-          <option value="">Ordenar por</option>
-        </select>
-      </form>
-    </div>
-  </section>
-
-  <section class="relacionados">
+  <section class="shop-list">
 
 		@foreach ($products as $product)
 			<a href="{{route('shop.product', $product->slug)}}">
-					<div class="relacionado">
+					<div class="item">
 							<img src="{{asset($product->picture)}}" alt="">
-							<p class="product-name">VOLK</p>
-							<p>{{$product->name}}</p>
+							{{-- <p class="product-name">VOLK</p> --}}
+							<p class="name">{{$product->name}}</p>
 							<p class="price">${{$product->price}}</p>
 					</div>
 			</a>

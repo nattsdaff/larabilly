@@ -48,13 +48,11 @@
         </div>
     </div>
 
-    <div class="container">
-        <aside class="aside">
-            <p><a href="{{ route('password.request') }}">
+    <div class='copy-side'>
+            <a href="{{ route('password.request') }}" class="alt-a" style="display: block;">
                 {{ __('Forgot Your Password?') }}
-            </a></p>
-            <p>¿No tenés una cuenta en mobili? <a href="register">Crear una</a></p>
-        </aside>
+            </a>
+            <p style="display: inline-block;">¿No tenés una cuenta en mobili?   </p><a href="register" class="alt-a">Crear una</a>
     </div>
 </section>
 @endsection
