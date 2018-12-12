@@ -47,7 +47,12 @@
                 </ul>
             </div>
             @endauth
-            <a href="{{route('cart.index')}}"><i class="fas fa-shopping-bag"></i></a>
+            <a href="{{route('cart.index')}}">
+                @if (Cart::instance('default')->count() > 0)
+                    <span class="cantidad-carrito">{{ Cart::instance('default')->count() }}</span>
+                @endif
+                <i class="fas fa-shopping-bag"></i>
+            </a>
         </div>
         <!--cierra. bloqueDer-->
     </nav>
