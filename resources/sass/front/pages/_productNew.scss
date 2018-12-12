@@ -1,9 +1,5 @@
 .container{
 	&-product {
-		.product-image{
-			display: none;
-		}
-
 		.slick-dots li button:before {
 			color: rgb(177, 211, 152);
 			font-size: 3rem;
@@ -220,8 +216,19 @@
 @media all and (min-width: 991px){
 	.container{
 		&-product {
-			.slider-producto{
-				display: none;
+			display: flex;
+			flex-direction: column;
+			.product-image{
+				// width: 100%;
+				.item {
+					width: 50%;
+					img{
+						width: 50%;
+					}
+				}
+			}
+			.product-main{
+				flex-direction: row;
 			}
 			display: flex;
 			&-description{

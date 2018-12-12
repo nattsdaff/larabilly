@@ -14,62 +14,65 @@
 	</section>
 
 
-<div class="container-product">
-	<!--SLIDER DE PRODUCTO-->
-	<div class="product-image slider-producto product">
-		<div class="item"><img src="{{asset($product->picture)}}" alt=""></div>
-	</div>
-
-    <div class="description">
-		<h2>{{$product->name}}</h2>
-		<p class="price">${{$product->price}}</p>
-		<div class="pay">
-			<div class="cuotas">
-				<i class="far fa-credit-card"></i>
-				<p>HASTA 12 CUOTAS</p>
-			</div>
-			<a href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">
-				<p>Ver medios de pago</p>
-			</a>
-		</div>
-	</div>
-
-	<div class="colors">
-			<h5>Colores disponibles</h5>
-			<div class="circulos">
-				<div class="circulo" id="color1"></div>
-				<div class="circulo" id="color2"></div>
-				<div class="circulo" id="color3"></div>
-				<div class="circulo" id="color4"></div>
+	<section class="container-product">
+		<div class="product-main">
+			<!--SLIDER DE PRODUCTO-->
+			<div class="product-image slider-producto product">
+				<div class="item"><img src="{{asset($product->picture)}}" alt=""></div>
 			</div>
 
-			{{-- <input type="submit" value="AGREGAR AL CARRITO" class="submit-btn verde"> --}}
-			<form action="{{route('cart.store', $product)}}" method="POST">
-				@csrf
-				<input type="submit" value="AGREGAR AL CARRITO" class="submit-btn verde">
-			</form>
-	</div>
 
-	<div class="description">
-		<p>{{$product->description}}</p>
-	</div>
-</div>
-
-	<div class="opiniones">
-			<h3>Opiniones</h3>
-			<div class="opinion">
-				<div class="estrellas">
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
+			<div class="description">
+				<h2>{{$product->name}}</h2>
+				<p class="price">${{$product->price}}</p>
+				<div class="pay">
+					<div class="cuotas">
+						<i class="far fa-credit-card"></i>
+						<p>HASTA 12 CUOTAS</p>
+					</div>
+					<a href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">
+						<p>Ver medios de pago</p>
+					</a>
 				</div>
-					<h6 class="opinion-nombre">Damián</h6>
-					<p class="comentario">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				<div class="colors">
+						<h5>Colores disponibles</h5>
+						<div class="circulos">
+							<div class="circulo" id="color1"></div>
+							<div class="circulo" id="color2"></div>
+							<div class="circulo" id="color3"></div>
+							<div class="circulo" id="color4"></div>
+						</div>
+			
+						{{-- <input type="submit" value="AGREGAR AL CARRITO" class="submit-btn verde"> --}}
+						<form action="{{route('cart.store', $product)}}" method="POST">
+							@csrf
+							<input type="submit" value="AGREGAR AL CARRITO" class="submit-btn verde">
+						</form>
+				</div>
 			</div>
-			<input type="submit" value="VER TODAS LAS OPINIONES" class="submit-btn gris">
-	</div>
+		</div>
+
+		<div class="product-secondary">
+			<p>{{$product->description}}</p>
+			<div class="opiniones">
+					<h3>Opiniones</h3>
+					<div class="opinion">
+						<div class="estrellas">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+							<h6 class="opinion-nombre">Damián</h6>
+							<p class="comentario">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<input type="submit" value="VER TODAS LAS OPINIONES" class="submit-btn gris">
+			</div>
+		</div>
+
+	</section>
+
 
 	<div class="relacionados">
 		<h6>PRODUCTOS RELACIONADOS</h6>
