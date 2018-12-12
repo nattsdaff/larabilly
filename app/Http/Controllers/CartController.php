@@ -14,10 +14,26 @@ class CartController extends Controller
     }
 
     public function store(Product $product)
-    {
+    {   
+
+        $duplicates = Cart::search(function ($cartItem, $rowId) use ($product) {
+            return $cartItem->id === $product->id;
+        });
+
+        if ($duplicates->isNotEmpty()) {
+            return redirect()->route('cart.index')->with('success', 'El producto ya estaba en su carrito!');
+        } 
+
         Cart::add($product->id, $product->name, 1, $product->price)
             ->associate('\App\Product');
 
-        return redirect()->route('cart.index')->with('success', 'Todo piola');
+        return redirect()->route('cart.index')->with('success', 'El producto fue agregado a su carrito!');
+    }
+
+    public function destroy($id)
+    {
+        Cart::remove($id);
+
+        return back()->with('success', 'Producto eliminado del carrito.');
     }
 }

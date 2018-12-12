@@ -24,6 +24,7 @@ Route::get('/shop/{product}', 'ShopController@show')->name('shop.product');
 // Rutas del Carrito
 Route::get('/cart', 'CartController@index')->name('cart.index');
 Route::post('/cart/{product}', 'CartController@store')->name('cart.store');
+Route::delete('/cart/{product}', 'CartController@destroy')->name('cart.destroy');
 
 Route::get('empty', function(){
     Cart::destroy();

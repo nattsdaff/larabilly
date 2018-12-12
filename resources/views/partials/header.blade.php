@@ -48,7 +48,10 @@
             </div>
             @endauth
             <a href="{{route('cart.index')}}">
-                <span class="cantidad-carrito">{{ Cart::count() }}</span><i class="fas fa-shopping-bag"></i>
+                @if (Cart::instance('default')->count() > 0)
+                    <span class="cantidad-carrito">{{ Cart::instance('default')->count() }}</span>
+                @endif
+                <i class="fas fa-shopping-bag"></i>
             </a>
         </div>
         <!--cierra. bloqueDer-->
