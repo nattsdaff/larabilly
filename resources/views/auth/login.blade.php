@@ -22,19 +22,17 @@
                     </span>
                     @endif
                 </div>
-
                 <!-- CONTRASEÑA -->
                 <div class="form-item">
                     <label for="inputPassword" class="form-label">Contraseña <span style="color:red;">*</span></label>
                     <input id="password" type="password" class="form-field{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
                     @if ($errors->has('password'))
-                    <span class="form-error" role="alert">
-                        <strong>{{ $errors->first('password') }}</strong>
-                    </span>
+                        <span class="form-error" role="alert">
+                            <strong>{{ $errors->first('password') }}</strong>
+                        </span>
                     @endif
                 </div>
-
                 <!-- RECORDAR USUARIO -->
                 <div class="form-checkbox">
                     <input class="checkbox" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
@@ -43,7 +41,6 @@
                         <p>{{ __('Remember Me') }}</p>
                     </label>
                 </div>
-
                 <div>
                     <input type="submit" value="{{ __('Login') }}" class="submit-btn gris">
                 </div>
@@ -52,11 +49,10 @@
     </div>
 
     <div class='copy-side'>
-        <a href="{{ route('password.request') }}" class="alt-a" style="display: block;">
-
-            {{ __('Forgot Your Password?') }}
-        </a>
-        <p style="display: inline-block;">¿No tenés una cuenta en mobili? </p><a href="register" class="alt-a">Crear una</a>
+            <a href="{{ route('password.request') }}" class="alt-a" style="display: block;">
+                {{ __('Forgot Your Password?') }}
+            </a>
+            <p style="display: inline-block;">¿No tenés una cuenta en mobili?   </p><a href="register" class="alt-a">Crear una</a>
     </div>
 </section>
 @endsection

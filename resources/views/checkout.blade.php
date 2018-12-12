@@ -10,11 +10,11 @@
 
 <div class="container">
 
-	<h2>Envío y pago</h2>
+        <div class="title"><h2 class="alt-title center">Envío y Pago</h2></div>
 	
 	<div class="showroom-items">
 		<section class="showroom">
-		<h3 class="alt-title">RETIRO EN SHOWROOM</h3>
+		<h3 style="margin-top:5rem;">RETIRO EN SHOWROOM</h3>
 		<p>Seleccioná un local por donde preferís retirar tu producto.</p>
 		<h4>LOCALES</h4>
 		<form>
@@ -24,35 +24,10 @@
 		</form>
 	</section>
 
-	<section class="items checkout">
-		@foreach (Cart::content() as $item)
-			<div class="item">
-				<a href="{{route('shop.product', $item->model->slug)}}"><img src="{{asset($item->model->picture)}}"></a>
-				<div class="description">
-					<div class="description-sup">
-						<div class="name-price">
-							<div class="name">
-								<p>{{$item->model->name}}</p>
-								<p>x{{$item->qty}}</p>     
-							</div>
-							<p class="total-price">${{$item->model->price}}</p>
-						</div>
-					</div>   
-				</div>
-			</div>
-		@endforeach
-
-    	<div class="totales">
-			<div class="subtotal">Subtotal: ${{Cart::subtotal()}} <br> IVA (21%) ${{Cart::tax()}}</div>
-			<div class="total">Total: ${{Cart::total()}}</div>
-		</div>
-
-	</section>
-	</div>
 	
 
 	<section class="medios-de-pago">
-		<h3 class="alt-title">MEDIO DE PAGO</h3>
+		<h3 style="margin-top:5rem;">MEDIO DE PAGO</h3>
 		<form>
 			<div class="medio-de-pago">
 				<input type="radio" name="pago" value="efectivo"><p>Quiero abonar en efectivo al retirar</p>
