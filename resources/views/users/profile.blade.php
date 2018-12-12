@@ -49,7 +49,8 @@
                 <i class="far fa-smile"></i>
                 @endif
             </div>
-        </div>            
+        </div> 
+        
     </div>            
 </section>
 @endsection

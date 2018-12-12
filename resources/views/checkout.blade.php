@@ -2,6 +2,10 @@
 
 @section('title', 'm o b i l i • Checkout')
 
+@section('stripe')
+	<script src="https://js.stripe.com/v3/"></script>
+@endsection
+
 @section('content')
 
 <div class="container">
@@ -34,7 +38,10 @@
 			</div>
 		</form>
 		<img src="assets/img/pago/mercado-pago.png">
-		<input type="submit" value="FINALIZAR COMPRA" class="submit-btn verde finalizar-compra">
+		<form action="{{route('checkout.store')}}" method="POST">
+			@csrf
+			<input type="submit" value="FINALIZAR COMPRA" class="submit-btn verde finalizar-compra">
+		</form>
 	</section>
 
 </div>

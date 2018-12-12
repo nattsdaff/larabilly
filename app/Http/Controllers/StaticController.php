@@ -20,4 +20,8 @@ class StaticController extends Controller
     {
         return view('exito');
     }
+    public static function success()
+    {
+        return view('success');
+    }
 }

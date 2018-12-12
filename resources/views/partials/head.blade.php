@@ -14,4 +14,5 @@
     <!--CSS CUSTOM-->
     <link rel="stylesheet" href="{{asset('css/styles.css')}}">
     <title>@yield('title', 'm o b i l i')</title>
+    @yield('stripe')
 </head>

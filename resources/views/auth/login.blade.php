@@ -17,9 +17,9 @@
                     <input id="email" type="email" class="form-field{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
 
                     @if ($errors->has('email'))
-                        <span class="form-error" role="alert">
-                            <strong>{{ $errors->first('email') }}</strong>
-                        </span>
+                    <span class="form-error" role="alert">
+                        <strong>{{ $errors->first('email') }}</strong>
+                    </span>
                     @endif
                 </div>
                 <!-- CONTRASEÑA -->
