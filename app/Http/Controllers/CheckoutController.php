@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Gloudemans\Shoppingcart\Facades\Cart;
+use Auth;
 
 class CheckoutController extends Controller
 {
@@ -32,9 +34,10 @@ class CheckoutController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
+    public function store()
+    {   
+        Cart::destroy();
+        return redirect('success');
     }
 
     /**

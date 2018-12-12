@@ -20,6 +20,7 @@ class ProfileController extends Controller
         // Get the currently authenticated user's ID...
         $id = Auth::id();
         $datos = request()->user();
+
         return view('users.profile', compact('id','datos'));
     }
 

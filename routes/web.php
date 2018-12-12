@@ -1,7 +1,5 @@
 <?php
 
-use Gloudemans\Shoppingcart\Facades\Cart;
-
 // Rutas generadas por make:auth
 Auth::routes();
 Route::get('/logout', 'Auth\LoginController@logout');
@@ -15,7 +13,7 @@ Route::put('/profile/{id}','ProfileController@update')->name('profile.update');
 Route::get('/', 'StaticController@index');
 Route::get('faq', 'StaticController@faq');
 Route::get('exito', 'StaticController@exito');
-Route::get('checkout', 'StaticController@checkout');
+Route::get('success', 'StaticController@success');
 
 // Rutas del Shop
 Route::get('/shop', 'ShopController@index')->name('shop.index');
@@ -33,10 +31,7 @@ Route::post('/saveForLater/switchToCart/{product}', 'SaveForLaterController@swit
 
 // Rutas del Checkout
 Route::get('/checkout', 'CheckoutController@index')->name('checkout.index');
-
-Route::get('empty', function(){
-    Cart::instance('saveForLater')->destroy();
-});
+Route::post('/checkout', 'CheckoutController@store')->name('checkout.store');
 
 // Rutas del panel de admin
 Route::prefix('admin')->group(function() {
