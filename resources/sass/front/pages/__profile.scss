@@ -1,0 +1,45 @@
+section {
+    &.micuenta{
+        text-align: center;
+    }
+}
+.container{
+    &-button{
+        width: 100%;
+        margin: 2rem auto;
+        }
+    &-avatar {
+        text-align: center;
+        margin: 2rem auto;
+        }
+    &-copy{
+        margin: 0rem auto;
+    }
+    &-content{
+        margin-top: 10%;
+    }
+}
+@media all and (min-width:768px){
+    .container{
+        &-button{
+            width: 40%;
+            margin: 2rem auto;
+            }
+        &-avatar {
+            text-align: center;
+            margin: 2rem;
+            }
+        &-copy{
+            margin: 2rem auto;
+        }
+        &-content{
+            width: 80%;
+            margin: 3rem auto 0;
+        }
+    }
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+}
+    
