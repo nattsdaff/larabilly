@@ -1680,29 +1680,29 @@ section.micuenta {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
-    .container .product .product-image .item {
-      width: 50%; }
-      .container .product .product-image .item img {
+    .container .product .product-image {
+      max-width: 50%; }
+      .container .product .product-image .item {
         width: 50%; }
+        .container .product .product-image .item img {
+          width: 100%;
+          margin: 0; }
     .container .product .product-main {
-      -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -ms-flex-direction: row;
       flex-direction: row;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
       -ms-flex-pack: distribute;
       justify-content: space-around; }
     .container .product .description {
-      width: 52%;
-      margin-left: 7%;
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column; }
+      max-width: 50%;
+      display: block;
+      width: auto; }
       .container .product .description h2 {
         font-size: 3em; }
       .container .product .description .pay {

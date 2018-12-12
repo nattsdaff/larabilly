@@ -233,10 +233,9 @@
 				justify-content: space-around;
 			}
 			.description{
-				width: 52%;
-				margin-left: 7%;
-				display: inline-flex;
-				flex-direction: column;
+				max-width:50%;
+				display: block;
+				width:auto;
 				h2{
 					font-size: 3em;
 				}
@@ -246,11 +245,11 @@
 						margin: 0;
 					}
 				}
-				}
 			}
-			
 		}
+			
 	}
+}
 
 	// .relacionados, .route {
 	// 	display: block;
