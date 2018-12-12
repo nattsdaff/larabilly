@@ -217,11 +217,12 @@
 			display: flex;
 			flex-direction: column;
 			.product-image{
-				// width: 100%;
+				max-width: 50%;
 				.item {
 					width: 50%;
 					img{
-						width: 50%;
+						width: 100%;
+						margin:0;
 					}
 				}
 			}

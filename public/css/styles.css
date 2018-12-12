@@ -1685,10 +1685,13 @@ section.micuenta {
     -ms-flex-direction: column;
     flex-direction: column;
     display: flex; }
-    .container .product .product-image .item {
-      width: 50%; }
-      .container .product .product-image .item img {
+    .container .product .product-image {
+      max-width: 50%; }
+      .container .product .product-image .item {
         width: 50%; }
+        .container .product .product-image .item img {
+          width: 100%;
+          margin: 0; }
     .container .product .product-main {
       display: -webkit-box;
       display: -ms-flexbox;
