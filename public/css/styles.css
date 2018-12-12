@@ -1632,7 +1632,8 @@ h3.alt-title {
   .totales p {
     margin: 0;
     font-size: 1.2em;
-    font-weight: bold; }
+    font-weight: bold;
+    color: #707070; }
   .totales .subtotal {
     margin-top: 8%;
     font-weight: bold;
