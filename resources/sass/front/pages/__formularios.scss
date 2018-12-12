@@ -1,11 +1,4 @@
   .container{
-    a {
-      color:$verde-oscuro;
-      font-size: 1em;
-      &:hover{
-        color: $gris-oscuro;
-      }
-    }
     &-form{
       text-align: center;
       padding: 2rem;

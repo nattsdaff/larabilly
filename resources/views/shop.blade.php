@@ -8,7 +8,7 @@
 
   <section class="breadcrumb">
       <a href="/" class="alt-a">Home</a>
-      <p class="product-name"> > Productos</p>
+      <p> > Productos</p>
   		{{-- <p href="{{route('shop.index')}}" class="alt-a">Productos</p> --}}
       {{-- <p class="product-name">> {{$product->category}}</p> --}}
   </section>
