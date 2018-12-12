@@ -14,15 +14,12 @@
   </section>
   
   <section class="shop-header">
-    {{-- <h2>Living Room</h2> --}}
-    <div class="description">
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
-        <form class="" action="" method="post">
-          <select class="" name="">
-            <option value="">Ordenar por</option>
-          </select>
-        </form>
-      </div>
+    <h2>Productos</h2>
+    <form class="" action="" method="post">
+        <select>
+          <option value="">Ordenar por</option>
+        </select>
+      </form>
   </section>
 
   <section class="shop-list">

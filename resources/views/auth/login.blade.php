@@ -49,9 +49,9 @@
     </div>
 
     <div class='copy-side'>
-            <a href="{{ route('password.request') }}" class="alt-a" style="display: block;">
+            {{-- <a href="{{ route('password.request') }}" class="alt-a" style="display: block;">
                 {{ __('Forgot Your Password?') }}
-            </a>
+            </a> --}}
             <p style="display: inline-block;">¿No tenés una cuenta en mobili?   </p><a href="register" class="alt-a">Crear una</a>
     </div>
 </section>

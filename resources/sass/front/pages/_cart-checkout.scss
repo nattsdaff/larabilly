@@ -100,7 +100,10 @@ h3.alt-title{
       }
     }
 }
-
+.showroom-items{
+  display: flex;
+  flex-direction: column;
+}
 .totales {
       display: flex;
       flex-direction: column;
@@ -130,4 +133,14 @@ h3.alt-title{
           margin: 10% 0 0 0;
         }
       }
+}
+@media all and (min-width:991px){
+  .showroom-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    section{
+      width: 45%;
+    }
+  }
 }

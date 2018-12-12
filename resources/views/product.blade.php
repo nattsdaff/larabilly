@@ -25,12 +25,11 @@
 				<h2>{{$product->name}}</h2>
 				<p class="price">${{$product->price}}</p>
 				<div class="payment">
-					<i class="far fa-credit-card"></i>
-					<p>HASTA 12 CUOTAS</p>
+					<p><i class="far fa-credit-card"></i> HASTA 12 CUOTAS <a href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank" class="alt-a">Ver medios de pago
+					</a></p>
 					{{-- <div class="cuotas">
 					</div> --}}
-					<a href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank" class="alt-a">Ver medios de pago
-					</a>
+					
 				</div>
 				{{-- <div class="colors">
 					<h5>Colores disponibles</h5>

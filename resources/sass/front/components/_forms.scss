@@ -127,7 +127,7 @@
       height: 25px;
       top: 0;
       left: 0;
-      background: $blanco;
+      background: $gris-claro;
       &:after{
           /* El estado normal de la caja sin click */
         opacity: 0;
@@ -160,7 +160,7 @@
 
 .submit-btn{
   font-size: 1.6em;
-  margin-bottom: 2rem 0;
+  margin: 2rem 0;
   font-weight:$normal;
   letter-spacing: $interletrado;
   text-transform: uppercase;
@@ -205,7 +205,6 @@ input[type=checkbox] {
 @media all and (min-width:768px){
   .submit-btn{
     width: 300px;
-    margin: 0 auto;
   }
 }
 @media all and (min-width:991px){

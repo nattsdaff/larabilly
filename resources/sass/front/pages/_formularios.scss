@@ -1,9 +1,8 @@
-  .container{
+
+.container{
     &-form{
       text-align: center;
-      padding: 2rem;
-      background: $gris-claro;
-      padding: 4rem;
+      padding: 1rem 0;
       .fa-smile{
         display: block;
         font-size: 16em;
@@ -30,6 +29,7 @@
 
 @media only screen and (min-width:768px){
     .container-form{
+      background: $gris-claro;
       flex-direction: column;
       width: 700px;
       margin: 4rem auto 4rem;

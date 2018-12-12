@@ -46,12 +46,12 @@
                                 <form action="{{ route('cart.destroy', $item->rowId) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" alt="Eliminar"><i class="far fa-trash-alt"></i></button>
+                                    <button type="submit" alt="Eliminar"><i class="far fa-trash-alt"></i> Eliminar</button>
                                 </form>
 
                                 <form action="{{ route('cart.switchToSaveForLater', $item->rowId) }}" method="POST">
                                     @csrf
-                                    <button type="submit" alt="Mover a deseados"><i class="far fa-heart" style="font-size: 2em;"></i></button>
+                                    <button type="submit" alt="Mover a deseados"><i class="far fa-heart" style="font-size: 2em;"></i>Agregar a deseados</button>
                                 </form>
                             </div>
                         </div>

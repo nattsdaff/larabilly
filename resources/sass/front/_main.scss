@@ -72,7 +72,7 @@ ul {
     }
 }
 .container{
-    width: 85%;
+    padding: 3rem;
     background: #fff;
     margin-right: auto;
     margin-left: auto;
@@ -150,6 +150,14 @@ img {
     margin: 0 auto;
     width: 100%;
 }
+select {
+    width: 100%;
+    padding: 2%;
+    font-size: 1.2em;
+    border: 1px #D4D5D3 solid;
+    letter-spacing: 0.15em;
+}
+
 @media all and (min-width:768px){
     .container {
         max-width: 720px;
@@ -179,14 +187,11 @@ img {
 /* PAGES */
 @import "pages/_home";
 @import "pages/_exito";
-@import "pages/_micuenta";
 @import "pages/_preguntas-frecuentes";
-@import "pages/_product";
 @import "pages/_store";
-@import "pages/_checkout";
 
-@import "pages/_formulariosNew";
-@import "pages/_profileNew";
-@import "pages/_shopNew";
-@import "pages/_productNew";
+@import "pages/_formularios";
+@import "pages/_profile";
+@import "pages/_shop";
+@import "pages/_product";
 @import "pages/_cart-checkout";

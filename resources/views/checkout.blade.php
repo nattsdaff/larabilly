@@ -38,12 +38,14 @@
 			</div>
 		</form>
 		<img src="assets/img/pago/mercado-pago.png">
-		<form action="{{route('checkout.store')}}" method="POST">
-			@csrf
-			<input type="submit" value="FINALIZAR COMPRA" class="submit-btn verde finalizar-compra">
-		</form>
 	</section>
-
+	
 </div>
+		<div style="margin-top:4rem;display: flex;justify-content: center;">
+			<form action="{{route('checkout.store')}}" method="POST">
+				@csrf
+				<input type="submit" value="FINALIZAR COMPRA" class="submit-btn verde finalizar-compra">
+			</form>
+		</div>
 
 @endsection
