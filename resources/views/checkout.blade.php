@@ -1,6 +1,6 @@
 @extends('templates/master')
 
-@section('title', 'm o b i l i • c h e c k o u t')
+@section('title', 'm o b i l i • Checkout')
 
 @section('content')
 
@@ -21,51 +21,26 @@
 	</section>
 
 	<section class="items checkout">
-		<div class="item">
-            <a href=""><img src="assets/img/deseados/deseados-1.jpg"></a>
-            <div class="description">
-                <div class="description-sup">
-                    <div class="name-price">
-                        <div class="name">
-                        	<p>Sillón Byron</p>        
-                        </div>
-                        <p class="total-price">$300</p>
-                    </div>
-                </div>   
-            </div>
-        </div>
-
-		<div class="item">
-            <a href=""><img src="assets/img/deseados/deseados-1.jpg"></a>
-            <div class="description">
-                <div class="description-sup">
-                    <div class="name-price">
-                        <div class="name">
-                        	<p>Sillón Byron</p>        
-                        </div>
-                        <p class="total-price">$300</p>
-                    </div>
-                </div>   
-            </div>
-        </div>
-
-		<div class="item">
-            <a href=""><img src="assets/img/deseados/deseados-1.jpg"></a>
-            <div class="description">
-                <div class="description-sup">
-                    <div class="name-price">
-                        <div class="name">
-                        	<p>Sillón Byron</p>        
-                        </div>
-                        <p class="total-price">$300</p>
-                    </div>
-                </div>   
-            </div>
-        </div>
+		@foreach (Cart::content() as $item)
+			<div class="item">
+				<a href="{{route('shop.product', $item->model->slug)}}"><img src="{{asset($item->model->picture)}}"></a>
+				<div class="description">
+					<div class="description-sup">
+						<div class="name-price">
+							<div class="name">
+								<p>{{$item->model->name}}</p>
+								<p>x{{$item->qty}}</p>     
+							</div>
+							<p class="total-price">${{$item->model->price}}</p>
+						</div>
+					</div>   
+				</div>
+			</div>
+		@endforeach
 
     	<div class="totales">
-			<div class="subtotal">Subtotal: $0</div>
-			<div class="total">Total: $0</div>
+			<div class="subtotal">Subtotal: ${{Cart::subtotal()}} <br> IVA (21%) ${{Cart::tax()}}</div>
+			<div class="total">Total: ${{Cart::total()}}</div>
 		</div>
 
 	</section>
