@@ -1501,7 +1501,7 @@ section.micuenta {
   .cart-actions .button {
     padding-left: 0; }
   .cart-actions .far {
-    font-size: 2em;
+    font-size: 1.6em;
     color: #73A84D; }
 
 h3.alt-title {
@@ -1668,4 +1668,6 @@ h3.alt-title {
     -ms-flex-pack: distribute;
     justify-content: space-around; }
     .showroom-items section {
-      width: 45%; } }
+      width: 45%; }
+  .cart-actions .far {
+    font-size: 2em; } }

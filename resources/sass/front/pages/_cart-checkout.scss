@@ -18,7 +18,7 @@ font-weight: bold;
         padding-left: 0;
     }
     .far{
-        font-size: 2em;
+        font-size: 1.6em;
         color:$verde-oscuro;
     }
 
@@ -143,4 +143,11 @@ h3.alt-title{
       width: 45%;
     }
   }
+  .cart-actions{
+    .far{
+        font-size: 2em;
+    }
+
+}
+
 }
