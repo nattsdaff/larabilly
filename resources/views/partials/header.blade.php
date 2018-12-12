@@ -47,7 +47,10 @@
                 </ul>
             </div>
             @endauth
-            <a href="{{route('cart.index')}}"><i class="fas fa-shopping-bag"></i></a>
+            <a href="{{route('cart.index')}}">
+                <span class="cantidad-carrito">{{ Cart::count() }}</span>
+                <i class="fas fa-shopping-bag"></i>
+            </a>
         </div>
         <!--cierra. bloqueDer-->
     </nav>

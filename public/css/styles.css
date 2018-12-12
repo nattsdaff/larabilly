@@ -531,6 +531,24 @@ footer {
       padding-right: 0; }
     #mainNav .bloqueDer a:first-child {
       margin-left: 0; }
+    #mainNav .bloqueDer a .cantidad-carrito {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #b1d398;
+      color: #ffffff;
+      font-size: 9px;
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-left: 12px; }
   #mainNav .bloqueIzq,
   #mainNav .bloqueDer {
     display: -webkit-box;
