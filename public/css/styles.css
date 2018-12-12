@@ -1692,10 +1692,17 @@ section.micuenta {
       .container-product .product-image .item img {
         width: 50%; }
     .container-product .product-main {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -ms-flex-direction: row;
-      flex-direction: row; }
+      flex-direction: row;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
     .container-product-description {
       width: 52%;
       margin-left: 7%;
