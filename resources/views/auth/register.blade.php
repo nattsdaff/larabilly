@@ -3,9 +3,9 @@
 @section('title', 'm o b i l i • Registro')
 
 @section('content')
-<section class="register">
+<section class="forms">
     <div class="container">
-        <div style="text-align:center;"><p>¿Ya tenés cuenta en Mobili? <a href="login">Ingresar</a></p></div>
+        <div class='copy-side'><p style="display: inline;">¿Ya tenés cuenta en Mobili? </p><a href="login" class="alt-a">Ingresar</a></div>
         <div class="container-form">
             <h2 class="alt-title">Registrarme</h2>
             <p class="register-info">Disfrutá del 1-click checkout, accedé a tus pedidos y gestioná tu cuenta.</p>
@@ -106,8 +106,9 @@
                         </span>
                     @endif
                 </div>
-
-                <input type="submit" value="Crear cuenta" class="submit-btn verde" id="submit">
+                <div class="container-button">
+                    <input type="submit" value="Crear cuenta" class="submit-btn verde" id="submit">
+                </div>
                 <div class="alert-error submit"></div>
             </form>
         </div>

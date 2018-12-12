@@ -12,24 +12,25 @@ html, body {
 }
 h1 {
     margin:0;
+    font-size: 2.6em;
 }
 h2{
-    font-size: 2.5em;
+    font-size: 2.6em;
 }
 h3 {
     font-size:2em;
 }
 h4, h5, h6 {
-    font-size:1.8em;
+    font-size:1.6em;
 }
 p {
-    font-size:1.8em;
-    line-height: 1.6em;
+    font-size:1.6em;
+    line-height: 1.4em;
     font-weight: 300;
     font-weight: $light;
 }
 a {
-    font-size:1.8em;
+    font-size:1.6em;
     color:inherit;
     font-weight: $light;
     text-decoration: none;
@@ -37,6 +38,10 @@ a {
     color: $gris-oscuro;
     &:hover{
       color: $verde-claro;
+    }
+    &.alt-a{
+        text-decoration: underline;
+        color: $verde-oscuro;
     }
 }
 ul {
@@ -56,13 +61,22 @@ ul {
     letter-spacing: $interletrado;
     border-bottom: 2px solid $verde-claro;
 }
+.breadcrumb{
+    font-size: 1em;
+    p{
+        display: inline-block;
+    }
+}
 .container{
-    width: 100%;
-    background: $blanco;
+    width: 85%;
+    background: #fff;
     margin-right: auto;
     margin-left: auto;
-    flex-grow: 1;
-    text-align: center;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    /* flex-grow: 1; */
+    /* text-align: center; */
+    // margin-top: 5%;
 }
 .btn{
     font-size:1.8em;
@@ -71,7 +85,7 @@ ul {
     text-transform: uppercase;
     text-align: center;
     border:none;
-    // width: 20rem;
+    width: 100%;
     background:$verde-claro;
     padding:1.2rem;
     cursor:pointer;
@@ -108,14 +122,36 @@ ul {
         }
     }
   }
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.copy{
+    margin: 2rem auto;
+    &-side{
+    margin: 2rem auto;
+    }
+}
+img {
+    margin: 0 auto;
+    width: 100%;
+}
 @media all and (min-width:768px){
     .container {
         max-width: 720px;
+        margin-top: 2rem;
     }
 }
 @media (min-width: 992px){
     .container {
         max-width: 960px;
+        margin-top: 2rem;
     }
 }
 // @media (min-width: 1200px){
@@ -134,12 +170,14 @@ ul {
 
 /* PAGES */
 @import "pages/_home";
-@import "pages/_formularios";
 @import "pages/_exito";
 @import "pages/_micuenta";
 @import "pages/_preguntas-frecuentes";
-@import "pages/_init";
 @import "pages/_product";
 @import "pages/_store";
 @import "pages/_cart";
 @import "pages/_checkout";
+
+@import "pages/__formularios";
+@import "pages/__profile";
+@import "pages/__shop";

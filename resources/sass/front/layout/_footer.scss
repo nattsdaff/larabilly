@@ -1,5 +1,6 @@
 footer {
-    background: url(../assets/img/bg_footer.jpg) repeat;
+    // background: url(../assets/img/bg_footer.jpg) repeat;
+    background: $marron;
     color: $blanco;
     padding:3rem 1rem 1.5rem;
     .alt-menu {
@@ -41,7 +42,7 @@ footer {
         flex-direction: column;
         &-newsletter {
             color: $gris-oscuro;
-            background-color: rgba(255,255,255,0.5);
+            background-color: rgba(112,112,112,0.5);
             text-align: center;
             width: 100%;
             padding: 2rem;
@@ -50,9 +51,11 @@ footer {
 
             .alt-title{
                 font-size: 1.6em;
+                color: white;
             }
             p{
                 font-size: 1.8em;
+                color: white;
             }
             .form-field {
                 font-size: 1.8em;
