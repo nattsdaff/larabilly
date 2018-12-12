@@ -13,8 +13,7 @@
 		<p class="product-name">> {{$product->name}}</p>
 	</section>
 
-
-	<section class="container-product">
+	<section class="product">
 		<div class="product-main">
 			<!--SLIDER DE PRODUCTO-->
 			<div class="product-image slider-producto product">
@@ -73,46 +72,41 @@
 
 	</section>
 
-
-	<div class="relacionados">
-		<h6>PRODUCTOS RELACIONADOS</h6>
+	<section class="related">
+		<h3>PRODUCTOS RELACIONADOS</h3>
 		<a href="/product">
-      <div class="relacionado">
-  			<img src="assets/img/deseados/deseados-1.jpg" alt="">
-  			<p class="product-name">VOLK</p>
-  			<p>ST. CHARLES DESK</p>
-  			<p class="price">$7500</p>
-  		</div>
-    </a>
-
-    <a href="/product">
-  		<div class="relacionado">
-  			<img src="assets/img/deseados/deseados-2.jpg" alt="">
-  			<p class="product-name">ABC</p>
-  			<p>NEW YORK SEDIA VELVET DINING ARM CHAIR</p>
-  			<p class="price">$8000</p>
-  		</div>
-    </a>
-
-    <a href="/product">
-      <div class="relacionado">
-  			<img src="assets/img/deseados/deseados-1.jpg" alt="">
-  			<p class="product-name">VOLK</p>
-  			<p>ST. CHARLES DESK</p>
-  			<p class="price">$7500</p>
-  		</div>
-    </a>
-
-    <a href="/product">
-  		<div class="relacionado">
-  			<img src="assets/img/deseados/deseados-2.jpg" alt="">
-  			<p class="product-name">ABC</p>
-  			<p>NEW YORK SEDIA VELVET DINING ARM CHAIR</p>
-  			<p class="price">$8000</p>
-  		</div>
-    </a>
-
-	</div>
+			<div class="relacionado">
+				<img src="assets/img/deseados/deseados-1.jpg" alt="">
+				<p class="product-name">VOLK</p>
+				<p>ST. CHARLES DESK</p>
+				<p class="price">$7500</p>
+			</div>
+   		</a>
+		<a href="/product">
+			<div class="relacionado">
+				<img src="assets/img/deseados/deseados-2.jpg" alt="">
+				<p class="product-name">ABC</p>
+				<p>NEW YORK SEDIA VELVET DINING ARM CHAIR</p>
+				<p class="price">$8000</p>
+			</div>
+		</a>
+		<a href="/product">
+			<div class="relacionado">
+				<img src="assets/img/deseados/deseados-1.jpg" alt="">
+				<p class="product-name">VOLK</p>
+				<p>ST. CHARLES DESK</p>
+				<p class="price">$7500</p>
+			</div>
+		</a>
+		<a href="/product">
+			<div class="relacionado">
+				<img src="assets/img/deseados/deseados-2.jpg" alt="">
+				<p class="product-name">ABC</p>
+				<p>NEW YORK SEDIA VELVET DINING ARM CHAIR</p>
+				<p class="price">$8000</p>
+			</div>
+		</a>
+	</section>
 
 </div>
 
