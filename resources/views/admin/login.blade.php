@@ -33,9 +33,9 @@
                 </div>
                 <button type="submit" class="btn btn-primary btn-block" href="#">Ingresar</button>
                 </form>
-                <div class="text-center">
+                {{-- <div class="text-center">
                     <a class="d-block small" href="#">¿Olvidaste la contrase&ntilde;a?</a>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
