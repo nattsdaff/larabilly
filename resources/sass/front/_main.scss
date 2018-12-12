@@ -55,11 +55,15 @@ ul {
     font-size:3em;
 }
 .alt-title{
-    display: inline-block;
+    font-size: 2.4em;
+    display: block;
+    // display: inline-block;
     text-transform: uppercase;
     font-weight:$bold;
     letter-spacing: $interletrado;
     border-bottom: 2px solid $verde-claro;
+    margin-bottom: 3rem;
+    line-height: 2em;
 }
 .breadcrumb{
     font-size: 1em;
@@ -126,6 +130,9 @@ ul {
     display: flex;
     flex-direction: column;
 }
+.center{
+    text-align: center;
+}
 .left{
     text-align: left;
 }
@@ -136,6 +143,7 @@ ul {
     margin: 2rem auto;
     &-side{
     margin: 2rem auto;
+    text-align: center;
     }
 }
 img {
@@ -175,10 +183,10 @@ img {
 @import "pages/_preguntas-frecuentes";
 @import "pages/_product";
 @import "pages/_store";
-@import "pages/_cart";
 @import "pages/_checkout";
 
 @import "pages/_formulariosNew";
 @import "pages/_profileNew";
 @import "pages/_shopNew";
 @import "pages/_productNew";
+@import "pages/_cart-checkout";

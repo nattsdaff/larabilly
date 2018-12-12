@@ -1,0 +1,133 @@
+.alert{
+    text-align: center;
+color: orange;
+font-weight: bold;
+}
+
+.producto-subtotal {
+  display: flex;
+  justify-content: space-between;
+  p{
+      font-size: 1.4em;
+  }
+
+}
+.cart-actions{
+    display: flex;
+    .button{
+        padding-left: 0;
+    }
+    .far{
+        font-size: 2em;
+        color:$verde-oscuro;
+    }
+
+}
+h3.alt-title{
+        font-size: 2em;
+}
+.items {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    .item {
+      display: flex;
+      flex-direction: row;
+      background-color: #F7F7F7;
+      padding: 1%;
+      margin-bottom: 1%;
+      img {
+        width: 4em;
+        height: 4em;
+      }
+      .description {
+        margin-left: 2%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        .name-price {
+          display: flex;
+          justify-content: space-between;
+          p {
+          display: inline-flex;
+          margin: 0;
+          font-size: 1.6em;
+          font-weight: bold;
+          letter-spacing: 0.05em;
+          }
+          form {
+            display: inline-flex;
+            button {
+              margin: 0 0.2em 0 0.2em;
+              padding: 0;
+              display: inline-flex;
+              background: none;
+              i {
+              display: inline-flex;
+              color: $verde-oscuro;
+              font-size: 13px;
+              }
+            }
+          }
+        }
+        .unit-price {
+          margin-top: 0;
+          font-style: italic;
+          font-size: 1.2em;
+          letter-spacing: 0.1em;
+        }
+        .units {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 3%;
+          .cantidad {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 1.5em;
+            width: 1.8em;
+            border: 1px solid #D4D5D3;
+            font-size: 1.3em;
+            font-weight: bold;
+            background-color: #FFFFFF;
+          }
+          .numero {
+            width: 2.2em;
+          }
+        }
+      }
+    }
+}
+
+.totales {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-bottom: 5%;
+      p {
+        margin: 0;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+      .subtotal {
+        margin-top: 8%;
+        font-weight: bold;
+        font-size: 1.6em;
+      }
+      .total {
+        font-weight: bold;
+        font-size: 2.8em;
+        color: #73A84D;
+        margin: 2rem 0;
+      }
+      .botones-compra {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        input {
+          margin: 10% 0 0 0;
+        }
+      }
+}

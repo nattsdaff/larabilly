@@ -14,7 +14,7 @@
   </section>
   
   <section class="shop-header">
-    <h2>Living Room</h2>
+    {{-- <h2>Living Room</h2> --}}
     <div class="description">
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
         <form class="" action="" method="post">
