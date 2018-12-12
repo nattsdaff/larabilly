@@ -14,13 +14,13 @@
 	</section>
 
 
+<div class="container-product">
 	<!--SLIDER DE PRODUCTO-->
-	<section class="slider-producto product">
+	<div class="product-image slider-producto product">
 		<div class="item"><img src="{{asset($product->picture)}}" alt=""></div>
-	</section>
+	</div>
 
-<div class="name-colors-description">
-    <section class="name">
+    <div class="description">
 		<h2>{{$product->name}}</h2>
 		<p class="price">${{$product->price}}</p>
 		<div class="pay">
@@ -32,9 +32,9 @@
 				<p>Ver medios de pago</p>
 			</a>
 		</div>
-	</section>
+	</div>
 
-	<section class="colors">
+	<div class="colors">
 			<h5>Colores disponibles</h5>
 			<div class="circulos">
 				<div class="circulo" id="color1"></div>
@@ -48,14 +48,14 @@
 				@csrf
 				<input type="submit" value="AGREGAR AL CARRITO" class="submit-btn verde">
 			</form>
-	</section>
+	</div>
 
-	<section class="description">
+	<div class="description">
 		<p>{{$product->description}}</p>
-	</section>
+	</div>
 </div>
 
-	<section class="opiniones">
+	<div class="opiniones">
 			<h3>Opiniones</h3>
 			<div class="opinion">
 				<div class="estrellas">
@@ -69,9 +69,9 @@
 					<p class="comentario">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
 			<input type="submit" value="VER TODAS LAS OPINIONES" class="submit-btn gris">
-	</section>
+	</div>
 
-	<section class="relacionados">
+	<div class="relacionados">
 		<h6>PRODUCTOS RELACIONADOS</h6>
 		<a href="/product">
       <div class="relacionado">
@@ -109,7 +109,7 @@
   		</div>
     </a>
 
-	</section>
+	</div>
 
 </div>
 

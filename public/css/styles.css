@@ -1615,57 +1615,14 @@ section.micuenta {
     .shop-header .description {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; }
       .shop-header .description select {
         width: 230px;
         height: 40px;
-        font-size: 1.5em; }
-  .shop-sort {
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .shop-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row; }
-    .shop-list .item {
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      margin: 0 0.4% 5% 0;
-      width: 30rem; }
-      .shop-list .item .name {
-        font-size: 0.8em;
-        text-transform: uppercase;
-        font-weight: 600;
-        text-align: center; }
-      .shop-list .item .price {
-        font-size: 1em;
-        margin-top: 0em;
-        text-align: center; }
-    .shop-list:nth-child(5n) {
-      margin-right: 0; } }
+        font-size: 1.5em; } }
