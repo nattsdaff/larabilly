@@ -20,9 +20,4 @@ class StaticController extends Controller
     {
         return view('exito');
     }
-
-    public static function checkout()
-    {
-        return view('checkout');
-    }
 }
