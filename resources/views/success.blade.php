@@ -4,7 +4,10 @@
 
 
 @section('content')
-
-    <h1>Todo piola</h1>
-
+    <section class="exito">
+        <div class="container">
+            <h2 class="alt-title">¡Gracias por tu compra!</h2>
+            <p>Tu orden ha sido procesada con éxito.</p>
+        </div>
+    </section>
 @endsection
