@@ -1,6 +1,6 @@
 ## Datos útiles para navegar Mobili
 
-Usuario: usuario@gmail.com
+Usuario: usuario@gmail.com <br>
 Password: usuario
 
 Ruta de admin:
@@ -9,7 +9,7 @@ Ruta de admin:
 Admin: admin@gmail.com
 Password: password
 
-<p>Importante: No logear con ambas cuentas en una misma sesión. Por el momento ingresar con una de las dos y luego deslogear antes de ingresar con la otra.</p>
+**Importante: No logear con ambas cuentas en una misma sesión. Por el momento ingresar con una de las dos y luego deslogear antes de ingresar con la otra.**
 
 ## Tareas Principales Pendientes
 
