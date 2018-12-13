@@ -46,53 +46,18 @@
                                 <form action="{{ route('cart.destroy', $item->rowId) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" alt="Eliminar"><i class="far fa-trash-alt"></i> Eliminar</button>
+                                    <button type="submit" alt="Eliminar" class="button"><i class="far fa-trash-alt"></i> Eliminar</button>
                                 </form>
 
                                 <form action="{{ route('cart.switchToSaveForLater', $item->rowId) }}" method="POST">
                                     @csrf
-                                    <button type="submit" alt="Mover a deseados"><i class="far fa-heart" style="font-size: 2em;"></i>Agregar a deseados</button>
+                                    <button type="submit" alt="Mover a deseados" class="button"><i class="far fa-heart" style="font-size: 2em;"></i>Agregar a deseados</button>
                                 </form>
                             </div>
                         </div>
                     </div>
                 @endforeach
         </section>
-
-        {{-- <section class="items-desktop">
-                @foreach (Cart::content() as $item)
-                    <div class="item">
-                        <a href="{{route('shop.product', $item->model->slug)}}"><img src="{{ asset($item->model->picture) }}"></a>
-                        <div class="description">
-                            <div class="description-sup">
-                                <div class="name-price">
-                                    <div class="name">
-                                        <p>{{$item->model->name}}</p>
-                                        <form action="{{ route('cart.destroy', $item->rowId) }}" method="POST">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button class="btn" type="submit"><i class="far fa-trash-alt"></i></button>
-                                        </form>
-                                    </div>
-                                    <p class="total-price">${{$item->model->price}}</p>
-                                </div>
-                                <p class="unit-price">${{$item->model->price}}</p>
-                            </div>
-
-                            <div class="units">
-                                <a href="#"><div class="cantidad">-</div></a>
-                                <div class="cantidad numero">1</div>
-                                <a href="#"><div class="cantidad">+</div></a>
-                            </div>
-
-                            <form action="{{ route('cart.switchToSaveForLater', $item->rowId) }}" method="POST">
-                                @csrf
-                                <button type="submit">Mover a Productos Deseados</button>
-                            </form>
-                        </div>
-                    </div>
-                @endforeach
-        </section> --}}
 
         <section class="totales">
             <p>{{ Cart::count() }} item(s) en el carrito</p>
@@ -139,7 +104,7 @@
 
                             <form action="{{ route('saveForLater.switchToCart', $deseado->rowId) }}" method="POST">
                                 @csrf
-                                <button type="submit">Mover al Carrito</button>
+                                <button type="submit" class="button">Mover al Carrito</button>
                             </form>
 
                         </div>

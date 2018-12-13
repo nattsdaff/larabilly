@@ -3,7 +3,22 @@
 color: orange;
 font-weight: bold;
 }
-
+.medio-de-pago {
+  span{
+    font-size:1.6em;
+    display: inline-block;
+    margin:1rem 0 0 1rem;
+  }
+}
+#formPago {
+  margin-bottom:2rem;
+}
+.button{
+  padding-left: 0;
+  border:none;
+  background:none;
+  cursor:pointer;
+}
 .producto-subtotal {
   display: flex;
   justify-content: space-between;
@@ -14,9 +29,6 @@ font-weight: bold;
 }
 .cart-actions{
     display: flex;
-    .button{
-        padding-left: 0;
-    }
     .far{
         font-size: 1.6em;
         color:$verde-oscuro;
