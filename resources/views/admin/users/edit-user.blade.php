@@ -16,6 +16,7 @@
     <div class="container">
         <form method="POST" action="{{route('user.update', ['id' => $user->id ])}}" novalidate class="needs-validation">
             @csrf
+            @method('PUT')
             <div class="form-group row">
                 {{-- Email --}}
                 <label for="email" class="col-sm-2 col-form-label">Email</label>
@@ -68,7 +69,7 @@
                 {{-- CONTRASEÑA --}}
                 <label for="password" class="col-sm-2 col-form-label">Contraseña</label>
                 <div class="col-sm-5">
-                    <input type="password" name="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" id="password" placeholder="Al menos 6 caracteres" value="{{ old('password') }}" required>
+                    <input type="password" name="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" id="password" placeholder="Al menos 6 caracteres" value="{{ old('password') }}">
                     @if ($errors->has('password'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('password') }}</strong>
@@ -81,7 +82,7 @@
                 </div>
                 <label for="password-confirm" class="col-sm-2 col-form-label">Confirmar contraseña</label>
                 <div class="col-sm-3">
-                    <input type="password" name="password_confirmation" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" id="password-confirm" value="{{ old('password') }}" required>
+                    <input type="password" name="password_confirmation" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" id="password-confirm" value="{{ old('password') }}">
                     @if ($errors->has('password'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('password') }}</strong>

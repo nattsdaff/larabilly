@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Input;
 use App\User;
 
 class UserController extends Controller
@@ -58,7 +59,6 @@ class UserController extends Controller
     public function update($id)
     {
         $user = User::find($id);
-        
         $datos = [];
         $datos[] = (!Input::get('first_name')) ? ['first_name' => $user->first_name] : request()->validate(['first_name' => 'string|max:255|min:2|regex:/^[a-zA-Z áéíóúÁÉÍÓÚñÑüÜ]*$/']);
         $datos[] = (!Input::get('last_name')) ? ['last_name' => $user->last_name] : request()->validate(['last_name' => 'string|max:255|min:2|regex:/^[a-zA-Z áéíóúÁÉÍÓÚñÑüÜ]*$/']); 
@@ -72,19 +72,18 @@ class UserController extends Controller
         $datos = $datos->collapse()->toArray();
         $datos['password'] = Hash::make($datos['password']);
         
-        if (request()->file('avatar')) {
-            request()->validate(['avatar' => 'image|max:2000']);
-            $ext = request()->file('avatar')->extension();
-            $id = $user->id;
-            $nombre = request()->file('avatar')->storeAs('avatars', $id.'.'.$ext);
-            $nombre = 'storage/'.$nombre;
+        // if (request()->file('avatar')) {
+        //     request()->validate(['avatar' => 'image|max:2000']);
+        //     $ext = request()->file('avatar')->extension();
+        //     $id = $user->id;
+        //     $nombre = request()->file('avatar')->storeAs('avatars', $id.'.'.$ext);
+        //     $nombre = 'storage/'.$nombre;
 
-            $datos['avatar'] = $nombre;
-        }
+        //     $datos['avatar'] = $nombre;
+        // }
 
         $user->update($datos);
-        return redirect('profile')->with('status', 'Usuario Actualizado');
-
+        return redirect('admin/users')->with('status', 'Usuario Actualizado');
 
         // request()->validate([
         //     'first_name' => 'required|string|max:255|min:2|regex:/^[a-zA-Z áéíóúÁÉÍÓÚñÑüÜ]*$/',
@@ -107,7 +106,6 @@ class UserController extends Controller
 
         // $user->update($datos);
 
-        return redirect('admin/users')->with('status', 'Usuario Actualizado');
     }
 
     public function destroy($id)
