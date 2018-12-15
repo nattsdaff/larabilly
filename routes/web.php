@@ -62,4 +62,11 @@ Route::prefix('admin')->group(function() {
     Route::get('/admins/{id}/edit', 'AdminController@edit');
     Route::put('/admins/{id}', 'AdminController@update')->name('admin.update');
     Route::delete('/admins/{id}', 'AdminController@destroy')->name('admin.destroy');
+    // Rutas de User 
+    Route::get('/users','UserController@index');
+    Route::get('/users/create', 'UserController@create');
+    Route::post('/users', 'UserController@store')->name('users.store');
+    Route::get('/users/{id}/edit', 'UserController@edit');
+    Route::put('/users/{id}', 'UserController@update')->name('user.update');
+    Route::delete('/users/{id}', 'UserController@destroy')->name('user.destroy');
 });
