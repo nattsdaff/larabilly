@@ -322,13 +322,17 @@ select {
     margin-bottom: 2rem;
     font-size: 1.4em; }
   .form-item ::-webkit-input-placeholder {
-    color: #707070; }
+    color: black;
+    opacity: 1; }
   .form-item :-ms-input-placeholder {
-    color: #707070; }
+    color: black;
+    opacity: 1; }
   .form-item ::-ms-input-placeholder {
-    color: #707070; }
+    color: black;
+    opacity: 1; }
   .form-item ::placeholder {
-    color: #707070; }
+    color: black;
+    opacity: 1; }
 
 .form-label {
   font-size: 1.4em;

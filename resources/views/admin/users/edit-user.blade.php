@@ -20,7 +20,7 @@
                 {{-- Email --}}
                 <label for="email" class="col-sm-2 col-form-label">Email</label>
                 <div class="col-sm-10">
-                    <input type="text" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="email" placeholder="email@email.com" value="{{ old('email') }}" required>
+                    <input type="text" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="email" placeholder="email@email.com" value="{{ old('email', $user->email) }}" required>
                     @if ($errors->has('email'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('email') }}</strong>
@@ -36,7 +36,7 @@
                 {{-- Nombre --}}
                 <label for="first_name" class="col-sm-2 col-form-label">Nombre</label>
                 <div class="col-sm-4">
-                    <input type="text" name="first_name" class="form-control{{ $errors->has('first_name') ? ' is-invalid' : '' }}" id="first_name" placeholder="" value="{{ old('first_name') }}" required>
+                    <input type="text" name="first_name" class="form-control{{ $errors->has('first_name') ? ' is-invalid' : '' }}" id="first_name" placeholder="" value="{{ old('first_name', $user->first_name) }}" required>
                     @if ($errors->has('first_name'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('first_name') }}</strong>
@@ -52,7 +52,7 @@
                 {{-- Apellido --}}
                 <label for="last_name" class="col-sm-1 col-form-label">Apellido</label>
                 <div class="col-sm-5">
-                    <input type="text" name="last_name" class="form-control{{ $errors->has('last_name') ? ' is-invalid' : '' }}" id="last_name" placeholder="" value="{{ old('last_name') }}" required>
+                    <input type="text" name="last_name" class="form-control{{ $errors->has('last_name') ? ' is-invalid' : '' }}" id="last_name" placeholder="" value="{{ old('last_name', $user->last_name) }}" required>
                     @if ($errors->has('last_name'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('last_name') }}</strong>
@@ -97,7 +97,7 @@
                 {{-- dni --}}
                 <label for="dni" class="col-sm-2 col-form-label">DNI</label>
                 <div class="col-sm-4">
-                    <input type="text" name="dni" class="form-control{{ $errors->has('dni') ? ' is-invalid' : '' }}" id="dni" placeholder="Sin puntos ni guiones" value="{{ old('dni') }}" required>
+                    <input type="text" name="dni" class="form-control{{ $errors->has('dni') ? ' is-invalid' : '' }}" id="dni" placeholder="Sin puntos ni guiones" value="{{ old('dni', $user->dni) }}" required>
                     @if ($errors->has('dni'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('dni') }}</strong>
@@ -113,7 +113,7 @@
                 {{-- telefono --}}
                 <label for="phone" class="col-sm-1 col-form-label">Teléfono</label>
                 <div class="col-sm-5">
-                    <input type="text" name="phone" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" id="phone" placeholder="01133445566" value="{{ old('phone') }}" required>
+                    <input type="text" name="phone" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" id="phone" placeholder="01133445566" value="{{ old('phone', $user->phone) }}" required>
                     @if ($errors->has('phone'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('phone') }}</strong>
@@ -129,7 +129,7 @@
                 {{-- fecha de nacimiento --}}
                 <label for="birthday" class="col-sm-2 col-form-label">Fecha de nacimiento</label>
                 <div class="col-sm-10">
-                    <input type="date" name="birthday" class="form-control{{ $errors->has('birthday') ? ' is-invalid' : '' }}" id="birthday" placeholder="01133445566" value="{{ old('birthday') }}" required>
+                    <input type="date" name="birthday" class="form-control{{ $errors->has('birthday') ? ' is-invalid' : '' }}" id="birthday" placeholder="01133445566" value="{{ old('birthday', $user->birthday) }}" required>
                     @if ($errors->has('birthday'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('birthday') }}</strong>
