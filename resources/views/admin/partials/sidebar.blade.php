@@ -17,10 +17,14 @@
         </div>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="admin">
-            <i class="fas fa-fw fa-users"></i>
+        <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-user-shield"></i>
             <span>Usuarios</span>
         </a>
+        <div class="dropdown-menu" aria-labelledby="adminDropdown">
+            <a class="dropdown-item" href="/admin/users">Listado de Usuarios</a>
+            <a class="dropdown-item" href="/admin/users/create">Agregar Usuario</a>
+        </div>
     </li>
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="productosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

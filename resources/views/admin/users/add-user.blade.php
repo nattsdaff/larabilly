@@ -1,26 +1,26 @@
 @extends('admin.master')
-@section('title', 'Mobili - Editar Usuario')
+@section('title', 'Mobili - Agregar Usuario')
 
 @section('breadcrumb')
 <!-- Breadcrumbs-->
 <ol class="breadcrumb">
     <li class="breadcrumb-item">
-        <a href="../">Usuarios</a>
+        <a href="../users">Usuarios</a>
     </li>
-    <li class="breadcrumb-item active">Editar Usuario</li>
+    <li class="breadcrumb-item active">Agregar Usuario</li>
 </ol>
 @endsection
 
 @section('content')
 <div class="row">
     <div class="container">
-        <form method="POST" action="{{route('user.update', ['id' => $user->id ])}}" novalidate class="needs-validation">
+        <form method="POST" action="{{route('users.store')}}" novalidate class="needs-validation">
             @csrf
             <div class="form-group row">
                 {{-- Email --}}
                 <label for="email" class="col-sm-2 col-form-label">Email</label>
                 <div class="col-sm-10">
-                    <input type="text" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="email" placeholder="email@email.com" value="{{ old('email') }}" required>
+                    <input type="text" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="email" placeholder="nombre@email.com" value="{{ old('email') }}" required>
                     @if ($errors->has('email'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('email') }}</strong>

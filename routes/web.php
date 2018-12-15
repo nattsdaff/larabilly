@@ -69,4 +69,12 @@ Route::prefix('admin')->group(function() {
     //Rutas de Ventas
     Route::get('/sales', 'SaleController@index')->name('sales.index');
     Route::get('/sales/{id}', 'SaleController@show')->name('sales.show');
+    
+    // Rutas de User 
+    Route::get('/users','UserController@index');
+    Route::get('/users/create', 'UserController@create');
+    Route::post('/users', 'UserController@store')->name('users.store');
+    Route::get('/users/{id}/edit', 'UserController@edit');
+    Route::put('/users/{id}', 'UserController@update')->name('user.update');
+    Route::delete('/users/{id}', 'UserController@destroy')->name('user.destroy');
 });
