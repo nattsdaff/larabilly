@@ -5,7 +5,7 @@
 <!-- Breadcrumbs-->
 <ol class="breadcrumb">
     <li class="breadcrumb-item">
-        <a href="../users">Usuarios</a>
+        <a href="{{ route('users.index') }}">Usuarios</a>
     </li>
     <li class="breadcrumb-item active">Agregar Usuario</li>
 </ol>

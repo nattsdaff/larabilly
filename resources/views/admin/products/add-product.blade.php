@@ -5,7 +5,7 @@
 <!-- Breadcrumbs-->
 <ol class="breadcrumb">
     <li class="breadcrumb-item">
-        <a href="../products">Productos</a>
+        <a href="{{ route('product.index') }}">Productos</a>
     </li>
     <li class="breadcrumb-item active">Agregar Producto</li>
 </ol>

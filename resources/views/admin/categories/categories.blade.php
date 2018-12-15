@@ -30,7 +30,7 @@
                     <tr>
                         <td>{{ $k+1 }}</td>
                         <td>{{ $category->name }}</td>
-                        <td><a href="categories/{{$category->id}}/edit" class="btn btn-warning"><i class="far fa-edit"></i></a></td>
+                        <td><a href="{{ route('category.edit', ['id' => $category->id]) }}" class="btn btn-warning"><i class="far fa-edit"></i></a></td>
                         <td>
                             <form action="{{route('category.destroy', ['id' => $category->id ])}}" method="POST">
                                 @csrf

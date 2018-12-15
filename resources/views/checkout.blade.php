@@ -34,12 +34,12 @@
                 <h3 style="margin-top:5rem;">MEDIO DE PAGO</h3>
 
                 <div class="medio-de-pago">
-                    <input type="radio" name="payment" value="efectivo" checked>
+                    <input type="radio" name="payment" value="Efectivo" checked>
                     <span>Quiero abonar en efectivo al retirar</span>
                 </div>
 
                 <div class="medio-de-pago">
-                    <input type="radio" name="payment" value="mercado-pago">
+                    <input type="radio" name="payment" value="Mercado Pago">
                     <span>Quiero abonar con MercadoPago</span>
                 </div>
 

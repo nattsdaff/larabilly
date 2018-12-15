@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand navbar-dark bg-dark static-top" id="page-top">
     <div class="toggle">
-        <a class="navbar-brand mr-0" href="/admin"><img src="{{asset('assets/img/logo-white.png')}}" alt="Logo Mobili Blanco"></a>
+        <a class="navbar-brand mr-0" href="{{ route('admin.index') }}"><img src="{{asset('assets/img/logo-white.png')}}" alt="Logo Mobili Blanco"></a>
         <button class="btn btn-link btn-sm text-white" id="sidebarToggle" href="#">
             <i class="fas fa-bars"></i>
         </button>

@@ -5,7 +5,7 @@
 <!-- Breadcrumbs-->
 <ol class="breadcrumb">
     <li class="breadcrumb-item">
-        <a href="../categories">Categorías</a>
+        <a href="{{ route('category.index') }}">Categorías</a>
     </li>
     <li class="breadcrumb-item active">Agregar Categoría</li>
 </ol>

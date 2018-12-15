@@ -33,7 +33,7 @@
                     <tr>
                         <td>{{ $k+1 }}</td>
                         <td>{{ $user->email }}</td>
-                        <td><a href="\admin/users/{{$user->id}}/edit" class="btn btn-warning"><i class="far fa-edit"></i></a></td>
+                        <td><a href="{{ route('users.edit', ['id' => $user->id]) }}" class="btn btn-warning"><i class="far fa-edit"></i></a></td>
                         <td>
                             @if ($user->id!=1)
                             <form action="{{route('user.destroy', ['id' => $user->id ])}}" method="POST">

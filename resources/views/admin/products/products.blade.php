@@ -26,7 +26,7 @@
                 <p class="card-text">{{substr($product->description, 0, 100)}}...</p>
             </div>
             <div class="acciones" style="border-top: 1px solid rgba(0,0,0,.125);display: flex;justify-content: space-between;padding: 0.5rem 1.25rem;">
-                <a href="products/{{$product->id}}/edit" class="btn btn-warning"><i class="far fa-edit"></i> Editar</a>
+                <a href="{{ route('product.edit', ['id' => $product->id]) }}" class="btn btn-warning"><i class="far fa-edit"></i> Editar</a>
                 <form action="{{route('product.destroy', ['id' => $product->id ])}}" method="POST">
                     @csrf
                     @method('DELETE')

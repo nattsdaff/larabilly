@@ -43,38 +43,38 @@ Route::prefix('admin')->group(function() {
     Route::get('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
 
     // Rutas de Productos
-    Route::get('/products', 'ProductController@index');
-    Route::get('/products/create', 'ProductController@create');
+    Route::get('/products', 'ProductController@index')->name('product.index');
+    Route::get('/products/create', 'ProductController@create')->name('product.create');
     Route::post('/products', 'ProductController@store')->name('product.store');
-    Route::get('/products/{id}/edit', 'ProductController@edit');
+    Route::get('/products/{id}/edit', 'ProductController@edit')->name('product.edit');
     Route::put('/products/{id}', 'ProductController@update')->name('product.update');
     Route::delete('/products/{id}', 'ProductController@destroy')->name('product.destroy');
 
     // Rutas de Categorías
-    Route::get('/categories', 'CategoryController@index');
-    Route::get('/categories/create', 'CategoryController@create');
+    Route::get('/categories', 'CategoryController@index')->name('category.index');
+    Route::get('/categories/create', 'CategoryController@create')->name('category.create');
     Route::post('/categories', 'CategoryController@store')->name('categories.store');
-    Route::get('/categories/{id}/edit', 'CategoryController@edit');
+    Route::get('/categories/{id}/edit', 'CategoryController@edit')->name('category.edit');
     Route::put('/categories/{id}', 'CategoryController@update')->name('category.update');
     Route::delete('/categories/{id}', 'CategoryController@destroy')->name('category.destroy');
 
     // Rutas de Admin
-    Route::get('/admins','AdminController@index');
-    Route::get('/create', 'AdminController@create');
+    Route::get('/admins','AdminController@index')->name('admins.index');
+    Route::get('/create', 'AdminController@create')->name('admins.create');
     Route::post('/admins', 'AdminController@store')->name('admins.store');
-    Route::get('/admins/{id}/edit', 'AdminController@edit');
+    Route::get('/admins/{id}/edit', 'AdminController@edit')->name('admins.edit');
     Route::put('/admins/{id}', 'AdminController@update')->name('admin.update');
     Route::delete('/admins/{id}', 'AdminController@destroy')->name('admin.destroy');
 
     //Rutas de Ventas
     Route::get('/sales', 'SaleController@index')->name('sales.index');
     Route::get('/sales/{id}', 'SaleController@show')->name('sales.show');
-    
+
     // Rutas de User 
-    Route::get('/users','UserController@index');
-    Route::get('/users/create', 'UserController@create');
+    Route::get('/users','UserController@index')->name('users.index');
+    Route::get('/users/create', 'UserController@create')->name('users.create');
     Route::post('/users', 'UserController@store')->name('users.store');
-    Route::get('/users/{id}/edit', 'UserController@edit');
+    Route::get('/users/{id}/edit', 'UserController@edit')->name('users.edit');
     Route::put('/users/{id}', 'UserController@update')->name('user.update');
     Route::delete('/users/{id}', 'UserController@destroy')->name('user.destroy');
 });

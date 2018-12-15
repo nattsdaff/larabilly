@@ -5,7 +5,7 @@
 <!-- Breadcrumbs-->
 <ol class="breadcrumb">
     <li class="breadcrumb-item">
-        <a href="../admin/admins">Administradores</a>
+        <a href="{{ route('admins.index') }}">Administradores</a>
     </li>
     <li class="breadcrumb-item active">Agregar Administrador</li>
 </ol>

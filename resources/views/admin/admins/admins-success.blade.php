@@ -5,10 +5,10 @@
 <!-- Breadcrumbs-->
 <ol class="breadcrumb">
     <li class="breadcrumb-item">
-        <a href="admins">Administradores</a>
+        <a href="{{ route('admins.index') }}">Administradores</a>
     </li>
     <li class="breadcrumb-item">
-        <a href="create">Agregar Administrador</a>
+        <a href="{{ route('admins.create') }}">Agregar Administrador</a>
     </li>
     <li class="breadcrumb-item active">Administrador Creado</li>
 </ol>
@@ -19,8 +19,8 @@
         <div class="alert alert-success" role="alert">
             <span>¡El administrador fue creado con éxito!</span>
         </div>
-        <a href="create" class="btn btn-success"><i class="fas fa-plus"></i>Agregar otro Administrador</a>
-        <a href="admins" class="btn btn-primary">Ir al listado <i class="fas fa-arrow-right"></i></a>
+        <a href="{{ route('admins.create') }}" class="btn btn-success"><i class="fas fa-plus"></i>Agregar otro Administrador</a>
+        <a href="{{ route('admins.index') }}" class="btn btn-primary">Ir al listado <i class="fas fa-arrow-right"></i></a>
     </div>
 </div>
 
