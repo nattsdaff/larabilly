@@ -19,6 +19,10 @@ class SaleController extends Controller
     {
         $order = Order::findOrFail($id);
         $items = OrderItems::where('order_id', $id)->get();
+        // Idem a lo de arriba, más rebuscado. No encontré cuál es la diferencia, puede que sea más performante.. pero no sé.
+        /* $items = OrderItems::with('order')->whereHas('order', function($query) use ($id){
+            $query->where('order_id', $id);
+        })->get(); */
         $client = User::findOrFail($order->user_id);
 
         return view('admin.sales.sale-details', compact('order', 'items', 'client'));
