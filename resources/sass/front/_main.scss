@@ -179,6 +179,7 @@ select {
 /* COMPONENTS */
 @import "components/_slider";
 @import "components/_forms";
+@import "components/_pagination";
 
 /* LAYOUT */
 @import "layout/_footer";
@@ -188,8 +189,6 @@ select {
 @import "pages/_home";
 @import "pages/_exito";
 @import "pages/_preguntas-frecuentes";
-@import "pages/_store";
-
 @import "pages/_formularios";
 @import "pages/_profile";
 @import "pages/_shop";

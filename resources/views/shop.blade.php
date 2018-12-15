@@ -4,40 +4,64 @@
 
 @section('content')
 
-<div class="container">
+<section class="shop">
 
-  <section class="breadcrumb">
-      <a href="/" class="alt-a">Home</a>
-      <p> > Productos</p>
-  		{{-- <p href="{{route('shop.index')}}" class="alt-a">Productos</p> --}}
-      {{-- <p class="product-name">> {{$product->category}}</p> --}}
-  </section>
-  
-  <section class="shop-header">
-    <h2>Productos</h2>
-    <form class="" action="" method="post">
-        <select>
-          <option value="">Ordenar por</option>
-        </select>
-      </form>
-  </section>
+    <nav class="breadcrumb">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="{{route('shop.index')}}">Productos</a></li>
+        </ul>
+    </nav>
 
-  <section class="shop-list">
+    <aside class="shop-categories">
+        <h3 class="shop-categories-title">Categorías</h3>
+        <ul class="categories">
+            @foreach ($categories as $category)
+                <li class="{{ request()->category == $category->slug ? 'active' : '' }}"><a href="{{route('shop.index', ['category' => $category->slug])}}">{{ $category->name }}</a></li>
+            @endforeach
+        </ul>
+    </aside>
 
-		@foreach ($products as $product)
-			<a href="{{route('shop.product', $product->slug)}}">
-					<div class="item">
-							<img src="{{asset($product->picture)}}" alt="">
-							{{-- <p class="product-name">VOLK</p> --}}
-							<p class="name">{{$product->name}}</p>
-							<p class="price">${{$product->price}}</p>
-					</div>
-			</a>
-		@endforeach
+    <main class="shop-list">
+
+        <h2 class="shop-list-title">{{ $categoryName }}</h2>
+        <div class="byPrice">
+            <span>Ordenar por: </span>
+            <a href="{{ route('shop.index', ['category'=> request()->category, 'orderBy' => 'menor_precio']) }}">Menor Precio</a>
+            <a href="{{ route('shop.index', ['category'=> request()->category, 'orderBy' => 'mayor_precio']) }}">Mayor Precio</a>
+        </div>
+        <div class="shop-list-items">
+
+            @forelse ($products as $product)
+                <a href="{{route('shop.product', $product->slug)}}">
+                    <div class="item">
+                        <img src="{{asset($product->picture)}}" alt="">
+                        {{-- <p class="product-name">VOLK</p> --}}
+                        <p class="name">{{$product->name}}</p>
+                        <p class="price">${{$product->price}}</p>
+                    </div>
+                </a>
+            @empty
+                <div class="empty-category"><p>No hay productos para mostrar en esta categoría.</p></div>
+            @endforelse
+
+            @if ($products->count()%4 !== 0)
+                @for ($i = 0; $i < $products->count()%4; $i++)
+                    <div class="item"></div>
+                @endfor
+            @endif
+
+        </div>
+
+        {{-- Esta es la forma normal de llamar al paginador {{ $products->links() }} --}}
+
+        {{-- En nuestro caso hay que agregarle el metodo appends() para que concatene las query strings que tenemos al cambiar de página --}}
+        {{ $products->appends(request()->input())->links() }}
+    </main>{{-- cierra .shop-list --}}
     
-  </section>
+</section>{{-- cierra .shop --}}
 
-  <section class="features store">
+<section class="features store">
     <div class="features-item">
         <span class="features-icon"><i class="fas fa-shopping-basket"></i></span>
         <h5 class="features-title">Comprá online. Recibí en tienda</h5>
@@ -50,8 +74,8 @@
         <span class="features-icon"><i class="fas fa-lock"></i></span>
         <h5 class="features-title">Compra fácil y 100% segura</h5>
     </div>
-  </section>
+</section>
 
-</div>
+
 
 @endsection

@@ -15,6 +15,7 @@ class AddSlugToProducts extends Migration
     {
         Schema::table('products', function (Blueprint $table) {
             $table->string('slug')->after('name')->unique();
+            $table->boolean('featured')->after('name')->after('picture');
         });
     }
 
@@ -27,6 +28,7 @@ class AddSlugToProducts extends Migration
     {
         Schema::table('products', function (Blueprint $table) {
             $table->dropColumn('slug');
+            $table->dropColumn('featured');
         });
     }
 }

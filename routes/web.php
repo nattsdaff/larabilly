@@ -4,16 +4,18 @@
 Auth::routes();
 Route::get('/logout', 'Auth\LoginController@logout');
 
+//Index
+Route::get('/', 'IndexController@index');
+
+// Rutas del front (estáticas)
+Route::get('faq', 'StaticController@faq');
+Route::get('exito', 'StaticController@exito');
+Route::get('success', 'StaticController@success');
+
 // Rutas de User Profile
 Route::get('/profile','ProfileController@show')->name('profile.show');
 Route::get('/profile/edit','ProfileController@edit')->name('profile.edit');
 Route::put('/profile/{id}','ProfileController@update')->name('profile.update');
-
-// Rutas del front (estáticas)
-Route::get('/', 'StaticController@index');
-Route::get('faq', 'StaticController@faq');
-Route::get('exito', 'StaticController@exito');
-Route::get('success', 'StaticController@success');
 
 // Rutas del Shop
 Route::get('/shop', 'ShopController@index')->name('shop.index');

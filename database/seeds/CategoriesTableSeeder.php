@@ -13,24 +13,12 @@ class CategoriesTableSeeder extends Seeder
     public function run()
     {
         DB::table('categories')->insert([
-            [
-                'name' => 'Sin Categoría'
-            ],
-            [
-                'name' => 'Escritorios'
-            ],
-            [
-                'name' => 'Sillas'
-            ],
-            [
-                'name' => 'Camas'
-            ],
-            [
-                'name' => 'Bancos'
-            ],
-            [
-                'name' => 'Sillones'
-            ]
+            ['name' => 'Sin Categoría', 'slug' => 'sin-categoria'],
+            ['name' => 'Escritorios', 'slug' => 'escritorios'],
+            ['name' => 'Sillas', 'slug' => 'sillas'],
+            ['name' => 'Camas', 'slug' => 'camas'],
+            ['name' => 'Bancos', 'slug' => 'bancos'],
+            ['name' => 'Sillones', 'slug' => 'sillones']
         ]);
     }
 }

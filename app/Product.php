@@ -7,6 +7,11 @@ use Cviebrock\EloquentSluggable\Sluggable;
 
 class Product extends Model
 {
+
+    protected $fillable = [
+        'name', 'description', 'price', 'picture', 'category_id'
+    ];
+    
     use Sluggable;
     /**
      * Return the sluggable configuration array for this model.
@@ -21,10 +26,6 @@ class Product extends Model
             ]
         ];
     }
-
-    protected $fillable = [
-        'name', 'description', 'price', 'picture', 'category_id'
-    ];
 
     public function category()
     {
