@@ -4,3 +4,4 @@
 <script type="text/javascript" src="{{asset('js/vendor/slick.min.js')}}"></script>
 <!--JS CUSTOM-->
 <script src="{{asset('js/scripts.js')}}"></script>
+<script src="{{asset('js/validate.js')}}"></script>
