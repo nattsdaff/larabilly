@@ -47,7 +47,7 @@
             </div>
         </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="{{ route('sales.index') }}">
             <i class="fas fa-fw fa-cart-arrow-down"></i>
             <span>Ventas</span></a>
     </li>

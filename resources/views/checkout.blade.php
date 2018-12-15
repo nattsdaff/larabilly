@@ -9,45 +9,50 @@
 @section('content')
 
 <div class="container">
+    <form action="{{route('checkout.store')}}" method="POST">
+        @csrf
+        <div class="title">
+            <h2 class="alt-title center">Envío y Pago</h2>
+        </div>
 
-    <div class="title"><h2 class="alt-title center">Envío y Pago</h2></div>
-	
-	<div class="showroom-items">
-		<section class="showroom">
-			<h3 style="margin-top:5rem;">RETIRO EN SHOWROOM</h3>
-			<p>Seleccioná un local por donde preferís retirar tu producto.</p>
-			<h4>LOCALES</h4>
-			<form>
-				<select>
-					<option value="">THAMES 2323 - CABA</option>
-				</select>
-			</form>
-		</section>
+        <div class="showroom-items">
 
-		<section class="medios-de-pago">
-			<h3 style="margin-top:5rem;">MEDIO DE PAGO</h3>
-			<form action="#" id="formPago">
-				<div class="medio-de-pago">
-					<input type="radio" name="pago" value="efectivo" checked>
-					<span>Quiero abonar en efectivo al retirar</span>
-				</div>
+            <section class="showroom">
+                <h3 style="margin-top:5rem;">RETIRO EN SHOWROOM</h3>
+                <p>Seleccioná un local por donde preferís retirar tu producto.</p>
+                <h4>LOCALES</h4>
 
-				<div class="medio-de-pago">
-					<input type="radio" name="pago" value="mercado-pago">
-					<span>Quiero abonar con MercadoPago</span>
-				</div>
-			</form>
-			<img src="assets/img/pago/mercado-pago.png">
-		</section>
-	</div>
+                <select name="store_address">
+                    <option value="" selected disabled>Seleccionar Local</option>
+                    <option value="Thames 2323">THAMES 2323 - Palermo</option>
+                    <option value="Cabildo 1728">CABILDO 1728 - Belgrano</option>
+                    <option value="Thames 2323">LAVALLE 937 - Retiro</option>
+                </select>
+            </section>
 
-	<div style="margin-top:4rem;display: flex;justify-content: center;">
-		<form action="{{route('checkout.store')}}" method="POST">
-			@csrf
-			<input type="submit" value="FINALIZAR COMPRA" class="submit-btn verde finalizar-compra">
-		</form>
-	</div>
+            <section class="medios-de-pago">
+                <h3 style="margin-top:5rem;">MEDIO DE PAGO</h3>
 
+                <div class="medio-de-pago">
+                    <input type="radio" name="payment" value="efectivo" checked>
+                    <span>Quiero abonar en efectivo al retirar</span>
+                </div>
+
+                <div class="medio-de-pago">
+                    <input type="radio" name="payment" value="mercado-pago">
+                    <span>Quiero abonar con MercadoPago</span>
+                </div>
+
+                <img src="assets/img/pago/mercado-pago.png">
+            </section>
+
+        </div>
+
+        <div style="margin-top:4rem;display: flex;justify-content: center;">
+            <input type="submit" value="FINALIZAR COMPRA" class="submit-btn verde finalizar-compra">
+        </div>
+
+    </form>
 </div>
 
 @endsection
