@@ -995,7 +995,8 @@ footer {
   padding: 50px 15px; }
   .preguntas-frecuentes .alt-title {
     max-width: 220px;
-    line-height: 1.3em; }
+    line-height: 1.3em;
+    margin: 0 auto; }
   .preguntas-frecuentes p {
     padding-left: 7%;
     padding-right: 7%; }
@@ -1475,10 +1476,15 @@ section.micuenta {
   color: orange;
   font-weight: bold; }
 
-.medio-de-pago span {
-  font-size: 1.6em;
-  display: inline-block;
-  margin: 1rem 0 0 1rem; }
+.medio-de-pago {
+  position: relative;
+  min-height: 6rem; }
+  .medio-de-pago span {
+    font-size: 1.5em;
+    position: absolute;
+    top: -5px;
+    left: 2.5rem;
+    max-width: 230px; }
 
 #formPago {
   margin-bottom: 2rem; }
@@ -1659,6 +1665,17 @@ h3.alt-title {
     align-items: flex-end; }
     .totales .botones-compra input {
       margin: 10% 0 0 0; }
+
+@media all and (min-width: 400px) {
+  .medio-de-pago {
+    position: static;
+    min-height: auto; }
+    .medio-de-pago span {
+      font-size: 1.6em;
+      display: inline-block;
+      margin: 1rem 0 0 1rem;
+      position: static;
+      max-width: none; } }
 
 @media all and (min-width: 991px) {
   .showroom-items {

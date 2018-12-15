@@ -74,15 +74,15 @@
 		<h3 class="alt-title">PRODUCTOS RELACIONADOS</h3>
 		<section class="shop-list">
 
-			<a href="{{route('shop.product', $product->slug)}}">
+			<a href="{{route('shop.product', 'catre-napper')}}">
 				<div class="item">
 					<img src="/assets/img/deseados/deseados-3.jpg" alt="">
 					{{-- <p class="product-name">VOLK</p> --}}
-					<p class="name">CATRE NAPPERS</p>
+					<p class="name">CATRE NAPPER</p>
 					<p class="price">$13000</p>
 				</div>
 			</a>
-			<a href="{{route('shop.product', $product->slug)}}">
+			<a href="{{route('shop.product', 'sillon-byron')}}">
 				<div class="item">
 					<img src="/assets/img/deseados/deseados-4.jpg" alt="">
 					{{-- <p class="product-name">VOLK</p> --}}
@@ -90,7 +90,7 @@
 					<p class="price">$8500</p>
 				</div>
 			</a>
-			<a href="{{route('shop.product', $product->slug)}}">
+			<a href="{{route('shop.product', 'banquito-eco')}}">
 				<div class="item">
 					<img src="/assets/img/deseados/deseados-5.jpg" alt="">
 					{{-- <p class="product-name">VOLK</p> --}}

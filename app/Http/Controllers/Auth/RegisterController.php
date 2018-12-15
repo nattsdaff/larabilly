@@ -53,9 +53,9 @@ class RegisterController extends Controller
             'last_name' => ['required', 'string', 'max:255', 'min:2', 'regex:/^[a-zA-Z áéíóúÁÉÍÓÚñÑüÜ]*$/'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
-            'birthday' => ['required', 'date'],
-            'phone' => ['nullable', 'integer', 'digits_between:8,13'],
-            'dni' => ['nullable', 'integer', 'digits_between:7,9'],
+            'dni' => ['required', 'numeric', 'digits_between:7,9', 'regex:/^\d{7,9}(?:[-\s]\d{4})?$/'],
+            'birthday' => ['nullable', 'date'],
+            'phone' => ['nullable', 'numeric', 'digits_between:8,13','regex:/^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/']
         ]);
     }
 
