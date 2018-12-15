@@ -43,7 +43,7 @@ class ProfileController extends Controller
         $datos[] = (!Input::get('password')) ? ['password' => $profile->password] : request()->validate(['password' => 'string|min:6|confirmed']);
         $datos[] = (!Input::get('dni')) ?['dni' => $profile->dni] : request()->validate(['dni' => 'integer|digits_between:7,9|unique:users,dni,'.$profile->id]); 
         $datos[] = (!Input::get('birthday')) ? ['birthday' => $profile->birthday] : request()->validate(['birthday' => 'nullable|date']); 
-        $datos[] = (!Input::get('phone')) ? ['phone' => $profile->phone] : request()->validate(['phone' => 'nullable|integer|digits_between:8,13']);
+        $datos[] = (!Input::get('phone')) ? ['phone' => $profile->phone] : request()->validate(['phone' => 'nullable|numeric|digits_between:8,13','regex:/^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/']);
 
         $datos = collect($datos);
         $datos = $datos->collapse()->toArray();
