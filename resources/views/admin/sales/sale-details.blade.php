@@ -23,5 +23,9 @@
         <p>{{$item->quantity}}</p>
     @endforeach
 
+    <p>{{$client->first_name}}</p>
+    <p>{{$client->last_name}}</p>
     <p>{{$client->email}}</p>
+    <p>{{$client->phone}}</p>
+    <p>{{$client->dni}}</p>
 @endsection
