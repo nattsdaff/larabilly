@@ -26,7 +26,7 @@
                     <option value="" selected disabled>Seleccionar Local</option>
                     <option value="Thames 2323">THAMES 2323 - Palermo</option>
                     <option value="Cabildo 1728">CABILDO 1728 - Belgrano</option>
-                    <option value="Thames 2323">LAVALLE 937 - Retiro</option>
+                    <option value="Lavalle 937">LAVALLE 937 - Retiro</option>
                 </select>
             </section>
 

@@ -13,11 +13,15 @@
         <h2 class="order-title">Detalle de la Orden</h2>
         <h3 class="order-date"><span>Orden realizada: </span>{{ $date->format('l d, F Y') }}</h3>
     </div>
+@php
+   // dd($order->user->email)
+@endphp
 
 <div class="row">
     <!-- Listado productos-->
     <div class="col-sm-12 col-lg-8 col-xl-8">
         <div class="card">
+            
             {{-- <div class="card-body"> --}}
                 <div class="table-responsive">
                     <table class="orders table table-striped">
@@ -51,6 +55,7 @@
                                     </tr>
                             </tbody>
                     </table>
+                    
                     <section class="totales right">
                         <div class="subtotal">
                             <p>IVA (21%): ${{ $order->tax }}</p>
@@ -61,6 +66,7 @@
                 </div>
             {{-- </div>   --}}
         </div>
+        
         <div class="order-details row">
             <div class="col-sm-12 col-lg-6 col-xl-6">
                 <p class="order-subtitle">FORMA DE PAGO</p>
