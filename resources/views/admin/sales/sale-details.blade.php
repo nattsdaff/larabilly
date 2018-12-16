@@ -9,12 +9,44 @@
     </ol>
 @endsection
 @section('content')
-    <h2>Detalles de la Orden</h2>
-    <p>#ID: {{$order->id}}</p>
-    <p>Fecha: {{$order->created_at}}</p>
-    <p>Local: {{$order->store_address}}</p>
-    <p>Forma de Pago: {{$order->payment}}</p>
-    <p>Estado: {{$order->status}}</p>
+    <div class="top-info">
+        <h2 class="order-title">Detalles de la Orden # {{$order->id}}</h2>
+        <h3 class="order-date"><span>Orden realizada: </span>{{ $date->format('l d, F Y') }}</h3>
+    </div>
+
+    <p class="status alert <?php switch($order->status) {
+            case 'Pendiente':
+                echo 'alert-warning';
+                break;
+            case 'Cancelada':
+                echo 'alert-danger';
+                break;
+            case 'Pago Recibido':
+                echo 'alert-success';
+                break;
+        }
+    ?>"><strong>Estado:</strong> {{$order->status}}</p>
+
+    <div class="order-details">
+        <div class="detail">
+            <p><span>Local:</span> {{$order->store_address}}</p>
+        </div>
+        <div class="detail">
+            <p><span>Forma de Pago:</span> {{$order->payment}}</p>
+        </div>
+        <div class="detail">
+            <p><span>Dni:</span> {{$client->dni}}</p>
+        </div>
+        <div class="detail">
+            <p><span>Cliente:</span> {{$client->first_name}} {{$client->last_name}}</p>
+        </div>
+        <div class="detail">
+            <p><span>Email:</span> {{$client->email}}</p>
+        </div>
+        <div class="detail">
+            <p><span>Teléfono:</span> {{$client->phone}}</p>
+        </div>
+    </div>
     <p>Total: ${{$order->total}}</p>
 
     @foreach ($items as $item)
@@ -23,9 +55,29 @@
         <p>{{$item->quantity}}</p>
     @endforeach
 
-    <p>{{$client->first_name}}</p>
-    <p>{{$client->last_name}}</p>
-    <p>{{$client->email}}</p>
-    <p>{{$client->phone}}</p>
-    <p>{{$client->dni}}</p>
+    <form action="{{ route('sales.update', ['id'=>$order->id]) }}" method="POST">
+        @csrf
+        @method('PUT')
+
+        <select name="status">
+            <option value="" selected disabled>Cambiar Estado de la Orden</option>
+            @switch($order->status)
+                @case('Pendiente')
+                    <option value="Cancelada">Cancelada</option>
+                    <option value="Pago Recibido">Pago Recibido</option>
+                    @break
+                @case('Cancelada')
+                    <option value="Pago Recibido">Pago Recibido</option>
+                    <option value="Pendiente">Pendiente</option>
+                    @break
+                @case('Pago Recibido')
+                    <option value="Cancelada">Cancelada</option>
+                    <option value="Pendiente">Pendiente</option>
+                    @break
+                @default
+            @endswitch
+        </select>
+        <br>
+        <input type="submit" value="Cambiar" class="btn btn-primary">
+    </form>
 @endsection

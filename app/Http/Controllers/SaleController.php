@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Order;
 use App\OrderItems;
 use App\User;
+use Jenssegers\Date\Date;
 
 class SaleController extends Controller
 {
@@ -16,8 +17,10 @@ class SaleController extends Controller
     }
 
     public function show($id)
-    {
+    {   
         $order = Order::findOrFail($id);
+        
+        $date = Date::parse($order->created_at);
         $items = OrderItems::where('order_id', $id)->get();
         // Idem a lo de arriba, más rebuscado. No encontré cuál es la diferencia, puede que sea más performante.. pero no sé.
         /* $items = OrderItems::with('order')->whereHas('order', function($query) use ($id){
@@ -25,6 +28,16 @@ class SaleController extends Controller
         })->get(); */
         $client = User::findOrFail($order->user_id);
 
-        return view('admin.sales.sale-details', compact('order', 'items', 'client'));
+        return view('admin.sales.sale-details', compact('order', 'items', 'client', 'date'));
+    }
+
+    public function update($id)
+    {
+        $order = Order::findOrFail($id);
+        $order->update([
+            'status' => request()->input('status'),
+        ]);
+
+        return redirect('admin/sales/'.$id);
     }
 }

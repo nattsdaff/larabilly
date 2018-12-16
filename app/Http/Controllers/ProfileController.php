@@ -47,7 +47,10 @@ class ProfileController extends Controller
 
         $datos = collect($datos);
         $datos = $datos->collapse()->toArray();
-        $datos['password'] = Hash::make($datos['password']);
+        
+        if(Input::get('password')) {
+            $datos['password'] = Hash::make($datos['password']);
+        }
         
         if (request()->file('avatar')) {
             request()->validate(['avatar' => 'image|max:2000']);
@@ -60,7 +63,7 @@ class ProfileController extends Controller
         }
 
         $profile->update($datos);
-        return redirect('profile')->with('status', 'Usuario Actualizado');
+        return redirect('/profile')->with('status', 'Usuario Actualizado');
     }
 
 }

@@ -1,20 +1,6 @@
 @extends('templates/master')
 @section('title', 'm o b i l i • Mi cuenta')
 
-@section('breadcrumb')
-<!-- Breadcrumbs-->
-<ol class="breadcrumb">
-    <li class="breadcrumb-item">
-        <a href="products">Mi cuenta</a>
-    </li>
-    <li class="breadcrumb-item">
-        <a href="products/create">Agregar Producto</a>
-    </li>
-    <li class="breadcrumb-item active">Producto Cargado</li>
-</ol>
-@endsection
-
-
 @section('content')
 
 @if (session()->has('success'))
@@ -46,7 +32,7 @@
                 @if ($datos->avatar)
                     <img class="avatar" src="{{asset($datos->avatar)}}" alt="Avatar usuario">                    
                 @else
-                <i class="far fa-smile"></i>
+                    <i class="far fa-smile"></i>
                 @endif
             </div>
         </div> 

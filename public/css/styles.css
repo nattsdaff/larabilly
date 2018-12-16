@@ -477,7 +477,10 @@ select {
     -ms-flex-positive: 1;
     flex-grow: 1; }
     .form-item.image {
-      font-size: 1.4em; } }
+      font-size: 1.4em;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .pagination {
   display: -webkit-box;
