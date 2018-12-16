@@ -31,23 +31,22 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($order->OrderItems as $order)
+                            @foreach ($order->OrderItems as $item)
                             <tr>
                                 <th scope="row"></th>   
-                                <td>{{$order->name}}</td>
-                                <td class="text-right">{{$order->quantity}}</td>
-                                <td class="text-right">${{$order->price}}</td>
-                                <td class="text-right">${{$order->quantity * $order->price}}</td>
+                                <td>{{$item->name}}</td>
+                                <td class="text-right">{{$item->quantity}}</td>
+                                <td class="text-right">${{$item->price}}</td>
+                                <td class="text-right">${{$item->quantity * $item->price}}</td>
                             </tr>
                             @endforeach
                         </tbody>
                     </table>
                     <section class="totales right">
                         <div class="subtotal">
-                            {{-- <p>{{$order->OrderItems->count()}} item(s) en el carrito</p> --}}
-                            {{-- <p>Subtotal: ${{ $order->subtotal }} <br><br> IVA (21%): ${{ $order->tax }}</p> --}}
+                            <p>Subtotal: ${{ $order->subtotal }} <br><br> IVA (21%): ${{ $order->tax }}</p>
                         </div>
-                        {{-- <div class="total">Total: ${{ $order->total }}</div> --}}
+                        <div class="total">Total: ${{ $order->total }}</div>
                     
                     </section>
                 </div>
