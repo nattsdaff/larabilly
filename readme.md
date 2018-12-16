@@ -1,3 +1,8 @@
+## Complementos Instalados
+
+- [Laravel_Shopping_Cart]https://github.com/hardevine/LaravelShoppingcart
+- 
+
 ## Datos útiles para navegar Mobili
 
 Usuario: usuario@gmail.com <br>
