@@ -21,8 +21,13 @@ class CheckoutController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view('checkout');
+    {   
+        if (Cart::count() < 1) {
+            $route = '/cart';
+        } else {
+            $route = '/checkout';
+        }
+        return view($route);
     }
 
     /**
