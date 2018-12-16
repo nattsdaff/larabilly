@@ -1,7 +1,9 @@
 ## Complementos Instalados
 
-- [Laravel_Shopping_Cart]https://github.com/hardevine/LaravelShoppingcart
-- 
+- [Laravel Shopping Cart](https://github.com/hardevine/LaravelShoppingcart)
+- [Date Translator](https://github.com/jenssegers/date)
+- [Sluggable](https://github.com/cviebrock/eloquent-sluggable)
+- [LaravelES](https://github.com/Laraveles/spanish)
 
 ## Datos útiles para navegar Mobili
 
