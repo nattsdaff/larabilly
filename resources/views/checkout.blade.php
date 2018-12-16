@@ -28,6 +28,9 @@
                     <option value="Cabildo 1728">CABILDO 1728 - Belgrano</option>
                     <option value="Lavalle 937">LAVALLE 937 - Retiro</option>
                 </select>
+                @if ($errors->has('store_address'))
+                    <p style="color:red;">{{$errors->first('store_address')}}</p>
+                @endif
             </section>
 
             <section class="medios-de-pago">
@@ -42,7 +45,9 @@
                     <input type="radio" name="payment" value="Mercado Pago">
                     <span>Quiero abonar con MercadoPago</span>
                 </div>
-
+                @if ($errors->has('payment'))
+                    <p style="color:red;">{{$errors->first('payment')}}</p>
+                @endif
                 <img src="assets/img/pago/mercado-pago.png">
             </section>
 
