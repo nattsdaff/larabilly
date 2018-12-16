@@ -31,23 +31,23 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($items as $item)
+                            @foreach ($order->OrderItems as $order)
                             <tr>
-                                <th scope="row"></th>
-                                <td>{{$item->name}}</td>
-                                <td class="text-right">{{$item->quantity}}</td>
-                                <td class="text-right">${{$item->price}}</td>
-                                <td class="text-right">${{$item->quantity * $item->price}}</td>
+                                <th scope="row"></th>   
+                                <td>{{$order->name}}</td>
+                                <td class="text-right">{{$order->quantity}}</td>
+                                <td class="text-right">${{$order->price}}</td>
+                                <td class="text-right">${{$order->quantity * $order->price}}</td>
                             </tr>
                             @endforeach
                         </tbody>
                     </table>
                     <section class="totales right">
                         <div class="subtotal">
-                            <p>{{$items->count()*$item->quantity}} item(s) en el carrito</p>
-                            <p>Subtotal: ${{ $order->subtotal }} <br><br> IVA (21%): ${{ $order->tax }}</p>
+                            {{-- <p>{{$order->OrderItems->count()}} item(s) en el carrito</p> --}}
+                            {{-- <p>Subtotal: ${{ $order->subtotal }} <br><br> IVA (21%): ${{ $order->tax }}</p> --}}
                         </div>
-                        <div class="total">Total: ${{ $order->total }}</div>
+                        {{-- <div class="total">Total: ${{ $order->total }}</div> --}}
                     
                     </section>
                 </div>
@@ -111,10 +111,11 @@
 
             <div class="card">
                 <div class="card-body">
-                    <p class="client-name"><i class="far fa-user-circle"></i>{{$client->first_name}} {{$client->last_name}}</p>
-                    <p><a href="mailto:{{$client->email}}">{{$client->email}}</a></p>
-                    <p><span>DNI: </span>{{$client->dni}}</p>
-                    <p><span>Teléfono: </span>{{$client->phone}}</p>
+                    <p><span>Cliente:</span> {{$order->user->first_name}} {{$order->user->last_name}}</p>
+                    {{-- <p><span>Cliente:</span> {{$order->user->first_name}} {{$order->user->last_name}}</p>p class="client-name"><i class="far fa-user-circle"></i>{{$order->user->first_name}} {{$order->user->last_name}}</p>
+                    <p><a href="mailto:{{$order->user->email}}">{{$order->user->email}}</a></p>
+                    <p><span>DNI: </span>{{$order->user->dni}}</p>
+                    <p><span>Teléfono: </span>{{$order->user->phone}}</p> --}}
                 </div>
             </div>
         </div>
