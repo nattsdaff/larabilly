@@ -20,12 +20,12 @@
         <div class="card">
             {{-- <div class="card-body"> --}}
                 <div class="table-responsive">
-                    <table class="table table-striped">
-                        <thead class="thead-light">
+                    <table class="orders table table-striped">
+                        <thead class="thead-dark">
                             <tr>
-                                <th scope="col"></th>
                                 <th scope="col">Producto</th>
                                 <th scope="col" class="text-right">Cantidad</th>
+                                <th scope="col" class="text-right"></th>
                                 <th scope="col" class="text-right">Precio</th>
                                 <th scope="col" class="text-right">Total</th>
                             </tr>
@@ -33,18 +33,27 @@
                         <tbody>
                             @foreach ($order->OrderItems as $item)
                             <tr>
-                                <th scope="row"></th>   
                                 <td>{{$item->name}}</td>
                                 <td class="text-right">{{$item->quantity}}</td>
+                                <td class="text-right">x</td>
                                 <td class="text-right">${{$item->price}}</td>
                                 <td class="text-right">${{$item->quantity * $item->price}}</td>
                             </tr>
+                            </thead>
                             @endforeach
-                        </tbody>
+                            <tfoot class="tfoot-light">
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col" class="text-right">{{$order->count()}}</th>
+                                        <th scope="col" class="text-right"></th>
+                                        <th scope="col" class="text-right">Subtotal</th>
+                                        <th scope="col" class="text-right">${{ $order->subtotal }}</th>
+                                    </tr>
+                            </tbody>
                     </table>
                     <section class="totales right">
                         <div class="subtotal">
-                            <p>Subtotal: ${{ $order->subtotal }} <br><br> IVA (21%): ${{ $order->tax }}</p>
+                            <p>IVA (21%): ${{ $order->tax }}</p>
                         </div>
                         <div class="total">Total: ${{ $order->total }}</div>
                     
@@ -107,14 +116,15 @@
                 </select>
                 <input type="submit" value="Cambiar" class="btn btn-primary">
             </form>
-
+<br><br>
+            <p class="order-subtitle">Datos del cliente</p>
             <div class="card">
                 <div class="card-body">
-                    <p><span>Cliente:</span> {{$order->user->first_name}} {{$order->user->last_name}}</p>
-                    {{-- <p><span>Cliente:</span> {{$order->user->first_name}} {{$order->user->last_name}}</p>p class="client-name"><i class="far fa-user-circle"></i>{{$order->user->first_name}} {{$order->user->last_name}}</p>
+                    <p class="client-name">{{$order->user->first_name}} {{$order->user->last_name}}</p>
                     <p><a href="mailto:{{$order->user->email}}">{{$order->user->email}}</a></p>
+                    
                     <p><span>DNI: </span>{{$order->user->dni}}</p>
-                    <p><span>Teléfono: </span>{{$order->user->phone}}</p> --}}
+                    <p><span>Teléfono: </span>{{$order->user->phone}}</p>
                 </div>
             </div>
         </div>

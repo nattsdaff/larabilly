@@ -7,6 +7,7 @@ use App\Order;
 use App\OrderItems;
 use App\User;
 use Jenssegers\Date\Date;
+use Gloudemans\Shoppingcart\Facades\Cart;
 
 class SaleController extends Controller
 {

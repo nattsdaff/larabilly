@@ -42,6 +42,8 @@ class CheckoutController extends Controller
         $order = Order::create([
             'user_id' => auth()->user()->id,
             'store_address' => $request->store_address,
+            'subtotal' => Cart::subtotal(),
+            'tax' => Cart::tax(),
             'payment' => $request->payment,
             'total' => Cart::total(),
             'status' => 'Pendiente'
