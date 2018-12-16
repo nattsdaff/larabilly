@@ -13,11 +13,15 @@
         <h2 class="order-title">Detalle de la Orden</h2>
         <h3 class="order-date"><span>Orden realizada: </span>{{ $date->format('l d, F Y') }}</h3>
     </div>
+@php
+   // dd($order->user->email)
+@endphp
 
 <div class="row">
     <!-- Listado productos-->
     <div class="col-sm-12 col-lg-8 col-xl-8">
         <div class="card">
+            
             {{-- <div class="card-body"> --}}
                 <div class="table-responsive">
                     <table class="table table-striped">
@@ -31,17 +35,18 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($order->OrderItems as $order)
+                            @foreach ($order->OrderItems as $item)
                             <tr>
                                 <th scope="row"></th>   
-                                <td>{{$order->name}}</td>
-                                <td class="text-right">{{$order->quantity}}</td>
-                                <td class="text-right">${{$order->price}}</td>
-                                <td class="text-right">${{$order->quantity * $order->price}}</td>
+                                <td>{{$item->name}}</td>
+                                <td class="text-right">{{$item->quantity}}</td>
+                                <td class="text-right">${{$item->price}}</td>
+                                <td class="text-right">${{$item->quantity * $item->price}}</td>
                             </tr>
                             @endforeach
                         </tbody>
                     </table>
+                    
                     <section class="totales right">
                         <div class="subtotal">
                             {{-- <p>{{$order->OrderItems->count()}} item(s) en el carrito</p> --}}
@@ -53,6 +58,7 @@
                 </div>
             {{-- </div>   --}}
         </div>
+        
         <div class="order-details row">
             <div class="col-sm-12 col-lg-6 col-xl-6">
                 <p class="order-subtitle">FORMA DE PAGO</p>
@@ -111,7 +117,7 @@
 
             <div class="card">
                 <div class="card-body">
-                    <p><span>Cliente:</span> {{$order->user->first_name}} {{$order->user->last_name}}</p>
+                    <p><span>Cliente:</span>{{$order->user->email}}</p>
                     {{-- <p><span>Cliente:</span> {{$order->user->first_name}} {{$order->user->last_name}}</p>p class="client-name"><i class="far fa-user-circle"></i>{{$order->user->first_name}} {{$order->user->last_name}}</p>
                     <p><a href="mailto:{{$order->user->email}}">{{$order->user->email}}</a></p>
                     <p><span>DNI: </span>{{$order->user->dni}}</p>
