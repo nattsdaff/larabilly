@@ -13,7 +13,7 @@ class CategoriesTableSeeder extends Seeder
     public function run()
     {
         DB::table('categories')->insert([
-            ['name' => 'Sin Categoría', 'slug' => 'sin-categoria'],
+            ['name' => 'Mesas', 'slug' => 'mesas'],
             ['name' => 'Escritorios', 'slug' => 'escritorios'],
             ['name' => 'Sillas', 'slug' => 'sillas'],
             ['name' => 'Camas', 'slug' => 'camas'],

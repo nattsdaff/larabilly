@@ -5,82 +5,119 @@
     <!-- Breadcrumbs-->
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ route('sales.index') }}">Ventas</a></li>
-        <li class="breadcrumb-item active">Orden nº {{$order->id}}</li>
+        <li class="breadcrumb-item active">Orden # {{$order->id}}</li>
     </ol>
 @endsection
 @section('content')
     <div class="top-info">
-        <h2 class="order-title">Detalles de la Orden # {{$order->id}}</h2>
+        <h2 class="order-title">Detalle de la Orden</h2>
         <h3 class="order-date"><span>Orden realizada: </span>{{ $date->format('l d, F Y') }}</h3>
     </div>
 
-    <p class="status alert 
-    <?php switch($order->status) {
-            case 'Pendiente':
-                echo 'alert-warning';
-                break;
-            case 'Cancelada':
-                echo 'alert-danger';
-                break;
-            case 'Pago Recibido':
-                echo 'alert-success';
-                break;
-        }
-    ?>">
-        <strong>Estado:</strong> {{$order->status}}
-    </p>
-
-    <div class="order-details">
-        <div class="detail">
-            <p><span>Local:</span> {{$order->store_address}}</p>
+<div class="row">
+    <!-- Listado productos-->
+    <div class="col-sm-12 col-lg-8 col-xl-8">
+        <div class="card">
+            {{-- <div class="card-body"> --}}
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Producto</th>
+                                <th scope="col" class="text-right">Cantidad</th>
+                                <th scope="col" class="text-right">Precio</th>
+                                <th scope="col" class="text-right">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($items as $item)
+                            <tr>
+                                <th scope="row"></th>
+                                <td>{{$item->name}}</td>
+                                <td class="text-right">{{$item->quantity}}</td>
+                                <td class="text-right">${{$item->price}}</td>
+                                <td class="text-right">${{$item->quantity * $item->price}}</td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                    <section class="totales right">
+                        <div class="subtotal">
+                            <p>{{$items->count()*$item->quantity}} item(s) en el carrito</p>
+                            <p>Subtotal: ${{ $order->subtotal }} <br><br> IVA (21%): ${{ $order->tax }}</p>
+                        </div>
+                        <div class="total">Total: ${{ $order->total }}</div>
+                    
+                    </section>
+                </div>
+            {{-- </div>   --}}
         </div>
-        <div class="detail">
-            <p><span>Forma de Pago:</span> {{$order->payment}}</p>
-        </div>
-        <div class="detail">
-            <p><span>Dni:</span> {{$client->dni}}</p>
-        </div>
-        <div class="detail">
-            <p><span>Cliente:</span> {{$client->first_name}} {{$client->last_name}}</p>
-        </div>
-        <div class="detail">
-            <p><span>Email:</span> {{$client->email}}</p>
-        </div>
-        <div class="detail">
-            <p><span>Teléfono:</span> {{$client->phone}}</p>
+        <div class="order-details row">
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+                <p class="order-subtitle">FORMA DE PAGO</p>
+                <p>{{$order->payment}}</p>
+            </div>
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+                <p class="order-subtitle">RETIRA POR</p>
+                <p>{{$order->store_address}}</p>
+            </div>
         </div>
     </div>
-    <p>Total: ${{$order->total}}</p>
 
-    @foreach ($items as $item)
-        <p>{{$item->name}}</p>
-        <p>${{$item->price}}</p>
-        <p>{{$item->quantity}}</p>
-    @endforeach
+    <!-- Detalle Comprador-->
+    <div class="col-sm-12 col-lg-4 col-xl-4 ">
+        <div class="order-details">
+            <p class="status alert 
+            <?php switch($order->status) {
+                    case 'Pendiente':
+                        echo 'alert-warning';
+                        break;
+                    case 'Cancelada':
+                        echo 'alert-danger';
+                        break;
+                    case 'Pago Recibido':
+                        echo 'alert-success';
+                        break;
+                }
+            ?>">
+                <strong>Estado:</strong> {{$order->status}}
+            </p>
+            <form action="{{ route('sales.update', ['id'=>$order->id]) }}" method="POST">
+                @csrf
+                @method('PUT')
+        
+                <label for="status" class="order-subtitle">ACCIONES</label>
+                <select name="status" id="status" class="form-control">
+                    <option value="" selected disabled>---</option>
+                    @switch($order->status)
+                        @case('Pendiente')
+                            <option value="Cancelada">Cancelar</option>
+                            <option value="Pago Recibido">Pago Recibido</option>
+                            @break
+                        @case('Cancelada')
+                            <option value="Pago Recibido">Pago Recibido</option>
+                            <option value="Pendiente">Pendiente</option>
+                            @break
+                        @case('Pago Recibido')
+                            <option value="Cancelada">Cancelada</option>
+                            <option value="Pendiente">Pendiente</option>
+                            @break
+                        @default
+                    @endswitch
+                </select>
+                <input type="submit" value="Cambiar" class="btn btn-primary">
+            </form>
 
-    <form action="{{ route('sales.update', ['id'=>$order->id]) }}" method="POST">
-        @csrf
-        @method('PUT')
-
-        <select name="status">
-            <option value="" selected disabled>Cambiar Estado de la Orden</option>
-            @switch($order->status)
-                @case('Pendiente')
-                    <option value="Cancelada">Cancelada</option>
-                    <option value="Pago Recibido">Pago Recibido</option>
-                    @break
-                @case('Cancelada')
-                    <option value="Pago Recibido">Pago Recibido</option>
-                    <option value="Pendiente">Pendiente</option>
-                    @break
-                @case('Pago Recibido')
-                    <option value="Cancelada">Cancelada</option>
-                    <option value="Pendiente">Pendiente</option>
-                    @break
-                @default
-            @endswitch
-        </select>
-        <br>
-        <input type="submit" value="Cambiar" class="btn btn-primary">
-    </form>
+            <div class="card">
+                <div class="card-body">
+                    <p class="client-name"><i class="far fa-user-circle"></i>{{$client->first_name}} {{$client->last_name}}</p>
+                    <p><a href="mailto:{{$client->email}}">{{$client->email}}</a></p>
+                    <p><span>DNI: </span>{{$client->dni}}</p>
+                    <p><span>Teléfono: </span>{{$client->phone}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
