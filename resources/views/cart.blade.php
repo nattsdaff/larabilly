@@ -22,41 +22,46 @@
 		</section>
 
 		<section class="items">
-                @foreach (Cart::content() as $item)
-                    <div class="item">
-                        <a href="{{route('shop.product', $item->model->slug)}}"><img src="{{ asset($item->model->picture) }}"></a>
-                        <div class="description">
-                            <div class="description-sup">
-                                <div class="name-price">
-                                    <div class="name">
-                                        <p>{{$item->model->name}}</p>
-                                    </div>
-                                    <p class="price">${{$item->model->price}}</p>
+            @foreach (Cart::content() as $item)
+                <div class="item">
+                    <a href="{{route('shop.product', $item->model->slug)}}"><img src="{{ asset($item->model->picture) }}"></a>
+                    <div class="description">
+                        <div class="description-sup">
+                            <div class="name-price">
+                                <div class="name">
+                                    <p>{{$item->model->name}}</p>
                                 </div>
-                                {{-- <p class="unit-price">${{$item->model->price}}</p> --}}
+                                <p class="price">${{$item->subtotal()}}</p>
                             </div>
+                            <p class="unit-price">${{$item->model->price}}</p>
+                        </div>
+                        
+                        <form action="{{ route('cart.update', ['id'=> $item->rowId]) }}" method="POST">
+                            @csrf
+                            @method('PATCH')
+                            <select name="quantity">
+                                @for ($i = 1; $i <= 5; $i++)
+                                    <option value="{{$i}}" {{ $i == $item->qty ? 'selected' : '' }}>{{$i}}</option>
+                                @endfor
+                            </select>
+                            <button type="submit">Actualizar</button>
+                        </form>
+                        
+                        <div class="cart-actions">
+                            <form action="{{ route('cart.destroy', $item->rowId) }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" alt="Eliminar" class="button"><i class="far fa-trash-alt"></i> Eliminar</button>
+                            </form>
 
-                            {{-- <div class="units">
-                                <a href="#"><div class="cantidad">-</div></a>
-                                <div class="cantidad numero">1</div>
-                                <a href="#"><div class="cantidad">+</div></a>
-                            </div>
- --}}
-                            <div class="cart-actions">
-                                <form action="{{ route('cart.destroy', $item->rowId) }}" method="POST">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" alt="Eliminar" class="button"><i class="far fa-trash-alt"></i> Eliminar</button>
-                                </form>
-
-                                <form action="{{ route('cart.switchToSaveForLater', $item->rowId) }}" method="POST">
-                                    @csrf
-                                    <button type="submit" alt="Mover a deseados" class="button"><i class="far fa-heart" style="font-size: 2em;"></i>Agregar a deseados</button>
-                                </form>
-                            </div>
+                            <form action="{{ route('cart.switchToSaveForLater', $item->rowId) }}" method="POST">
+                                @csrf
+                                <button type="submit" alt="Mover a deseados" class="button"><i class="far fa-heart" style="font-size: 2em;"></i>Agregar a deseados</button>
+                            </form>
                         </div>
                     </div>
-                @endforeach
+                </div>
+            @endforeach
         </section>
 
         <section class="totales">
@@ -118,4 +123,4 @@
 
 	</div>
 
-@endsection
+@endsection    

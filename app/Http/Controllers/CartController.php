@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use App\Product;
+use Validator;
 
 class CartController extends Controller
 {
@@ -28,6 +29,22 @@ class CartController extends Controller
             ->associate('\App\Product');
 
         return redirect()->route('cart.index')->with('success', 'El producto fue agregado a su carrito!');
+    }
+
+    public function update($id)
+    {
+        $validator = Validator::make(request()->all(), [
+            'quantity' => 'required|numeric|between:1,5'
+        ]);
+        
+        if ($validator->fails()) {
+            $msg = 'La cantidad debe estar entre 1 y 5.';
+        } else {
+            $msg = 'Cantidad actualizada correctamente.';
+            Cart::update($id, request()->input('quantity'));
+        }
+        
+        return redirect()->route('cart.index')->with('success', $msg);
     }
 
     public function destroy($id)

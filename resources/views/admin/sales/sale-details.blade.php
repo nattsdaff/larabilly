@@ -14,7 +14,8 @@
         <h3 class="order-date"><span>Orden realizada: </span>{{ $date->format('l d, F Y') }}</h3>
     </div>
 
-    <p class="status alert <?php switch($order->status) {
+    <p class="status alert 
+    <?php switch($order->status) {
             case 'Pendiente':
                 echo 'alert-warning';
                 break;
@@ -25,7 +26,9 @@
                 echo 'alert-success';
                 break;
         }
-    ?>"><strong>Estado:</strong> {{$order->status}}</p>
+    ?>">
+        <strong>Estado:</strong> {{$order->status}}
+    </p>
 
     <div class="order-details">
         <div class="detail">
