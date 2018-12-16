@@ -65,12 +65,6 @@ ul {
     margin-bottom: 3rem;
     line-height: 2em;
 }
-.breadcrumb{
-    font-size: 1em;
-    p{
-        display: inline-block;
-    }
-}
 .container{
     padding: 3rem;
     background: #fff;
@@ -180,6 +174,7 @@ select {
 @import "components/_slider";
 @import "components/_forms";
 @import "components/_pagination";
+@import "components/_breadcrumb";
 
 /* LAYOUT */
 @import "layout/_footer";

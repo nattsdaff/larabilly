@@ -1,53 +1,8 @@
-/* Pendiente: Ver a quien afecta esto. No está en el shop. */
-// .products{
-// 	&-deseados {
-// 		padding: 1rem 3rem;
-// 		.main-title {
-// 			margin-bottom: 2em;
-// 		}
-// 		.name{
-			
-// 		}
-// 		.price{
-// 			text-align: center;
-// 		}
-// 	}
-// }
-
-
 .shop{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding: 2rem 1rem;
-	.breadcrumb {
-		width:100%;
-        padding-left:5%;
-        ul {
-            display: flex;
-            li {
-                a {
-                    color:$verde-oscuro;
-                    border-bottom:1px solid;
-                }
-                &:after {
-                    content:">";
-                    font-size: 1.5em;
-                    margin: 0 0.5rem;
-                }
-                &.active {
-                    &:after {
-                        display: none;
-                    }
-                    a {
-                        font-weight: 600;
-                        color:$gris-oscuro;
-                        border:none;
-                    }
-                } 
-            }
-        }
-	}
     &-categories {
         width:100%;
         margin:5rem 0;
@@ -116,7 +71,7 @@
                 .price{
                     font-size: 1em;
                     margin:0;
-                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-family: $alt-font;
                     font-style: italic;
                     font-weight: $light;
                     color: $gris-medio;
@@ -141,10 +96,6 @@
 @media all and (min-width: 768px){
 	.shop {
         padding: 4rem 3rem;
-        .breadcrumb {
-            padding:0;
-            margin-bottom:5rem;
-        }
         &-categories {
             width:25%;
             padding:0;
