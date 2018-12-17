@@ -95,7 +95,7 @@
 
 @media all and (min-width: 768px){
 	.shop {
-        padding: 4rem 3rem;
+        padding: 4rem;
         &-categories {
             width:25%;
             padding:0;
@@ -153,11 +153,5 @@
                 }
             }
         }
-    }
-}
-
-@media all and (min-width:1300px) {
-    .shop {
-        padding:0;
     }
 }
