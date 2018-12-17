@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddSlugToProducts extends Migration
+class AddDefaultValueToProductsFeatured extends Migration
 {
     /**
      * Run the migrations.
@@ -14,8 +14,8 @@ class AddSlugToProducts extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->string('slug')->after('name')->unique();
-            $table->boolean('featured')->after('picture');
+            $table->boolean('featured')->default(0)->change();
+            $table->string('picture')->default('assets/img/product.jpg')->change();
         });
     }
 
@@ -27,8 +27,8 @@ class AddSlugToProducts extends Migration
     public function down()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->dropColumn('slug');
-            $table->dropColumn('featured');
+            $table->boolean('featured')->change();
+            $table->string('picture')->change();
         });
     }
 }

@@ -9,7 +9,7 @@ class Product extends Model
 {
 
     protected $fillable = [
-        'name', 'description', 'price', 'picture', 'category_id'
+        'name', 'description', 'price', 'picture', 'category_id', 'featured'
     ];
     
     use Sluggable;

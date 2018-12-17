@@ -35,8 +35,8 @@
                                 <form action="{{ route('cart.update', ['id'=> $item->rowId]) }}" method="POST">
                                     @csrf
                                     @method('PATCH')
-                                    <label for="">Cantidad: </label>
-                                    <select name="quantity">
+                                    <label for="quantity">Cantidad: </label>
+                                    <select name="quantity" id="quantity">
                                         @for ($i = 1; $i <= 5; $i++)
                                             <option value="{{$i}}" {{ $i == $item->qty ? 'selected' : '' }}>{{$i}}</option>
                                         @endfor
@@ -68,7 +68,7 @@
                 <div class="total">Total: ${{ Cart::total() }}</div>
             
                 <div class="botones-compra">
-                    <a href="{{route('checkout.index')}}" class="submit-btn verde">Iniciar Compra</a>
+                    <a href="{{route('checkout.index')}}" id="submit" class="submit-btn verde">Iniciar Compra</a>
                     <a href="{{route('shop.index')}}" class="alt-a"><i class="fas fa-arrow-left"></i> Seguir comprando</a>
                 </div>
             </section>
