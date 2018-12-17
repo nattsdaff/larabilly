@@ -19,6 +19,9 @@
                 <p>{{ str_limit($product->description, 180)}}</p>
             </div>
             @endforeach
+            {{-- Esta es la forma normal de llamar al paginador {{ $products->links() }} --}}
+            {{-- En nuestro caso hay que agregarle el metodo appends() para que concatene las query strings que tenemos al cambiar de página --}}
+            {{ $products->appends(request()->input())->links() }}
         </div>
     </div>
 </div>

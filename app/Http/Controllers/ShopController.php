@@ -55,7 +55,7 @@ class ShopController extends Controller
 
         $products = Product::where('name', 'like', "%$query%")
                             ->orWhere('description', 'like', "%$query%")
-                            ->get();
+                            ->paginate(8);
         
         return view('search-results', compact('products'));
     }
