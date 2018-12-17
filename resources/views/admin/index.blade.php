@@ -7,12 +7,11 @@
         <li class="breadcrumb-item">
             <a href="{{ route('admin.index') }}">Dashboard</a>
         </li>
-        <li class="breadcrumb-item active">Overview</li>
     </ol>
 @endsection
 @section('content')
     <div class="top-info">
-        <h2 class="dashboard-title">Panel</h2>
+        <h2 class="dashboard-title">Resúmen de la tienda</h2>
     </div>
 
     <div class="row">

@@ -9,12 +9,18 @@
                 <p style="color:red;">{{$error}}</p>
             @endforeach
         @endif
-        <h2>Resultados de Búsqueda</h2>
-        <p>{{$products->count()}} resultado(s) para '{{request()->input('query')}}'</p>
-
-        @foreach ($products as $product)
-            <p>{{$product->name}}</p>
-        @endforeach
+        <div class="search-results">
+        <h2 class="alt-title">Resultados de Búsqueda</h2>
+        <p class="subtitle">{{$products->count()}} resultado(s) para '{{request()->input('query')}}'</p>
+        <div class="list">
+            @foreach ($products as $product)
+            <div class="item">
+                <a href="{{route('shop.product', $product->slug)}}" class="alt-a">{{$product->name}}</a>
+                <p>{{ str_limit($product->description, 180)}}</p>
+            </div>
+            @endforeach
+        </div>
     </div>
+</div>
     
 @endsection

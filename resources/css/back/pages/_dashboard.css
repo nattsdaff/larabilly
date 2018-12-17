@@ -1,38 +1,39 @@
-.dashboard-details .dashboard-title {
-  font-size: 4em; }
+.dashboard-title {
+  font-size: 2em;
+  text-transform: uppercase; }
 
-.dashboard-details .dashboard-subtitle {
+.dashboard-subtitle {
   font-size: 1.2em;
   font-weight: 600;
   text-transform: uppercase;
   display: block; }
 
-.dashboard-details .form-control {
+.dashboard .form-control {
   display: inline;
   width: 15rem; }
 
-.dashboard-details .card {
+.dashboard .card {
   margin: 1rem 0; }
 
-.dashboard-details .fa-user-circle {
+.dashboard .fa-user-circle {
   margin-right: 1rem; }
 
-.dashboard-details .client-name {
+.dashboard .client-name {
   font-size: 1.4em;
   font-weight: 600;
   color: black; }
 
-.dashboard-details .detail {
+.dashboard .detail {
   padding: 10px;
   background: #e9ecef; }
-  .dashboard-details .detail:nth-child(1), .dashboard-details .detail:nth-child(2), .dashboard-details .detail:nth-child(3) {
+  .dashboard .detail:nth-child(1), .dashboard .detail:nth-child(2), .dashboard .detail:nth-child(3) {
     bdashboard-bottom: 1px solid #dddbdb; }
-  .dashboard-details .detail:nth-child(3), .dashboard-details .detail:nth-child(6) {
+  .dashboard .detail:nth-child(3), .dashboard .detail:nth-child(6) {
     bdashboard-right: none; }
-  .dashboard-details .detail p {
+  .dashboard .detail p {
     font-size: 1.2em;
     color: #4c4c4d; }
-    .dashboard-details .detail p span {
+    .dashboard .detail p span {
       font-weight: 600; }
 
 .totales {

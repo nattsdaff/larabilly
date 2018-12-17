@@ -1,0 +1,20 @@
+.search-results{
+    .subtitle{
+        font-weight: $bold;
+    }
+    h2 {
+        margin-bottom: 0;
+    }
+    .list{
+        margin: 3rem auto;
+    }
+    .item{
+        padding: 1rem 0;
+        .name{
+            
+        }
+        a{
+            font-size: 2em;
+        }
+    }
+}

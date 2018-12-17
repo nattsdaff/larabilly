@@ -317,16 +317,16 @@ select {
     margin-bottom: 2rem;
     font-size: 1.4em; }
   .form-item ::-webkit-input-placeholder {
-    color: black;
+    color: #413F3D;
     opacity: 1; }
   .form-item :-ms-input-placeholder {
-    color: black;
+    color: #413F3D;
     opacity: 1; }
   .form-item ::-ms-input-placeholder {
-    color: black;
+    color: #413F3D;
     opacity: 1; }
   .form-item ::placeholder {
-    color: black;
+    color: #413F3D;
     opacity: 1; }
 
 .form-label {
@@ -552,8 +552,9 @@ select {
   -ms-flex-pack: center;
   justify-content: center; }
   #search-modal .search-box {
-    background: white;
-    padding: 3rem 5rem;
+    font-size: 1.2em;
+    background: #B1D398;
+    padding: 3rem 3rem;
     position: relative;
     border-radius: 6px; }
     #search-modal .search-box #close {
@@ -1737,3 +1738,17 @@ section.micuenta {
     justify-content: space-around; }
     .showroom-items section {
       width: 45%; } }
+
+.search-results .subtitle {
+  font-weight: 600; }
+
+.search-results h2 {
+  margin-bottom: 0; }
+
+.search-results .list {
+  margin: 3rem auto; }
+
+.search-results .item {
+  padding: 1rem 0; }
+  .search-results .item a {
+    font-size: 2em; }

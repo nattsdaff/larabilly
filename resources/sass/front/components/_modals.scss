@@ -10,8 +10,9 @@
     align-items: center;
     justify-content: center;
     .search-box {
-        background:rgba(255,255,255,1);
-        padding:3rem 5rem;
+        font-size: 1.2em;
+        background:$verde-claro;
+        padding: 3rem 3rem;
         position: relative;
         border-radius:6px;
         #close {
