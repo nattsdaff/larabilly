@@ -14,12 +14,14 @@
     </nav>
 
     <aside class="shop-categories">
-        <h3 class="shop-categories-title">Categorías</h3>
-        <ul class="categories">
-            @foreach ($categories as $category)
-                <li class="{{ request()->category == $category->slug ? 'active' : '' }}"><a href="{{route('shop.index', ['category' => $category->slug])}}">{{ $category->name }}</a></li>
-            @endforeach
-        </ul>
+        <h3 class="shop-categories-title  toggleCategoriesMenu"><a  href="javascript:void(0)">Categorías</a></h3>
+        <div class="categoriesMenu mobile">
+            <ul class="categories">
+                @foreach ($categories as $category)
+                    <li class="{{ request()->category == $category->slug ? 'active' : '' }}"><a href="{{route('shop.index', ['category' => $category->slug])}}">{{ $category->name }}</a></li>
+                @endforeach
+            </ul>
+        </div>
     </aside>
 
     <main class="shop-list">

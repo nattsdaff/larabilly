@@ -25,6 +25,19 @@ $(document).ready(function () {
             $("body").find(".userMenu").addClass("mobile");
         }
     });
+
+    $(".toggleCategoriesMenu").click(function () {
+        $(".categoriesMenu").fadeToggle(200, function () {
+            $(this).toggleClass("mobile");
+            $(this).css("display", "");
+        });
+    });
+    /* Función para cerrar el menú si se hace click afuera del mismo */
+    $(document).click(function (event) {
+        if (!$(event.target).closest(".categoriesMenu,.toggleCategoriesMenu").length) {
+            $("body").find(".categoriesMenu").addClass("mobile");
+        }
+    });
 });
 
 /* SETTINGS PARA EL SLIDER PRINCIPAL DEL HOME */

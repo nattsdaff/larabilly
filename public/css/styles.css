@@ -1191,10 +1191,23 @@ section.micuenta {
   padding: 2rem 1rem; }
   .shop-categories {
     width: 100%;
-    margin: 5rem 0;
-    padding-left: 5%; }
+    margin: 1rem 0 5rem 0;
+    padding: 5%; }
     .shop-categories-title {
-      margin: 0; }
+      margin: 0;
+      font-size: 1em;
+      padding: 1.6rem;
+      display: block;
+      background-color: #F2F2F2; }
+      .shop-categories-title a {
+        font-weight: bold; }
+      .shop-categories-title:after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f107";
+        font-size: 1.6em;
+        margin-top: -1.8rem;
+        text-align: right;
+        display: block; }
     .shop-categories .categories {
       padding-left: 1.5rem; }
       .shop-categories .categories li {
@@ -1202,6 +1215,8 @@ section.micuenta {
         .shop-categories .categories li.active a {
           color: #73A84D;
           font-weight: 600; }
+  .shop .categoriesMenu.mobile {
+    display: none; }
   .shop-list {
     width: 100%; }
     .shop-list-title {
@@ -1268,10 +1283,30 @@ section.micuenta {
 @media all and (min-width: 768px) {
   .shop {
     padding: 4rem 3rem; }
+    .shop .categoriesMenu.mobile {
+      display: block; }
+    .shop ul.categories {
+      padding-left: 0rem; }
     .shop-categories {
-      width: 25%;
-      padding: 0;
-      margin: 0; }
+      width: 20%;
+      margin: 0;
+      padding: 0; }
+      .shop-categories-title {
+        margin: 0;
+        font-size: 1em;
+        padding: 0rem;
+        display: block;
+        background-color: #Fff; }
+        .shop-categories-title a {
+          font-weight: bold; }
+        .shop-categories-title:after {
+          font-family: "Font Awesome 5 Free";
+          content: "\f107";
+          font-size: 1.6em;
+          margin-top: -1.8rem;
+          text-align: right;
+          display: block;
+          color: white; }
     .shop-list {
       width: 75%;
       position: relative; }
@@ -1487,7 +1522,7 @@ section.micuenta {
 
 .alert {
   text-align: center;
-  color: orange;
+  color: #FF6200;
   font-weight: bold; }
 
 .button {
