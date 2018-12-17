@@ -36,7 +36,7 @@
                                     @csrf
                                     @method('PATCH')
                                     <label for="">Cantidad:  </label>
-                                    <select name="quantity">
+                                    <select name="quantity" id="quantity">
                                         @for ($i = 1; $i <= 5; $i++)
                                             <option value="{{$i}}" {{ $i == $item->qty ? 'selected' : '' }}>{{$i}}</option>
                                         @endfor
