@@ -55,7 +55,8 @@ class CheckoutController extends Controller
                 'tax' => Cart::tax(),
                 'payment' => $request->payment,
                 'total' => Cart::total(),
-                'status' => 'Pendiente'
+                'status' => 'Pendiente',
+                'total_quantity' => Cart::count()
             ]);
 
             // Guardar items del carrito en BD

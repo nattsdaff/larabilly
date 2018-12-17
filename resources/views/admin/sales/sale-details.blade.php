@@ -13,9 +13,6 @@
         <h2 class="order-title">Detalle de la Orden</h2>
         <h3 class="order-date"><span>Orden realizada: </span>{{ $date->format('l d, F Y') }}</h3>
     </div>
-@php
-   // dd($order->user->email)
-@endphp
 
 <div class="row">
     <!-- Listado productos-->
@@ -39,7 +36,7 @@
                             <tr>
                                 <td>{{$item->name}}</td>
                                 <td class="text-right">{{$item->quantity}}</td>
-                                <td class="text-right">x</td>
+                                <td class="text-right" style="color: lightgray;">x</td>
                                 <td class="text-right">${{$item->price}}</td>
                                 <td class="text-right">${{$item->quantity * $item->price}}</td>
                             </tr>
@@ -48,7 +45,7 @@
                             <tfoot class="tfoot-light">
                                     <tr>
                                         <th scope="col"></th>
-                                        <th scope="col" class="text-right">{{$order->count()}}</th>
+                                        <th scope="col" class="text-right">{{$order->total_quantity}}</th>
                                         <th scope="col" class="text-right"></th>
                                         <th scope="col" class="text-right">Subtotal</th>
                                         <th scope="col" class="text-right">${{ $order->subtotal }}</th>

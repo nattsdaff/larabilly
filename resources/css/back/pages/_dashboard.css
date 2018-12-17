@@ -1,0 +1,43 @@
+.dashboard-details .dashboard-title {
+  font-size: 4em; }
+
+.dashboard-details .dashboard-subtitle {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block; }
+
+.dashboard-details .form-control {
+  display: inline;
+  width: 15rem; }
+
+.dashboard-details .card {
+  margin: 1rem 0; }
+
+.dashboard-details .fa-user-circle {
+  margin-right: 1rem; }
+
+.dashboard-details .client-name {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: black; }
+
+.dashboard-details .detail {
+  padding: 10px;
+  background: #e9ecef; }
+  .dashboard-details .detail:nth-child(1), .dashboard-details .detail:nth-child(2), .dashboard-details .detail:nth-child(3) {
+    bdashboard-bottom: 1px solid #dddbdb; }
+  .dashboard-details .detail:nth-child(3), .dashboard-details .detail:nth-child(6) {
+    bdashboard-right: none; }
+  .dashboard-details .detail p {
+    font-size: 1.2em;
+    color: #4c4c4d; }
+    .dashboard-details .detail p span {
+      font-weight: 600; }
+
+.totales {
+  text-align: right;
+  padding: 1rem; }
+  .totales .total {
+    font-weight: bold;
+    font-size: 1.6em; }

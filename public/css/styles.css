@@ -1480,6 +1480,9 @@ section.micuenta {
   .product .product-info {
     min-height: 55rem; } }
 
+.cart-page {
+  padding: 1rem; }
+
 .alert {
   text-align: center;
   color: orange;
@@ -1537,7 +1540,7 @@ section.micuenta {
     -ms-flex-direction: row;
     flex-direction: row;
     background-color: #F7F7F7;
-    padding: 1%;
+    padding: 1rem;
     margin-bottom: 1%; }
     .cart .items .item img, .wishlist .items .item img {
       width: 4em;
@@ -1573,10 +1576,14 @@ section.micuenta {
         margin: 0 0 1rem 0; }
         .cart .items .item .description .cart-quantity select, .wishlist .items .item .description .cart-quantity select {
           width: 7rem;
-          margin-right: 1rem; }
+          margin-right: 1rem;
+          font-size: 1.6em;
+          padding: 0.6rem; }
         .cart .items .item .description .cart-quantity .button .fas, .wishlist .items .item .description .cart-quantity .button .fas {
           font-size: 1.8em;
           color: #73A84D; }
+        .cart .items .item .description .cart-quantity label, .wishlist .items .item .description .cart-quantity label {
+          font-size: 1.4em; }
       .cart .items .item .description .cart-actions, .wishlist .items .item .description .cart-actions {
         margin: 0.5rem 0 1rem;
         display: -webkit-box;
@@ -1598,14 +1605,10 @@ section.micuenta {
             color: #73A84D;
             font-size: 1.6em;
             margin-right: 0.5rem; }
-      .cart .items .item .description form, .wishlist .items .item .description form {
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex; }
-        .cart .items .item .description form button, .wishlist .items .item .description form button {
-          margin: 0 0.2em 0 0.2em;
-          padding: 0;
-          background: none; }
+      .cart .items .item .description form button, .wishlist .items .item .description form button {
+        margin: 0 0.2em 0 0.2em;
+        padding: 0;
+        background: none; }
       .cart .items .item .description .unit-price, .wishlist .items .item .description .unit-price {
         margin-top: 0;
         font-style: italic;

@@ -35,6 +35,7 @@
                                 <form action="{{ route('cart.update', ['id'=> $item->rowId]) }}" method="POST">
                                     @csrf
                                     @method('PATCH')
+                                    <label for="">Cantidad: </label>
                                     <select name="quantity">
                                         @for ($i = 1; $i <= 5; $i++)
                                             <option value="{{$i}}" {{ $i == $item->qty ? 'selected' : '' }}>{{$i}}</option>
