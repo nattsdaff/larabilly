@@ -28,7 +28,7 @@
 
         <!--cierra .bloqueIzq-->
         <div class="bloqueDer">
-            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="javascript:void(0)" id="search"><i class="fas fa-search"></i></a>
             @auth
             <a class="toggleUserMenu" href="javascript:void(0)"><i class="far fa-user"></i></a>
             <div class="userMenu mobile">

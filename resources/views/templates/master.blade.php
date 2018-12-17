@@ -3,7 +3,7 @@
 @include ('partials.head')
 <body>
     @include ('partials.header')
-    
+    @include('partials.search-modal')
     @yield('content')
 
     @include ('partials.footer')

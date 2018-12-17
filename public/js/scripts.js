@@ -92,3 +92,10 @@ $(document).ready(function () {
       ]
     });
 });
+
+$('#search').click(function(){
+    $('#search-modal').show();
+});
+$('#close').click(function(){
+    $('#search-modal').hide();
+});

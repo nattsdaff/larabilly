@@ -20,6 +20,8 @@ Route::put('/profile/{id}','ProfileController@update')->name('profile.update');
 // Rutas del Shop
 Route::get('/shop', 'ShopController@index')->name('shop.index');
 Route::get('/shop/{product}', 'ShopController@show')->name('shop.product');
+//Rutas del Buscador
+Route::get('/search', 'ShopController@search')->name('search');
 
 // Rutas del Carrito
 Route::get('/cart', 'CartController@index')->name('cart.index');
@@ -35,6 +37,7 @@ Route::post('/saveForLater/switchToCart/{product}', 'SaveForLaterController@swit
 // Rutas del Checkout
 Route::get('/checkout', 'CheckoutController@index')->name('checkout.index');
 Route::post('/checkout', 'CheckoutController@store')->name('checkout.store');
+
 
 // Rutas del panel de admin
 Route::prefix('admin')->group(function() {

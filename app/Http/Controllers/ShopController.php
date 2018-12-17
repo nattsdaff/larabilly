@@ -44,4 +44,19 @@ class ShopController extends Controller
         $product = Product::where('slug', $slug)->firstOrFail();
         return view('product', compact('product'));
     }
+
+    public function search(Request $request)
+    {
+        $request->validate([
+            'query' => 'required|min:3'
+        ]);
+
+        $query = $request->input('query');
+
+        $products = Product::where('name', 'like', "%$query%")
+                            ->orWhere('description', 'like', "%$query%")
+                            ->get();
+        
+        return view('search-results', compact('products'));
+    }
 }
