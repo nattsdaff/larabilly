@@ -32,6 +32,7 @@ class ProductController extends Controller
             'price' => 'required|integer|digits_between:1,10',
             'picture' => 'image|max:2000',
             'category_id' => 'required',
+            'featured' => 'numeric|digits_between:0,1',
         ]);
         
         $datos = request()->all();
@@ -41,7 +42,6 @@ class ProductController extends Controller
             $nombre = str_slug(request()->input('name'));
             $nombre = request()->file('picture')->storeAs('products', $nombre.'.'.$ext);
             $nombre = 'storage/'.$nombre;
-
             $datos['picture'] = $nombre;
         }
 
@@ -64,6 +64,7 @@ class ProductController extends Controller
             'description' => 'string|max:500|nullable',
             'price' => 'required|integer|digits_between:1,10',
             'picture' => 'image|max:2000',
+            'featured' => 'numeric|digits_between:0,1',
         ]);
 
         $datos = request()->all();

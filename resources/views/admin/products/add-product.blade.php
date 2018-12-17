@@ -59,7 +59,7 @@
             <div class="form-group row">
                 <label for="category_id" class="col-sm-2 col-form-label">Categoría</label>
                 <div class="col-sm-10">
-                    <select name="category_id" id="category_id" class="form-control{{ $errors->has('category_id') ? ' is-invalid' : '' }}">
+                    <select name="category_id" id="category_id" class="form-control{{ $errors->has('category_id') ? ' is-invalid' : '' }}" required>
                         <option value="" disabled {{ (!old('category_id')) ? "selected" : "" }}>Elegir Categoría</option>
                         @foreach ($categories as $category)
                         <option value="{{$category->id}}" {{ (old('category_id') == $category->id) ? "selected" : "" }}>{{$category->name}}</option>
@@ -69,6 +69,10 @@
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('category_id') }}</strong>
                         </span>
+                    @else
+                        <div class="invalid-feedback">
+                            <strong>Campo Obligatorio</strong>
+                        </div>
                     @endif
                 </div>
             </div>
@@ -81,6 +85,19 @@
                             <strong>{{ $errors->first('picture') }}</strong>
                         </span>
                     @endif
+                </div>
+            </div>
+            <div class="form-group row">
+                <span class="col-sm-2 col-form-label">Producto Destacado</span>
+                <div class="col-sm-10">
+                    <div class="form-check form-check-inline" style="margin-top:5px;">
+                        <input class="form-check-input" type="radio" name="featured" id="featuredYes" value="1" {{ old('featured') ? 'checked="checked"' : '' }}>
+                        <label class="form-check-label" for="featuredYes">Sí</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="featured" id="featuredNo" value="0" {{ old('featured') ? '' : 'checked="checked"' }}>
+                        <label class="form-check-label" for="featuredNo">No</label>
+                    </div>
                 </div>
             </div>
             <div class="form-group row">

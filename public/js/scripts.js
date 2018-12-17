@@ -93,9 +93,27 @@ $(document).ready(function () {
     });
 });
 
+/* Modal para el buscador */
 $('#search').click(function(){
     $('#search-modal').show();
 });
 $('#close').click(function(){
     $('#search-modal').hide();
+});
+
+/* Aviso para actualizar cantidad del carrito */
+$(function(){
+    var href = '';
+    $('#quantity').change(function(){
+        href = $('#submit').attr('href');
+        $('#submit').attr('href', 'javascript:void(0)');
+    });
+    $('#submit').click(function(){
+        if($(this).attr('href') == 'javascript:void(0)') {
+            var question = window.confirm('No ha actualizado la cantidad de items en su carrito, ¿desea continuar de todas formas?');
+            if (question) {
+                window.location.href = href;
+            }
+        }
+    });
 });

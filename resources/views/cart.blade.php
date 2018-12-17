@@ -69,7 +69,7 @@
                 <div class="total">Total: ${{ Cart::total() }}</div>
             
                 <div class="botones-compra">
-                    <a href="{{route('checkout.index')}}" class="submit-btn verde">Iniciar Compra</a>
+                    <a href="{{route('checkout.index')}}" id="submit" class="submit-btn verde">Iniciar Compra</a>
                     <a href="{{route('shop.index')}}" class="alt-a"><i class="fas fa-arrow-left"></i> Seguir comprando</a>
                 </div>
             </section>

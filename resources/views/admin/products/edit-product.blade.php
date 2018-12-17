@@ -60,7 +60,7 @@
             <div class="form-group row">
                 <label for="price" class="col-sm-2 col-form-label">Foto Actual:</label>
                 <div class="col-sm-10">
-                    <img src="/storage/{{$product->picture}}" alt="" class="img-fluid">
+                    <img src="{{ asset($product->picture) }}" alt="" class="img-fluid border" style="max-width:100px;">
                 </div>
             </div>
             <div class="form-group row">
@@ -72,6 +72,19 @@
                             <strong>{{ $errors->first('picture') }}</strong>
                         </span>
                     @endif
+                </div>
+            </div>
+            <div class="form-group row">
+                <span class="col-sm-2 col-form-label">Producto Destacado</span>
+                <div class="col-sm-10">
+                    <div class="form-check form-check-inline" style="margin-top:5px;">
+                        <input class="form-check-input" type="radio" name="featured" id="featuredYes" value="1" {{ old('featured',  $product->featured) ? 'checked="checked"' : '' }}>
+                        <label class="form-check-label" for="featuredYes">Sí</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="featured" id="featuredNo" value="0" {{ old('featured',  $product->featured) ? '' : 'checked="checked"' }}>
+                        <label class="form-check-label" for="featuredNo">No</label>
+                    </div>
                 </div>
             </div>
             <div class="form-group row">
