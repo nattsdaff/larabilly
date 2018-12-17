@@ -746,9 +746,10 @@ footer {
       width: 14px;
       height: 14px;
       border-radius: 50%;
-      background: #b1d398;
+      background: #FF6200;
       color: #ffffff;
       font-size: 9px;
+      font-weight: 600;
       position: absolute;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1512,6 +1513,8 @@ section.micuenta {
     justify-content: space-between; }
     .cart .producto-subtotal p {
       font-size: 1.4em; }
+  .cart .alt-title {
+    margin-bottom: 0; }
 
 /* .cart */
 .wishlist {
@@ -1568,23 +1571,28 @@ section.micuenta {
         justify-content: space-between; }
         .cart .items .item .description .name-price .name, .wishlist .items .item .description .name-price .name {
           margin: 0;
-          font-size: 1.5em; }
+          font-size: 1.8em;
+          margin-bottom: 1rem; }
         .cart .items .item .description .name-price .price, .wishlist .items .item .description .name-price .price {
           margin: 0;
-          font-size: 1.4em;
+          font-size: 1.8em;
           font-weight: bold; }
       .cart .items .item .description .cart-quantity, .wishlist .items .item .description .cart-quantity {
         margin: 0 0 1rem 0; }
         .cart .items .item .description .cart-quantity select, .wishlist .items .item .description .cart-quantity select {
           width: 7rem;
-          margin-right: 1rem;
+          margin-right: 0.4rem;
           font-size: 1.6em;
           padding: 0.6rem; }
-        .cart .items .item .description .cart-quantity .button .fas, .wishlist .items .item .description .cart-quantity .button .fas {
-          font-size: 1.8em;
-          color: #73A84D; }
+        .cart .items .item .description .cart-quantity .button, .wishlist .items .item .description .cart-quantity .button {
+          font-size: 1.2em;
+          color: #FF6200; }
+          .cart .items .item .description .cart-quantity .button .fas, .wishlist .items .item .description .cart-quantity .button .fas {
+            font-size: 1.4em;
+            margin-right: 0.5rem; }
         .cart .items .item .description .cart-quantity label, .wishlist .items .item .description .cart-quantity label {
-          font-size: 1.4em; }
+          font-size: 1.4em;
+          font-weight: bold; }
       .cart .items .item .description .cart-actions, .wishlist .items .item .description .cart-actions {
         margin: 0.5rem 0 1rem;
         display: -webkit-box;
@@ -1601,9 +1609,9 @@ section.micuenta {
           font-size: 1.2em;
           -webkit-box-align: center;
           -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+          color: #73A84D; }
           .cart .items .item .description .cart-actions .button .far, .wishlist .items .item .description .cart-actions .button .far {
-            color: #73A84D;
             font-size: 1.6em;
             margin-right: 0.5rem; }
       .cart .items .item .description form button, .wishlist .items .item .description form button {
@@ -1614,7 +1622,8 @@ section.micuenta {
         margin-top: 0;
         font-style: italic;
         font-size: 1.2em;
-        letter-spacing: 0.1em; }
+        letter-spacing: 0.1em;
+        color: #707070; }
 
 .totales {
   display: -webkit-box;
@@ -1678,13 +1687,13 @@ section.micuenta {
     width: 15rem;
     height: auto; }
   .cart .items .item .description .name-price .name, .cart .items .item .description .name-price .price, .wishlist .items .item .description .name-price .name, .wishlist .items .item .description .name-price .price {
-    font-size: 1.8em; }
+    font-size: 2em; }
   .cart .items .item .description .unit-price, .wishlist .items .item .description .unit-price {
-    font-size: 1.4em; }
+    font-size: 1.2em; }
   .cart .items .item .description .cart-actions, .wishlist .items .item .description .cart-actions {
     margin: 2rem 0; }
     .cart .items .item .description .cart-actions .button, .wishlist .items .item .description .cart-actions .button {
-      font-size: 1.4em; }
+      font-size: 1.2em; }
     .cart .items .item .description .cart-actions form:first-child, .wishlist .items .item .description .cart-actions form:first-child {
       margin-right: 4rem; } }
 

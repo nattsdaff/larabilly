@@ -13,10 +13,10 @@
 
             @if (Cart::count() > 0)
 
-            <div class="producto-subtotal">
+            {{-- <div class="producto-subtotal">
                 <p>PRODUCTO</p>
                 <p>SUBTOTAL</p>
-            </div>
+            </div> --}}
 
             <div class="items">
                 @foreach (Cart::content() as $item)
@@ -35,13 +35,14 @@
                                 <form action="{{ route('cart.update', ['id'=> $item->rowId]) }}" method="POST">
                                     @csrf
                                     @method('PATCH')
-                                    <label for="">Cantidad: </label>
+                                    <label for="">Cantidad:  </label>
                                     <select name="quantity">
                                         @for ($i = 1; $i <= 5; $i++)
                                             <option value="{{$i}}" {{ $i == $item->qty ? 'selected' : '' }}>{{$i}}</option>
                                         @endfor
                                     </select>
-                                    <button type="submit" class="button"><i class="fas fa-redo"></i></button>
+                                    <button type="submit" alt="Actualizar cantidad" class="button"><i class="fas fa-redo"></i>Actualizar
+                                </button>
                                 </form>
                             </div>
                             

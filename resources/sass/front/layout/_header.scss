@@ -58,9 +58,10 @@
                 width: 14px;
                 height: 14px;
                 border-radius: 50%;
-                background: rgb(177, 211, 152);
+                background:$orange;
                 color: #ffffff;
                 font-size: 9px;
+                font-weight: $bold;
                 position: absolute;
                 display: flex;
                 justify-content: center;
