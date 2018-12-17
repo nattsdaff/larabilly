@@ -35,7 +35,6 @@
                     <button type="submit" class="btn btn-success" value="submit">Modificar mis datos</button>
                 </form>
             </div>
-            
         </div> 
         
     </div>            
