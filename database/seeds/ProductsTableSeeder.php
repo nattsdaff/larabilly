@@ -16,7 +16,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Catre Napper',
                 'slug' => 'catre-napper',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
                 'price' => '13000',
                 'picture' => 'assets/img/deseados/deseados-3.jpg',
                 'category_id' => '4',
@@ -25,7 +25,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Sillón Byron',
                 'slug' => 'sillon-byron',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Esta exquisita reproducción del clásico icónico moderno es ideal para los amantes de lo retro. Admire la estética y aprecie cómo sin esfuerzo la forma y el flujo se combinan en igual proporción. Un diseño creado por Mobili donde menos es más, terminado con los más finos detalles y pensado para múltiples espacios. Desde el living de tu hogar, hasta una oficina moderna.',
                 'price' => '8500',
                 'picture' => 'assets/img/deseados/deseados-4.jpg',
                 'category_id' => '6',
@@ -34,7 +34,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banquito Eco',
                 'slug' => 'banquito-eco',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
                 'price' => '5350',
                 'picture' => 'assets/img/deseados/deseados-5.jpg',
                 'category_id' => '5',
@@ -43,7 +43,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'New York Violet Dining Arm Chair',
                 'slug' => 'new-york-violet-dining-arm-chair',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Este clásico del diseño ha sido utilizado en cafeterías y cocinas retro de todo el mundo, pero es combinable con multitud de estilos y tendencias decorativas. En la década de los 70 se utilizaban a menudo en fábricas, oficinas u hospitales. Hoy se ha impuesto como un diseño de moda ideal para multiples ambientes.',
                 'price' => '10200',
                 'picture' => 'assets/img/deseados/deseados-2.jpg',
                 'category_id' => '3',
@@ -52,7 +52,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'St. Charles Desk',
                 'slug' => 'st-charles-desk',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
                 'price' => '11750',
                 'picture' => 'assets/img/deseados/deseados-1.jpg',
                 'category_id' => '2',
@@ -61,7 +61,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Sillón Amore Mio',
                 'slug' => 'sillon-amore-mio',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Esta exquisita reproducción del clásico icónico moderno es ideal para los amantes de lo retro. Admire la estética y aprecie cómo sin esfuerzo la forma y el flujo se combinan en igual proporción. Un diseño creado por Mobili donde menos es más, terminado con los más finos detalles y pensado para múltiples espacios. Desde el living de tu hogar, hasta una oficina moderna.',
                 'price' => '16380',
                 'picture' => 'assets/img/deseados/deseados-6.jpg',
                 'category_id' => '6',
@@ -70,7 +70,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Sillón Begonia Brown',
                 'slug' => 'sillon-begonia-brown',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Esta exquisita reproducción del clásico icónico moderno es ideal para los amantes de lo retro. Admire la estética y aprecie cómo sin esfuerzo la forma y el flujo se combinan en igual proporción. Un diseño creado por Mobili donde menos es más, terminado con los más finos detalles y pensado para múltiples espacios. Desde el living de tu hogar, hasta una oficina moderna.',
                 'price' => '18990',
                 'picture' => 'assets/img/deseados/sillones-2.jpg',
                 'category_id' => '6',
@@ -79,7 +79,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Sillón Begonia Gray',
                 'slug' => 'sillon-begonia-gray',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Esta exquisita reproducción del clásico icónico moderno es ideal para los amantes de lo retro. Admire la estética y aprecie cómo sin esfuerzo la forma y el flujo se combinan en igual proporción. Un diseño creado por Mobili donde menos es más, terminado con los más finos detalles y pensado para múltiples espacios. Desde el living de tu hogar, hasta una oficina moderna.',
                 'price' => '18990',
                 'picture' => 'assets/img/deseados/sillones-3.jpg',
                 'category_id' => '6',
@@ -88,7 +88,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Sillón Fiona',
                 'slug' => 'sillon-fiona',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Esta exquisita reproducción del clásico icónico moderno es ideal para los amantes de lo retro. Admire la estética y aprecie cómo sin esfuerzo la forma y el flujo se combinan en igual proporción. Un diseño creado por Mobili donde menos es más, terminado con los más finos detalles y pensado para múltiples espacios. Desde el living de tu hogar, hasta una oficina moderna.',
                 'price' => '23990',
                 'picture' => 'assets/img/deseados/sillones-4.jpg',
                 'category_id' => '6',
@@ -97,7 +97,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Sillón Marina Orange',
                 'slug' => 'sillon-marina-orange',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Esta exquisita reproducción del clásico icónico moderno es ideal para los amantes de lo retro. Admire la estética y aprecie cómo sin esfuerzo la forma y el flujo se combinan en igual proporción. Un diseño creado por Mobili donde menos es más, terminado con los más finos detalles y pensado para múltiples espacios. Desde el living de tu hogar, hasta una oficina moderna.',
                 'price' => '32490',
                 'picture' => 'assets/img/deseados/sillones-5.jpg',
                 'category_id' => '6',
@@ -106,7 +106,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Sillón Rihanna Gray',
                 'slug' => 'sillon-rihanna-gray',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Esta exquisita reproducción del clásico icónico moderno es ideal para los amantes de lo retro. Admire la estética y aprecie cómo sin esfuerzo la forma y el flujo se combinan en igual proporción. Un diseño creado por Mobili donde menos es más, terminado con los más finos detalles y pensado para múltiples espacios. Desde el living de tu hogar, hasta una oficina moderna.',
                 'price' => '21990',
                 'picture' => 'assets/img/deseados/sillones-6.jpg',
                 'category_id' => '6',
@@ -115,7 +115,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Sillón Rihanna Blue',
                 'slug' => 'sillon-rihanna-blue',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Esta exquisita reproducción del clásico icónico moderno es ideal para los amantes de lo retro. Admire la estética y aprecie cómo sin esfuerzo la forma y el flujo se combinan en igual proporción. Un diseño creado por Mobili donde menos es más, terminado con los más finos detalles y pensado para múltiples espacios. Desde el living de tu hogar, hasta una oficina moderna.',
                 'price' => '21990',
                 'picture' => 'assets/img/deseados/sillones-7.jpg',
                 'category_id' => '6',
@@ -124,7 +124,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Sillón Rihanna White',
                 'slug' => 'sillon-rihanna-white',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Esta exquisita reproducción del clásico icónico moderno es ideal para los amantes de lo retro. Admire la estética y aprecie cómo sin esfuerzo la forma y el flujo se combinan en igual proporción. Un diseño creado por Mobili donde menos es más, terminado con los más finos detalles y pensado para múltiples espacios. Desde el living de tu hogar, hasta una oficina moderna.',
                 'price' => '21990',
                 'picture' => 'assets/img/deseados/sillones-8.jpg',
                 'category_id' => '6',
@@ -133,7 +133,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Sillón Sakura White',
                 'slug' => 'sillon-sakura-white',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Esta exquisita reproducción del clásico icónico moderno es ideal para los amantes de lo retro. Admire la estética y aprecie cómo sin esfuerzo la forma y el flujo se combinan en igual proporción. Un diseño creado por Mobili donde menos es más, terminado con los más finos detalles y pensado para múltiples espacios. Desde el living de tu hogar, hasta una oficina moderna.',
                 'price' => '18990',
                 'picture' => 'assets/img/deseados/sillones-9.jpg',
                 'category_id' => '6',
@@ -142,7 +142,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Mesa América',
                 'slug' => 'mesa-america',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Diseño y calidad en una marca: Basement. Impone el límite de la moda con sus colecciones, ofreciendo siempre a sus clientes lo último en elegancia urbana. Fresco, moderno y con acabados únicos, lo mejor en tendencias lo encontrás acá.',
                 'price' => '4200',
                 'picture' => 'assets/img/deseados/mesas-1.jpg',
                 'category_id' => '1',
@@ -151,7 +151,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Mesa Florencia',
                 'slug' => 'mesa-florencia',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Diseño y calidad en una marca: Basement. Impone el límite de la moda con sus colecciones, ofreciendo siempre a sus clientes lo último en elegancia urbana. Fresco, moderno y con acabados únicos, lo mejor en tendencias lo encontrás acá.',
                 'price' => '6100',
                 'picture' => 'assets/img/deseados/mesas-2.jpg',
                 'category_id' => '1',
@@ -160,7 +160,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Mesa Kretes',
                 'slug' => 'mesa-kretes',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Diseño y calidad en una marca: Basement. Impone el límite de la moda con sus colecciones, ofreciendo siempre a sus clientes lo último en elegancia urbana. Fresco, moderno y con acabados únicos, lo mejor en tendencias lo encontrás acá.',
                 'price' => '14440',
                 'picture' => 'assets/img/deseados/mesas-3.jpg',
                 'category_id' => '1',
@@ -169,7 +169,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Mesa One',
                 'slug' => 'mesa-one',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Diseño y calidad en una marca: Basement. Impone el límite de la moda con sus colecciones, ofreciendo siempre a sus clientes lo último en elegancia urbana. Fresco, moderno y con acabados únicos, lo mejor en tendencias lo encontrás acá.',
                 'price' => '7200',
                 'picture' => 'assets/img/deseados/mesas-4.jpg',
                 'category_id' => '1',
@@ -178,7 +178,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Mesa Marbella',
                 'slug' => 'mesa-marbella',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Diseño y calidad en una marca: Basement. Impone el límite de la moda con sus colecciones, ofreciendo siempre a sus clientes lo último en elegancia urbana. Fresco, moderno y con acabados únicos, lo mejor en tendencias lo encontrás acá.',
                 'price' => '9200',
                 'picture' => 'assets/img/deseados/mesas-5.jpg',
                 'category_id' => '1',
@@ -187,7 +187,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Mesa Mérida',
                 'slug' => 'mesa-merida',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Diseño y calidad en una marca: Basement. Impone el límite de la moda con sus colecciones, ofreciendo siempre a sus clientes lo último en elegancia urbana. Fresco, moderno y con acabados únicos, lo mejor en tendencias lo encontrás acá.',
                 'price' => '20600',
                 'picture' => 'assets/img/deseados/mesas-6.jpg',
                 'category_id' => '1',
@@ -196,7 +196,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Mesa Mirage',
                 'slug' => 'mesa-mirage',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Diseño y calidad en una marca: Basement. Impone el límite de la moda con sus colecciones, ofreciendo siempre a sus clientes lo último en elegancia urbana. Fresco, moderno y con acabados únicos, lo mejor en tendencias lo encontrás acá.',
                 'price' => '2370',
                 'picture' => 'assets/img/deseados/mesas-7.jpg',
                 'category_id' => '1',
@@ -205,7 +205,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Mesa 2002',
                 'slug' => 'mesa-2002',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Diseño y calidad en una marca: Basement. Impone el límite de la moda con sus colecciones, ofreciendo siempre a sus clientes lo último en elegancia urbana. Fresco, moderno y con acabados únicos, lo mejor en tendencias lo encontrás acá.',
                 'price' => '2350',
                 'picture' => 'assets/img/deseados/mesas-8.jpg',
                 'category_id' => '1',
@@ -214,7 +214,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Mesa Arrow',
                 'slug' => 'mesa-arrow',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Diseño y calidad en una marca: Basement. Impone el límite de la moda con sus colecciones, ofreciendo siempre a sus clientes lo último en elegancia urbana. Fresco, moderno y con acabados únicos, lo mejor en tendencias lo encontrás acá.',
                 'price' => '4500',
                 'picture' => 'assets/img/deseados/mesas-9.jpg',
                 'category_id' => '1',
@@ -223,7 +223,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Mesa Vigor',
                 'slug' => 'mesa-vigor',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Diseño y calidad en una marca: Basement. Impone el límite de la moda con sus colecciones, ofreciendo siempre a sus clientes lo último en elegancia urbana. Fresco, moderno y con acabados únicos, lo mejor en tendencias lo encontrás acá.',
                 'price' => '7260',
                 'picture' => 'assets/img/deseados/mesas-10.jpg',
                 'category_id' => '1',
@@ -232,7 +232,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Escritorio 3024',
                 'slug' => 'escritorio-3024',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
                 'price' => '4250',
                 'picture' => 'assets/img/deseados/escritorios-1.jpg',
                 'category_id' => '2',
@@ -241,7 +241,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Escritorio 3025 White',
                 'slug' => 'escritorio-3025-white',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
                 'price' => '4760',
                 'picture' => 'assets/img/deseados/escritorios-2.jpg',
                 'category_id' => '2',
@@ -250,7 +250,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Escritorio 3025 WH',
                 'slug' => 'escritorio-3025-wh',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
                 'price' => '4760',
                 'picture' => 'assets/img/deseados/escritorios-3.jpg',
                 'category_id' => '2',
@@ -259,7 +259,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Escritorio 3042',
                 'slug' => 'escritorio-3042',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
                 'price' => '2650',
                 'picture' => 'assets/img/deseados/escritorios-4.jpg',
                 'category_id' => '2',
@@ -268,7 +268,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Escritorio 3042 WH',
                 'slug' => 'escritorio-3042-wh',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
                 'price' => '2650',
                 'picture' => 'assets/img/deseados/escritorios-5.jpg',
                 'category_id' => '2',
@@ -277,7 +277,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Escritorio 3043 WH',
                 'slug' => 'escritorio-3043-wh',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
                 'price' => '3870',
                 'picture' => 'assets/img/deseados/escritorios-6.jpg',
                 'category_id' => '2',
@@ -286,7 +286,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Escritorio SC109',
                 'slug' => 'escritorio-sc109',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
                 'price' => '2400',
                 'picture' => 'assets/img/deseados/escritorios-7.jpg',
                 'category_id' => '2',
@@ -295,7 +295,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Escritorio SC1250',
                 'slug' => 'escritorio-sc1250',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
                 'price' => '2980',
                 'picture' => 'assets/img/deseados/escritorios-8.jpg',
                 'category_id' => '2',
@@ -304,7 +304,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Escritorio Vintage',
                 'slug' => 'escritorio-vintage',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
                 'price' => '12890',
                 'picture' => 'assets/img/deseados/escritorios-9.jpg',
                 'category_id' => '2',
@@ -313,7 +313,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Silla Arrow White',
                 'slug' => 'silla-arrow-white',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Este clásico del diseño ha sido utilizado en cafeterías y cocinas retro de todo el mundo, pero es combinable con multitud de estilos y tendencias decorativas. En la década de los 70 se utilizaban a menudo en fábricas, oficinas u hospitales. Hoy se ha impuesto como un diseño de moda ideal para multiples ambientes.',
                 'price' => '3150',
                 'picture' => 'assets/img/deseados/sillas-1.jpg',
                 'category_id' => '3',
@@ -322,7 +322,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Silla Houston Classic',
                 'slug' => 'silla-houston-classic',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Este clásico del diseño ha sido utilizado en cafeterías y cocinas retro de todo el mundo, pero es combinable con multitud de estilos y tendencias decorativas. En la década de los 70 se utilizaban a menudo en fábricas, oficinas u hospitales. Hoy se ha impuesto como un diseño de moda ideal para multiples ambientes.',
                 'price' => '5490',
                 'picture' => 'assets/img/deseados/sillas-2.jpg',
                 'category_id' => '3',
@@ -331,7 +331,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Silla Houston Brown',
                 'slug' => 'silla-houston-brown',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Este clásico del diseño ha sido utilizado en cafeterías y cocinas retro de todo el mundo, pero es combinable con multitud de estilos y tendencias decorativas. En la década de los 70 se utilizaban a menudo en fábricas, oficinas u hospitales. Hoy se ha impuesto como un diseño de moda ideal para multiples ambientes.',
                 'price' => '5490',
                 'picture' => 'assets/img/deseados/sillas-3.jpg',
                 'category_id' => '3',
@@ -340,7 +340,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Silla Linear',
                 'slug' => 'silla-linear',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Este clásico del diseño ha sido utilizado en cafeterías y cocinas retro de todo el mundo, pero es combinable con multitud de estilos y tendencias decorativas. En la década de los 70 se utilizaban a menudo en fábricas, oficinas u hospitales. Hoy se ha impuesto como un diseño de moda ideal para multiples ambientes.',
                 'price' => '3690',
                 'picture' => 'assets/img/deseados/sillas-4.jpg',
                 'category_id' => '3',
@@ -349,7 +349,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Silla Linear White',
                 'slug' => 'silla-linear-white',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Este clásico del diseño ha sido utilizado en cafeterías y cocinas retro de todo el mundo, pero es combinable con multitud de estilos y tendencias decorativas. En la década de los 70 se utilizaban a menudo en fábricas, oficinas u hospitales. Hoy se ha impuesto como un diseño de moda ideal para multiples ambientes.',
                 'price' => '3690',
                 'picture' => 'assets/img/deseados/sillas-5.jpg',
                 'category_id' => '3',
@@ -358,7 +358,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Silla Positano Gray',
                 'slug' => 'silla-positano-gray',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Este clásico del diseño ha sido utilizado en cafeterías y cocinas retro de todo el mundo, pero es combinable con multitud de estilos y tendencias decorativas. En la década de los 70 se utilizaban a menudo en fábricas, oficinas u hospitales. Hoy se ha impuesto como un diseño de moda ideal para multiples ambientes.',
                 'price' => '5460',
                 'picture' => 'assets/img/deseados/sillas-6.jpg',
                 'category_id' => '3',
@@ -367,7 +367,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Silla Positano',
                 'slug' => 'silla-positano',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Este clásico del diseño ha sido utilizado en cafeterías y cocinas retro de todo el mundo, pero es combinable con multitud de estilos y tendencias decorativas. En la década de los 70 se utilizaban a menudo en fábricas, oficinas u hospitales. Hoy se ha impuesto como un diseño de moda ideal para multiples ambientes.',
                 'price' => '5460',
                 'picture' => 'assets/img/deseados/sillas-7.jpg',
                 'category_id' => '3',
@@ -376,7 +376,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Silla Verona',
                 'slug' => 'silla-verona',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Este clásico del diseño ha sido utilizado en cafeterías y cocinas retro de todo el mundo, pero es combinable con multitud de estilos y tendencias decorativas. En la década de los 70 se utilizaban a menudo en fábricas, oficinas u hospitales. Hoy se ha impuesto como un diseño de moda ideal para multiples ambientes.',
                 'price' => '5440',
                 'picture' => 'assets/img/deseados/sillas-8.jpg',
                 'category_id' => '3',
@@ -385,7 +385,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Silla Verona Brown',
                 'slug' => 'silla-verona-brown',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Este clásico del diseño ha sido utilizado en cafeterías y cocinas retro de todo el mundo, pero es combinable con multitud de estilos y tendencias decorativas. En la década de los 70 se utilizaban a menudo en fábricas, oficinas u hospitales. Hoy se ha impuesto como un diseño de moda ideal para multiples ambientes.',
                 'price' => '5440',
                 'picture' => 'assets/img/deseados/sillas-9.jpg',
                 'category_id' => '3',
@@ -394,7 +394,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Cama América',
                 'slug' => 'cama-america',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
                 'price' => '24400',
                 'picture' => 'assets/img/deseados/camas-1.jpg',
                 'category_id' => '4',
@@ -403,7 +403,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Cama Bel Bed',
                 'slug' => 'cama-bel-bed',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
                 'price' => '16500',
                 'picture' => 'assets/img/deseados/camas-2.jpg',
                 'category_id' => '4',
@@ -412,7 +412,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Cama Belmo',
                 'slug' => 'cama-belmo',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
                 'price' => '24000',
                 'picture' => 'assets/img/deseados/camas-3.jpg',
                 'category_id' => '4',
@@ -421,7 +421,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Cama Europea Balance',
                 'slug' => 'cama-europea-balance',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
                 'price' => '28900',
                 'picture' => 'assets/img/deseados/camas-4.jpg',
                 'category_id' => '4',
@@ -430,7 +430,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Cama Europea Essence',
                 'slug' => 'cama-europea-essence',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
                 'price' => '21000',
                 'picture' => 'assets/img/deseados/camas-5.jpg',
                 'category_id' => '4',
@@ -439,7 +439,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Cama Juvenil',
                 'slug' => 'cama-juvenil',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
                 'price' => '18400',
                 'picture' => 'assets/img/deseados/camas-6.jpg',
                 'category_id' => '4',
@@ -448,7 +448,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Cama Nido',
                 'slug' => 'cama-nido',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
                 'price' => '25800',
                 'picture' => 'assets/img/deseados/camas-7.jpg',
                 'category_id' => '4',
@@ -457,7 +457,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Cama Simple Modern',
                 'slug' => 'cama-simple-modern',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
                 'price' => '22000',
                 'picture' => 'assets/img/deseados/camas-8.jpg',
                 'category_id' => '4',
@@ -466,7 +466,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Cama Torino',
                 'slug' => 'cama-torino',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
                 'price' => '27100',
                 'picture' => 'assets/img/deseados/camas-9.jpg',
                 'category_id' => '4',
@@ -475,7 +475,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banco Bantu',
                 'slug' => 'banco-bantu',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
                 'price' => '990',
                 'picture' => 'assets/img/deseados/bancos-1.jpg',
                 'category_id' => '5',
@@ -484,7 +484,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banco Bantu White',
                 'slug' => 'banco-bantu-white',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
                 'price' => '990',
                 'picture' => 'assets/img/deseados/bancos-2.jpg',
                 'category_id' => '5',
@@ -493,7 +493,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banco Cult',
                 'slug' => 'banco-cult',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
                 'price' => '1600',
                 'picture' => 'assets/img/deseados/bancos-4.jpg',
                 'category_id' => '5',
@@ -502,7 +502,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banco Lismaster',
                 'slug' => 'banco-lismaster',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
                 'price' => '790',
                 'picture' => 'assets/img/deseados/bancos-5.jpg',
                 'category_id' => '5',
@@ -511,7 +511,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banco Lumpur',
                 'slug' => 'banco-lumpur',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
                 'price' => '1200',
                 'picture' => 'assets/img/deseados/bancos-6.jpg',
                 'category_id' => '5',
@@ -520,7 +520,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banco María',
                 'slug' => 'banco-maria',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
                 'price' => '1200',
                 'picture' => 'assets/img/deseados/bancos-7.jpg',
                 'category_id' => '5',
@@ -529,7 +529,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banco Petit',
                 'slug' => 'banco-petit',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
                 'price' => '890',
                 'picture' => 'assets/img/deseados/bancos-8.jpg',
                 'category_id' => '5',
@@ -538,7 +538,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banco Torino',
                 'slug' => 'banco-torino',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
                 'price' => '1550',
                 'picture' => 'assets/img/deseados/bancos-9.jpg',
                 'category_id' => '5',
@@ -547,7 +547,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banco Classic Bantu',
                 'slug' => 'banco-classic-bantu',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit doloremque reiciendis ab, minus odio culpa excepturi incidunt assumenda beatae, rem dolorum nobis odit asperiores recusandae. Nihil fugit unde vel.',
+                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
                 'price' => '1200',
                 'picture' => 'assets/img/deseados/bancos-3.jpg',
                 'category_id' => '5',
