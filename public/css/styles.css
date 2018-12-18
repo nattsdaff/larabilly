@@ -365,7 +365,8 @@ select {
     height: 25px;
     top: 0;
     left: 0;
-    background: #F2F2F2; }
+    background: #fff;
+    border: 1px solid #707070; }
     .form-checkbox label:after {
       /* El estado normal de la caja sin click */
       opacity: 0;
@@ -431,7 +432,10 @@ select {
 
 @media all and (min-width: 768px) {
   .submit-btn {
-    width: 300px; } }
+    width: 300px; }
+  .form-checkbox label {
+    background: #fff;
+    border: 1px solid #707070; } }
 
 @media all and (min-width: 991px) {
   .form-group {
@@ -1182,6 +1186,8 @@ footer {
       margin: 0rem auto; }
     .micuenta .container .content {
       margin-top: 10%; }
+    .micuenta .container .container-micuenta .info p {
+      text-align: left; }
 
 .register .container {
   padding: 1rem; }

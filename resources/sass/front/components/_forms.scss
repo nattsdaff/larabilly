@@ -127,7 +127,8 @@
       height: 25px;
       top: 0;
       left: 0;
-      background: $gris-claro;
+      background: #fff;
+      border: 1px solid $gris-medio;
       &:after{
           /* El estado normal de la caja sin click */
         opacity: 0;
@@ -207,6 +208,11 @@ input[type=checkbox] {
 @media all and (min-width:768px){
   .submit-btn{
     width: 300px;
+  }
+  .form-checkbox label{
+    background: #fff;
+    border: 1px solid $gris-medio;
+
   }
 }
 @media all and (min-width:991px){
