@@ -1246,13 +1246,8 @@ footer {
       background-color: #F2F2F2; }
       .shop-categories-title a {
         font-weight: bold; }
-      .shop-categories-title:after {
-        font-family: "Font Awesome 5 Free";
-        content: "\f107";
-        font-size: 1.6em;
-        margin-top: -1.8rem;
-        text-align: right;
-        display: block; }
+        .shop-categories-title a .fa-angle-down {
+          margin-left: 22rem; }
     .shop-categories .categories {
       padding-left: 1.5rem; }
       .shop-categories .categories li {
@@ -1326,57 +1321,65 @@ footer {
     max-width: 25rem; } }
 
 @media all and (min-width: 768px) {
-  .shop ul.categories {
-    padding-left: 0rem; }
-  .shop-categories {
-    width: 20%;
-    margin: 0;
-    padding: 0; }
-    .shop-categories-title {
-      margin: 0;
-      font-size: 1.2em;
-      padding: 0rem;
-      display: block;
-      background-color: #Fff;
-      padding-bottom: 1rem; }
-      .shop-categories-title:after {
-        font-family: "Font Awesome 5 Free";
-        content: "\f107";
-        font-size: 1.6em;
-        margin-top: -2rem;
-        margin-right: 11rem;
-        text-align: right;
-        display: block; }
-  .shop-list {
-    width: 75%;
-    position: relative; }
-    .shop-list-title {
-      text-align: left;
-      margin-bottom: 5rem; }
-    .shop-list .byPrice {
-      position: absolute;
-      top: 1rem;
-      right: 0;
-      font-size: 1.4em; }
-      .shop-list .byPrice span {
-        display: inline-block;
-        margin-right: 0.5rem; }
-      .shop-list .byPrice a:first-of-type::after {
-        margin: 0 0.5rem; }
-    .shop-list-items {
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
-      .shop-list-items .item {
-        max-width: 20rem; }
-        .shop-list-items .item .name {
-          font-size: 0.8em; } }
+  .shop {
+    padding: 2rem; }
+    .shop ul.categories {
+      padding-left: 0rem; }
+    .shop-categories {
+      width: 25%;
+      margin-top: 0.2rem;
+      padding: 0; }
+      .shop-categories-title {
+        margin: 0;
+        font-size: 1.2em;
+        padding: 0rem;
+        display: block;
+        background-color: #Fff;
+        padding-bottom: 1rem; }
+        .shop-categories-title a {
+          font-weight: bold; }
+          .shop-categories-title a .fa-angle-down {
+            margin-left: 1rem; }
+    .shop-list {
+      width: 75%;
+      position: relative; }
+      .shop-list-title {
+        text-align: left;
+        margin-bottom: 5rem; }
+      .shop-list .byPrice {
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        font-size: 1.4em; }
+        .shop-list .byPrice span {
+          display: inline-block;
+          margin-right: 0.5rem; }
+        .shop-list .byPrice a:first-of-type::after {
+          margin: 0 0.5rem; }
+      .shop-list-items {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .shop-list-items .item {
+          max-width: 17rem; }
+          .shop-list-items .item .name {
+            font-size: 0.8em; } }
 
 @media all and (min-width: 1130px) {
   .shop {
     max-width: 1280px;
     margin: 4rem auto 0;
     padding: 0 3rem; }
+    .shop-categories {
+      width: 25%;
+      padding: 0; }
+      .shop-categories-title {
+        margin: 0;
+        font-size: 1.2em;
+        padding: 0rem;
+        display: block;
+        background-color: #Fff;
+        padding-bottom: 1rem; }
     .shop-list {
       max-width: 960px;
       margin: 0 auto; }

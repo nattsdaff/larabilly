@@ -26,6 +26,7 @@ $(document).ready(function () {
         }
     });
 
+    /* Función para abrir el menu CATEGORIAS */
     $(".toggleCategoriesMenu").click(function () {
         $(".categoriesMenu").fadeToggle(200, function () {
             $(this).toggleClass("mobile");

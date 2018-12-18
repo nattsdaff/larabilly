@@ -15,15 +15,10 @@
             background-color: $gris-claro;
             a{
                 font-weight: bold;
-            }
-            &:after{
-                font-family: "Font Awesome 5 Free";
-                content: "\f107";
-                font-size: 1.6em;
-                margin-top: -1.8rem;
-                text-align: right;
-                display: block;
+                .fa-angle-down{
+                    margin-left: 22rem;
                 }
+            }
         }
         .categories {
             padding-left:1.5rem;
@@ -113,14 +108,14 @@
 
 @media all and (min-width: 768px){
 	.shop {
+        padding: 2rem;
         ul.categories  {
             padding-left: 0rem;
         }
         &-categories {
-            width: 20%;
-            margin: 0;
+            width: 25%;
+            margin-top: 0.2rem;
             padding: 0;
-            // margin-top: 1rem;
             &-title {
                 margin:0;
                 font-size:1.2em;
@@ -128,19 +123,12 @@
                 display: block;
                 background-color: #Fff;
                 padding-bottom: 1rem;
-                // border-bottom: 1px solid black;
-                // a{
-                //     font-weight: bold;
-                // }
-                &:after{
-                    font-family: "Font Awesome 5 Free";
-                    content: "\f107";
-                    font-size: 1.6em;
-                    margin-top: -2rem;
-                    margin-right: 11rem;
-                    text-align: right;
-                    display: block;
+                a{
+                    font-weight: bold;
+                    .fa-angle-down{
+                        margin-left: 1rem;
                     }
+                }
             }
         }
             &-list {
@@ -168,7 +156,7 @@
             &-items {
                 justify-content: space-between;
                 .item {
-                    max-width:20rem;
+                    max-width: 17rem;
                     .name {
                         font-size:0.8em;
                     }
@@ -183,6 +171,19 @@
         max-width:1280px;
         margin:4rem auto 0;
         padding: 0 3rem;
+        &-categories {
+            width: 25%;
+            padding: 0;
+            &-title {
+                margin:0;
+                font-size:1.2em;
+                padding: 0rem;
+                display: block;
+                background-color: #Fff;
+                padding-bottom: 1rem;
+            }
+        }
+
         &-list {
             max-width:960px;
             margin:0 auto;

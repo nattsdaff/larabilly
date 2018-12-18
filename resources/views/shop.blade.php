@@ -14,7 +14,7 @@
     </nav>
 
     <aside class="shop-categories">
-        <h3 class="shop-categories-title  toggleCategoriesMenu"><a  href="javascript:void(0)">Categorías</a></h3>
+        <h3 class="shop-categories-title  toggleCategoriesMenu"><a  href="javascript:void(0)">Categorías  <i class="fas fa-angle-down"></i></a></h3>
         <div class="categoriesMenu mobile">
             <ul class="categories">
                 @foreach ($categories as $category)
