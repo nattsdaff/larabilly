@@ -16,7 +16,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Catre Napper',
                 'slug' => 'catre-napper',
-                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
+                'description' => 'Cama estilo oriental, de diseño funcional, con combinación en texturas y espesor de materiales. Amplios cajones de guardado, todos con correderas metálicas. También cuenta con un sector tipo baulera para guardado de cajas, valijas o bolsas. Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez. Súper resistente gracias a su estructura reforzada, soportando más de 400 kg. Fácil de transportar y con las medidas ideales.',
                 'price' => '13000',
                 'picture' => 'assets/img/deseados/deseados-3.jpg',
                 'category_id' => '4',
@@ -34,7 +34,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banquito Eco',
                 'slug' => 'banquito-eco',
-                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
+                'description' => 'Banco moderno, elegante y de diseño. El más vendido del mercado. Fácil de limpiar y con antideslizante en la base. Fabricado con materiales de primera calidad. Súper cómodo y de alta resistencia, soporta hasta 100 kg. De fácil transporte y gran durabilidad.',
                 'price' => '5350',
                 'picture' => 'assets/img/deseados/deseados-5.jpg',
                 'category_id' => '5',
@@ -52,7 +52,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'St. Charles Desk',
                 'slug' => 'st-charles-desk',
-                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
+                'description' => 'Su increíble diseño le brinda la posibilidad de poder organizar todos sus elementos de trabajo y/o estudio. Ideal para colocar en cualquier rincón del hogar. Dispone de un sistema de almacenamiento útil y práctico para cualquier tipo de ambientes (living, oficina, dormitorio, playroom, etc.). No sólo es útil sino también de fácil limpieza. Este escritorio puede utilizarse para trabajar con la notebook, leer, estudiar o como mesa auxiliar ya que tiene unas medidas que se adaptan a cualquier rincón del hogar.',
                 'price' => '11750',
                 'picture' => 'assets/img/deseados/deseados-1.jpg',
                 'category_id' => '2',
@@ -232,7 +232,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Escritorio 3024',
                 'slug' => 'escritorio-3024',
-                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
+                'description' => 'Su increíble diseño le brinda la posibilidad de poder organizar todos sus elementos de trabajo y/o estudio. Ideal para colocar en cualquier rincón del hogar. Dispone de un sistema de almacenamiento útil y práctico para cualquier tipo de ambientes (living, oficina, dormitorio, playroom, etc.). No sólo es útil sino también de fácil limpieza. Este escritorio puede utilizarse para trabajar con la notebook, leer, estudiar o como mesa auxiliar ya que tiene unas medidas que se adaptan a cualquier rincón del hogar.',
                 'price' => '4250',
                 'picture' => 'assets/img/deseados/escritorios-1.jpg',
                 'category_id' => '2',
@@ -241,7 +241,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Escritorio 3025 White',
                 'slug' => 'escritorio-3025-white',
-                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
+                'description' => 'Su increíble diseño le brinda la posibilidad de poder organizar todos sus elementos de trabajo y/o estudio. Ideal para colocar en cualquier rincón del hogar. Dispone de un sistema de almacenamiento útil y práctico para cualquier tipo de ambientes (living, oficina, dormitorio, playroom, etc.). No sólo es útil sino también de fácil limpieza. Este escritorio puede utilizarse para trabajar con la notebook, leer, estudiar o como mesa auxiliar ya que tiene unas medidas que se adaptan a cualquier rincón del hogar.',
                 'price' => '4760',
                 'picture' => 'assets/img/deseados/escritorios-2.jpg',
                 'category_id' => '2',
@@ -250,7 +250,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Escritorio 3025 WH',
                 'slug' => 'escritorio-3025-wh',
-                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
+                'description' => 'Su increíble diseño le brinda la posibilidad de poder organizar todos sus elementos de trabajo y/o estudio. Ideal para colocar en cualquier rincón del hogar. Dispone de un sistema de almacenamiento útil y práctico para cualquier tipo de ambientes (living, oficina, dormitorio, playroom, etc.). No sólo es útil sino también de fácil limpieza. Este escritorio puede utilizarse para trabajar con la notebook, leer, estudiar o como mesa auxiliar ya que tiene unas medidas que se adaptan a cualquier rincón del hogar.',
                 'price' => '4760',
                 'picture' => 'assets/img/deseados/escritorios-3.jpg',
                 'category_id' => '2',
@@ -259,7 +259,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Escritorio 3042',
                 'slug' => 'escritorio-3042',
-                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
+                'description' => 'Su increíble diseño le brinda la posibilidad de poder organizar todos sus elementos de trabajo y/o estudio. Ideal para colocar en cualquier rincón del hogar. Dispone de un sistema de almacenamiento útil y práctico para cualquier tipo de ambientes (living, oficina, dormitorio, playroom, etc.). No sólo es útil sino también de fácil limpieza. Este escritorio puede utilizarse para trabajar con la notebook, leer, estudiar o como mesa auxiliar ya que tiene unas medidas que se adaptan a cualquier rincón del hogar.',
                 'price' => '2650',
                 'picture' => 'assets/img/deseados/escritorios-4.jpg',
                 'category_id' => '2',
@@ -268,7 +268,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Escritorio 3042 WH',
                 'slug' => 'escritorio-3042-wh',
-                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
+                'description' => 'Su increíble diseño le brinda la posibilidad de poder organizar todos sus elementos de trabajo y/o estudio. Ideal para colocar en cualquier rincón del hogar. Dispone de un sistema de almacenamiento útil y práctico para cualquier tipo de ambientes (living, oficina, dormitorio, playroom, etc.). No sólo es útil sino también de fácil limpieza. Este escritorio puede utilizarse para trabajar con la notebook, leer, estudiar o como mesa auxiliar ya que tiene unas medidas que se adaptan a cualquier rincón del hogar.',
                 'price' => '2650',
                 'picture' => 'assets/img/deseados/escritorios-5.jpg',
                 'category_id' => '2',
@@ -277,7 +277,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Escritorio 3043 WH',
                 'slug' => 'escritorio-3043-wh',
-                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
+                'description' => 'Su increíble diseño le brinda la posibilidad de poder organizar todos sus elementos de trabajo y/o estudio. Ideal para colocar en cualquier rincón del hogar. Dispone de un sistema de almacenamiento útil y práctico para cualquier tipo de ambientes (living, oficina, dormitorio, playroom, etc.). No sólo es útil sino también de fácil limpieza. Este escritorio puede utilizarse para trabajar con la notebook, leer, estudiar o como mesa auxiliar ya que tiene unas medidas que se adaptan a cualquier rincón del hogar.',
                 'price' => '3870',
                 'picture' => 'assets/img/deseados/escritorios-6.jpg',
                 'category_id' => '2',
@@ -286,7 +286,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Escritorio SC109',
                 'slug' => 'escritorio-sc109',
-                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
+                'description' => 'Su increíble diseño le brinda la posibilidad de poder organizar todos sus elementos de trabajo y/o estudio. Ideal para colocar en cualquier rincón del hogar. Dispone de un sistema de almacenamiento útil y práctico para cualquier tipo de ambientes (living, oficina, dormitorio, playroom, etc.). No sólo es útil sino también de fácil limpieza. Este escritorio puede utilizarse para trabajar con la notebook, leer, estudiar o como mesa auxiliar ya que tiene unas medidas que se adaptan a cualquier rincón del hogar.',
                 'price' => '2400',
                 'picture' => 'assets/img/deseados/escritorios-7.jpg',
                 'category_id' => '2',
@@ -295,7 +295,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Escritorio SC1250',
                 'slug' => 'escritorio-sc1250',
-                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
+                'description' => 'Su increíble diseño le brinda la posibilidad de poder organizar todos sus elementos de trabajo y/o estudio. Ideal para colocar en cualquier rincón del hogar. Dispone de un sistema de almacenamiento útil y práctico para cualquier tipo de ambientes (living, oficina, dormitorio, playroom, etc.). No sólo es útil sino también de fácil limpieza. Este escritorio puede utilizarse para trabajar con la notebook, leer, estudiar o como mesa auxiliar ya que tiene unas medidas que se adaptan a cualquier rincón del hogar.',
                 'price' => '2980',
                 'picture' => 'assets/img/deseados/escritorios-8.jpg',
                 'category_id' => '2',
@@ -304,7 +304,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Escritorio Vintage',
                 'slug' => 'escritorio-vintage',
-                'description' => 'Amplio escritorio ideal para trabajar o estudiar en la casa o en la oficina. Funcional y moderno con gran superficie de trabajo para pc o notebook.',
+                'description' => 'Su increíble diseño le brinda la posibilidad de poder organizar todos sus elementos de trabajo y/o estudio. Ideal para colocar en cualquier rincón del hogar. Dispone de un sistema de almacenamiento útil y práctico para cualquier tipo de ambientes (living, oficina, dormitorio, playroom, etc.). No sólo es útil sino también de fácil limpieza. Este escritorio puede utilizarse para trabajar con la notebook, leer, estudiar o como mesa auxiliar ya que tiene unas medidas que se adaptan a cualquier rincón del hogar.',
                 'price' => '12890',
                 'picture' => 'assets/img/deseados/escritorios-9.jpg',
                 'category_id' => '2',
@@ -394,7 +394,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Cama América',
                 'slug' => 'cama-america',
-                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
+                'description' => 'Cama estilo oriental, de diseño funcional, con combinación en texturas y espesor de materiales. Amplios cajones de guardado, todos con correderas metálicas. También cuenta con un sector tipo baulera para guardado de cajas, valijas o bolsas. Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez. Súper resistente gracias a su estructura reforzada, soportando más de 400 kg. Fácil de transportar y con las medidas ideales.',
                 'price' => '24400',
                 'picture' => 'assets/img/deseados/camas-1.jpg',
                 'category_id' => '4',
@@ -403,7 +403,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Cama Bel Bed',
                 'slug' => 'cama-bel-bed',
-                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
+                'description' => 'Cama estilo oriental, de diseño funcional, con combinación en texturas y espesor de materiales. Amplios cajones de guardado, todos con correderas metálicas. También cuenta con un sector tipo baulera para guardado de cajas, valijas o bolsas. Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez. Súper resistente gracias a su estructura reforzada, soportando más de 400 kg. Fácil de transportar y con las medidas ideales.',
                 'price' => '16500',
                 'picture' => 'assets/img/deseados/camas-2.jpg',
                 'category_id' => '4',
@@ -412,7 +412,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Cama Belmo',
                 'slug' => 'cama-belmo',
-                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
+                'description' => 'Cama estilo oriental, de diseño funcional, con combinación en texturas y espesor de materiales. Amplios cajones de guardado, todos con correderas metálicas. También cuenta con un sector tipo baulera para guardado de cajas, valijas o bolsas. Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez. Súper resistente gracias a su estructura reforzada, soportando más de 400 kg. Fácil de transportar y con las medidas ideales.',
                 'price' => '24000',
                 'picture' => 'assets/img/deseados/camas-3.jpg',
                 'category_id' => '4',
@@ -421,7 +421,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Cama Europea Balance',
                 'slug' => 'cama-europea-balance',
-                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
+                'description' => 'Cama estilo oriental, de diseño funcional, con combinación en texturas y espesor de materiales. Amplios cajones de guardado, todos con correderas metálicas. También cuenta con un sector tipo baulera para guardado de cajas, valijas o bolsas. Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez. Súper resistente gracias a su estructura reforzada, soportando más de 400 kg. Fácil de transportar y con las medidas ideales.',
                 'price' => '28900',
                 'picture' => 'assets/img/deseados/camas-4.jpg',
                 'category_id' => '4',
@@ -430,7 +430,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Cama Europea Essence',
                 'slug' => 'cama-europea-essence',
-                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
+                'description' => 'Cama estilo oriental, de diseño funcional, con combinación en texturas y espesor de materiales. Amplios cajones de guardado, todos con correderas metálicas. También cuenta con un sector tipo baulera para guardado de cajas, valijas o bolsas. Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez. Súper resistente gracias a su estructura reforzada, soportando más de 400 kg. Fácil de transportar y con las medidas ideales.',
                 'price' => '21000',
                 'picture' => 'assets/img/deseados/camas-5.jpg',
                 'category_id' => '4',
@@ -439,7 +439,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Cama Juvenil',
                 'slug' => 'cama-juvenil',
-                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
+                'description' => 'Cama estilo oriental, de diseño funcional, con combinación en texturas y espesor de materiales. Amplios cajones de guardado, todos con correderas metálicas. También cuenta con un sector tipo baulera para guardado de cajas, valijas o bolsas. Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez. Súper resistente gracias a su estructura reforzada, soportando más de 400 kg. Fácil de transportar y con las medidas ideales.',
                 'price' => '18400',
                 'picture' => 'assets/img/deseados/camas-6.jpg',
                 'category_id' => '4',
@@ -448,7 +448,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Cama Nido',
                 'slug' => 'cama-nido',
-                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
+                'description' => 'Cama estilo oriental, de diseño funcional, con combinación en texturas y espesor de materiales. Amplios cajones de guardado, todos con correderas metálicas. También cuenta con un sector tipo baulera para guardado de cajas, valijas o bolsas. Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez. Súper resistente gracias a su estructura reforzada, soportando más de 400 kg. Fácil de transportar y con las medidas ideales.',
                 'price' => '25800',
                 'picture' => 'assets/img/deseados/camas-7.jpg',
                 'category_id' => '4',
@@ -457,7 +457,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Cama Simple Modern',
                 'slug' => 'cama-simple-modern',
-                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
+                'description' => 'Cama estilo oriental, de diseño funcional, con combinación en texturas y espesor de materiales. Amplios cajones de guardado, todos con correderas metálicas. También cuenta con un sector tipo baulera para guardado de cajas, valijas o bolsas. Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez. Súper resistente gracias a su estructura reforzada, soportando más de 400 kg. Fácil de transportar y con las medidas ideales.',
                 'price' => '22000',
                 'picture' => 'assets/img/deseados/camas-8.jpg',
                 'category_id' => '4',
@@ -466,7 +466,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Cama Torino',
                 'slug' => 'cama-torino',
-                'description' => 'Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez.',
+                'description' => 'Cama estilo oriental, de diseño funcional, con combinación en texturas y espesor de materiales. Amplios cajones de guardado, todos con correderas metálicas. También cuenta con un sector tipo baulera para guardado de cajas, valijas o bolsas. Una línea concebida con un diseño actual, minimalista, con colores clásicos y un aspecto moderno a la vez. Súper resistente gracias a su estructura reforzada, soportando más de 400 kg. Fácil de transportar y con las medidas ideales.',
                 'price' => '27100',
                 'picture' => 'assets/img/deseados/camas-9.jpg',
                 'category_id' => '4',
@@ -475,7 +475,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banco Bantu',
                 'slug' => 'banco-bantu',
-                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
+                'description' => 'Banco moderno, elegante y de diseño. El más vendido del mercado. Fácil de limpiar y con antideslizante en la base. Fabricado con materiales de primera calidad. Súper cómodo y de alta resistencia, soporta hasta 100 kg. De fácil transporte y gran durabilidad.',
                 'price' => '990',
                 'picture' => 'assets/img/deseados/bancos-1.jpg',
                 'category_id' => '5',
@@ -484,7 +484,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banco Bantu White',
                 'slug' => 'banco-bantu-white',
-                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
+                'description' => 'Banco moderno, elegante y de diseño. El más vendido del mercado. Fácil de limpiar y con antideslizante en la base. Fabricado con materiales de primera calidad. Súper cómodo y de alta resistencia, soporta hasta 100 kg. De fácil transporte y gran durabilidad.',
                 'price' => '990',
                 'picture' => 'assets/img/deseados/bancos-2.jpg',
                 'category_id' => '5',
@@ -493,7 +493,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banco Cult',
                 'slug' => 'banco-cult',
-                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
+                'description' => 'Banco moderno, elegante y de diseño. El más vendido del mercado. Fácil de limpiar y con antideslizante en la base. Fabricado con materiales de primera calidad. Súper cómodo y de alta resistencia, soporta hasta 100 kg. De fácil transporte y gran durabilidad.',
                 'price' => '1600',
                 'picture' => 'assets/img/deseados/bancos-4.jpg',
                 'category_id' => '5',
@@ -502,7 +502,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banco Lismaster',
                 'slug' => 'banco-lismaster',
-                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
+                'description' => 'Banco moderno, elegante y de diseño. El más vendido del mercado. Fácil de limpiar y con antideslizante en la base. Fabricado con materiales de primera calidad. Súper cómodo y de alta resistencia, soporta hasta 100 kg. De fácil transporte y gran durabilidad.',
                 'price' => '790',
                 'picture' => 'assets/img/deseados/bancos-5.jpg',
                 'category_id' => '5',
@@ -511,7 +511,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banco Lumpur',
                 'slug' => 'banco-lumpur',
-                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
+                'description' => 'Banco moderno, elegante y de diseño. El más vendido del mercado. Fácil de limpiar y con antideslizante en la base. Fabricado con materiales de primera calidad. Súper cómodo y de alta resistencia, soporta hasta 100 kg. De fácil transporte y gran durabilidad.',
                 'price' => '1200',
                 'picture' => 'assets/img/deseados/bancos-6.jpg',
                 'category_id' => '5',
@@ -520,7 +520,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banco María',
                 'slug' => 'banco-maria',
-                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
+                'description' => 'Banco moderno, elegante y de diseño. El más vendido del mercado. Fácil de limpiar y con antideslizante en la base. Fabricado con materiales de primera calidad. Súper cómodo y de alta resistencia, soporta hasta 100 kg. De fácil transporte y gran durabilidad.',
                 'price' => '1200',
                 'picture' => 'assets/img/deseados/bancos-7.jpg',
                 'category_id' => '5',
@@ -529,7 +529,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banco Petit',
                 'slug' => 'banco-petit',
-                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
+                'description' => 'Banco moderno, elegante y de diseño. El más vendido del mercado. Fácil de limpiar y con antideslizante en la base. Fabricado con materiales de primera calidad. Súper cómodo y de alta resistencia, soporta hasta 100 kg. De fácil transporte y gran durabilidad.',
                 'price' => '890',
                 'picture' => 'assets/img/deseados/bancos-8.jpg',
                 'category_id' => '5',
@@ -538,7 +538,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banco Torino',
                 'slug' => 'banco-torino',
-                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
+                'description' => 'Banco moderno, elegante y de diseño. El más vendido del mercado. Fácil de limpiar y con antideslizante en la base. Fabricado con materiales de primera calidad. Súper cómodo y de alta resistencia, soporta hasta 100 kg. De fácil transporte y gran durabilidad.',
                 'price' => '1550',
                 'picture' => 'assets/img/deseados/bancos-9.jpg',
                 'category_id' => '5',
@@ -547,7 +547,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name' => 'Banco Classic Bantu',
                 'slug' => 'banco-classic-bantu',
-                'description' => 'Banco moderno, elegante y de diseño, el más vendido del mercado. Es fácil de limpiar y cuenta con antideslizante en la base.',
+                'description' => 'Banco moderno, elegante y de diseño. El más vendido del mercado. Fácil de limpiar y con antideslizante en la base. Fabricado con materiales de primera calidad. Súper cómodo y de alta resistencia, soporta hasta 100 kg. De fácil transporte y gran durabilidad.',
                 'price' => '1200',
                 'picture' => 'assets/img/deseados/bancos-3.jpg',
                 'category_id' => '5',
