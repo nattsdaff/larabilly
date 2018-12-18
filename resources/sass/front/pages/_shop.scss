@@ -13,10 +13,13 @@
             padding: 1.6rem;
             display: block;
             background-color: $gris-claro;
+            position: relative;
             a{
                 font-weight: bold;
                 .fa-angle-down{
-                    margin-left: 22rem;
+                    position: absolute;
+                    right:1.6rem;
+                    top:1.6rem;
                 }
             }
         }
@@ -109,6 +112,13 @@
 @media all and (min-width: 768px){
 	.shop {
         padding: 2rem;
+        .categoriesMenu {
+            display:none;
+            &.mobile {
+                display: block;
+            }
+        }
+        
         ul.categories  {
             padding-left: 0rem;
         }
@@ -120,13 +130,14 @@
                 margin:0;
                 font-size:1.2em;
                 padding: 0rem;
-                display: block;
+                display: inline-block;
                 background-color: #Fff;
                 padding-bottom: 1rem;
                 a{
                     font-weight: bold;
                     .fa-angle-down{
                         margin-left: 1rem;
+                        position: static;
                     }
                 }
             }
@@ -154,11 +165,15 @@
                 }
             }
             &-items {
-                justify-content: space-between;
-                .item {
-                    max-width: 17rem;
-                    .name {
-                        font-size:0.8em;
+                justify-content: flex-start;
+                a {
+                    margin: 1rem;
+                    flex: 0 1 calc(33% - 2rem);
+                    .item {
+                        max-width: 100%;
+                        .name {
+                            font-size:0.8em;
+                        }
                     }
                 }
             }
@@ -166,7 +181,7 @@
     }
 }
 
-@media all and (min-width: 1130px){
+@media all and (min-width: 1100px){
     .shop {
         max-width:1280px;
         margin:4rem auto 0;
@@ -188,11 +203,12 @@
             max-width:960px;
             margin:0 auto;
             &-items {
-                .item {
-                    flex: 1 0 21%;
-                    &:empty {
-                        height:0;
-                        display: inline-flex;
+                a {
+                    flex:0 1 calc(25% - 2rem);
+                    .item {
+                        &:empty {
+                            height:0;
+                        }
                     }
                 }
             }

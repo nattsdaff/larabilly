@@ -592,6 +592,21 @@ select {
         #search-modal .search-box form button .fas {
           color: #474747; }
 
+@media all and (max-width: 530px) {
+  #search-modal .search-box {
+    max-width: 30rem;
+    padding: 3rem 1.5rem 4.5rem; }
+    #search-modal .search-box #close {
+      font-size: 1.8em; }
+    #search-modal .search-box form {
+      margin-top: 2rem; }
+      #search-modal .search-box form input {
+        font-size: 1.6em;
+        max-width: 21rem; }
+      #search-modal .search-box form button {
+        font-size: 1.4em;
+        padding: 0 2rem; } }
+
 /* LAYOUT */
 footer {
   background: #96856D;
@@ -1078,8 +1093,10 @@ footer {
   height: 40vh;
   margin: 13rem 0; }
 
-.container-exito a {
-  font-size: 1.8em; }
+.container-exito {
+  text-align: center; }
+  .container-exito a {
+    font-size: 1.8em; }
 
 .preguntas-frecuentes {
   text-align: center;
@@ -1243,11 +1260,14 @@ footer {
       font-size: 1em;
       padding: 1.6rem;
       display: block;
-      background-color: #F2F2F2; }
+      background-color: #F2F2F2;
+      position: relative; }
       .shop-categories-title a {
         font-weight: bold; }
         .shop-categories-title a .fa-angle-down {
-          margin-left: 22rem; }
+          position: absolute;
+          right: 1.6rem;
+          top: 1.6rem; }
     .shop-categories .categories {
       padding-left: 1.5rem; }
       .shop-categories .categories li {
@@ -1323,6 +1343,10 @@ footer {
 @media all and (min-width: 768px) {
   .shop {
     padding: 2rem; }
+    .shop .categoriesMenu {
+      display: none; }
+      .shop .categoriesMenu.mobile {
+        display: block; }
     .shop ul.categories {
       padding-left: 0rem; }
     .shop-categories {
@@ -1333,13 +1357,14 @@ footer {
         margin: 0;
         font-size: 1.2em;
         padding: 0rem;
-        display: block;
+        display: inline-block;
         background-color: #Fff;
         padding-bottom: 1rem; }
         .shop-categories-title a {
           font-weight: bold; }
           .shop-categories-title a .fa-angle-down {
-            margin-left: 1rem; }
+            margin-left: 1rem;
+            position: static; }
     .shop-list {
       width: 75%;
       position: relative; }
@@ -1357,15 +1382,20 @@ footer {
         .shop-list .byPrice a:first-of-type::after {
           margin: 0 0.5rem; }
       .shop-list-items {
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between; }
-        .shop-list-items .item {
-          max-width: 17rem; }
-          .shop-list-items .item .name {
-            font-size: 0.8em; } }
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start; }
+        .shop-list-items a {
+          margin: 1rem;
+          -webkit-box-flex: 0;
+          -ms-flex: 0 1 calc(33% - 2rem);
+          flex: 0 1 calc(33% - 2rem); }
+          .shop-list-items a .item {
+            max-width: 100%; }
+            .shop-list-items a .item .name {
+              font-size: 0.8em; } }
 
-@media all and (min-width: 1130px) {
+@media all and (min-width: 1100px) {
   .shop {
     max-width: 1280px;
     margin: 4rem auto 0;
@@ -1383,15 +1413,12 @@ footer {
     .shop-list {
       max-width: 960px;
       margin: 0 auto; }
-      .shop-list-items .item {
-        -webkit-box-flex: 1;
-        -ms-flex: 1 0 21%;
-        flex: 1 0 21%; }
-        .shop-list-items .item:empty {
-          height: 0;
-          display: -webkit-inline-box;
-          display: -ms-inline-flexbox;
-          display: inline-flex; } }
+      .shop-list-items a {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(25% - 2rem);
+        flex: 0 1 calc(25% - 2rem); }
+        .shop-list-items a .item:empty {
+          height: 0; } }
 
 .product .breadcrumb {
   padding-left: 0; }

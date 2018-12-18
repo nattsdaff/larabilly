@@ -50,3 +50,26 @@
         }
     }
 }
+
+@media all and (max-width:530px) {
+    #search-modal {
+        .search-box {
+            max-width:30rem;
+            padding:3rem 1.5rem 4.5rem;
+            #close {
+                font-size:1.8em;
+            }
+            form {
+                margin-top:2rem;
+                input {
+                    font-size:1.6em;
+                    max-width:21rem;
+                }
+                button {
+                    font-size:1.4em;
+                    padding:0 2rem;
+                }
+            }
+        }
+    }
+}

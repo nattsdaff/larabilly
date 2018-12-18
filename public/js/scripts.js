@@ -34,11 +34,11 @@ $(document).ready(function () {
         });
     });
     /* Función para cerrar el menú si se hace click afuera del mismo */
-    $(document).click(function (event) {
-        if (!$(event.target).closest(".categoriesMenu,.toggleCategoriesMenu").length) {
-            $("body").find(".categoriesMenu").addClass("mobile");
-        }
-    });
+    // $(document).click(function (event) {
+    //     if (!$(event.target).closest(".categoriesMenu,.toggleCategoriesMenu").length) {
+    //         $("body").find(".categoriesMenu").addClass("mobile");
+    //     }
+    // });
 });
 
 /* SETTINGS PARA EL SLIDER PRINCIPAL DEL HOME */

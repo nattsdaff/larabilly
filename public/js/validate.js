@@ -189,7 +189,7 @@ function validatePhoneField() {
     let field = document.getElementById('phone');
     let status = field.value;
     if(!validatePhone(status)&&status.length>0) {
-        errorMsg[5].innerHTML = 'Ingrese un teléfono válido. (Ej:1599887766)';
+        errorMsg[5].innerHTML = 'Ingrese un teléfono válido. (Ej:1199887766)';
         field.classList.add('is-invalid');
         errorCount.phone = false;
     } else {
