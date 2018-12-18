@@ -1326,55 +1326,51 @@ footer {
     max-width: 25rem; } }
 
 @media all and (min-width: 768px) {
-  .shop {
-    padding: 4rem 3rem; }
-    .shop .categoriesMenu.mobile {
-      display: block; }
-    .shop ul.categories {
-      padding-left: 0rem; }
-    .shop-categories {
-      width: 20%;
+  .shop ul.categories {
+    padding-left: 0rem; }
+  .shop-categories {
+    width: 20%;
+    margin: 0;
+    padding: 0; }
+    .shop-categories-title {
       margin: 0;
-      padding: 0; }
-      .shop-categories-title {
-        margin: 0;
-        font-size: 1em;
-        padding: 0rem;
-        display: block;
-        background-color: #Fff; }
-        .shop-categories-title a {
-          font-weight: bold; }
-        .shop-categories-title:after {
-          font-family: "Font Awesome 5 Free";
-          content: "\f107";
-          font-size: 1.6em;
-          margin-top: -1.8rem;
-          text-align: right;
-          display: block;
-          color: white; }
-    .shop-list {
-      width: 75%;
-      position: relative; }
-      .shop-list-title {
-        text-align: left; }
-      .shop-list .byPrice {
-        position: absolute;
-        top: 1rem;
-        right: 0;
-        font-size: 1.4em; }
-        .shop-list .byPrice span {
-          display: inline-block;
-          margin-right: 0.5rem; }
-        .shop-list .byPrice a:first-of-type::after {
-          margin: 0 0.5rem; }
-      .shop-list-items {
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between; }
-        .shop-list-items .item {
-          max-width: 20rem; }
-          .shop-list-items .item .name {
-            font-size: 0.8em; } }
+      font-size: 1.2em;
+      padding: 0rem;
+      display: block;
+      background-color: #Fff;
+      padding-bottom: 1rem; }
+      .shop-categories-title:after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f107";
+        font-size: 1.6em;
+        margin-top: -2rem;
+        margin-right: 11rem;
+        text-align: right;
+        display: block; }
+  .shop-list {
+    width: 75%;
+    position: relative; }
+    .shop-list-title {
+      text-align: left;
+      margin-bottom: 5rem; }
+    .shop-list .byPrice {
+      position: absolute;
+      top: 1rem;
+      right: 0;
+      font-size: 1.4em; }
+      .shop-list .byPrice span {
+        display: inline-block;
+        margin-right: 0.5rem; }
+      .shop-list .byPrice a:first-of-type::after {
+        margin: 0 0.5rem; }
+    .shop-list-items {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .shop-list-items .item {
+        max-width: 20rem; }
+        .shop-list-items .item .name {
+          font-size: 0.8em; } }
 
 @media all and (min-width: 1130px) {
   .shop {

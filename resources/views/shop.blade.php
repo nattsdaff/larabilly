@@ -63,7 +63,7 @@
     
 </section>{{-- cierra .shop --}}
 
-<section class="features store">
+{{-- <section class="features store">
     <div class="features-item">
         <span class="features-icon"><i class="fas fa-shopping-basket"></i></span>
         <h5 class="features-title">Comprá online. Recibí en tienda</h5>
@@ -76,7 +76,7 @@
         <span class="features-icon"><i class="fas fa-lock"></i></span>
         <h5 class="features-title">Compra fácil y 100% segura</h5>
     </div>
-</section>
+</section> --}}
 
 
 
