@@ -49,7 +49,7 @@
                     <i class="fas fa-star"></i>
                 </div>
                 <h6 class="opinion-nombre">Natalia</h6>
-                <blockquote class="comentario">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</blockquote>
+                <blockquote class="comentario">Excelente producto. En mi caso, lo ubiqué en el living de mi casa y combina perfecto con el resto de los muebles. Altamente recomendable, tanto para tu casa como para tu oficina.</blockquote>
             </div>
             <div class="opinion">
                 <div class="estrellas">
@@ -60,7 +60,18 @@
                     <i class="far fa-star"></i>
                 </div>
                 <h6 class="opinion-nombre">Damián</h6>
-                <blockquote class="comentario">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</blockquote>
+                <blockquote class="comentario">Buena calidad, recomendable.</blockquote>
+            </div>
+            <div class="opinion">
+                <div class="estrellas">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h6 class="opinion-nombre">Tomás</h6>
+                <blockquote class="comentario">Gran producto. Muy lindo y cómodo.</blockquote>
             </div> 
         </aside>
 
