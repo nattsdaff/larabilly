@@ -15,32 +15,46 @@
     </div>
 @endif  
 <div class="row">
-    @foreach ($products as $product)
-    <div class="col-sm-6 col-lg-4 col-xl-3">
-        <div class="card">
-            <img class="card-img-top" src="{{asset($product->picture)}}" alt="Card image cap">
-            <div class="card-body">
-                <h4 class="card-title">{{$product->name}}</h4>
-                <h5 class="card-subtitle mb-2 text-muted">{{$product->category->name}}</h5>
-                <h6 class="card-subtitle my-2">$ {{$product->price}}</h6>
-                <p class="card-text">{{substr($product->description, 0, 100)}}...</p>
-            </div>
-            <div class="acciones" style="border-top: 1px solid rgba(0,0,0,.125);display: flex;justify-content: space-between;padding: 0.5rem 1.25rem;">
-                <a href="{{ route('product.edit', ['id' => $product->id]) }}" class="btn btn-warning"><i class="far fa-edit"></i> Editar</a>
-                <form action="{{route('product.destroy', ['id' => $product->id ])}}" method="POST">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i> Borrar</button>
-                </form>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">Creado: {{$product->created_at}}</small>
-            </div>
+    
+    <div class="col-12">
+        <h4 class="mb-3 mt-3">{{$products->total()}} Productos Agregados</h4>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Foto</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Editar</th>
+                        <th scope="col">Borrar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($products as $product)
+                    <tr>
+                        <td>{{$product->id}}</td>
+                        <td><img src="{{asset($product->picture)}}" alt="" style="max-width:100px;"></td>
+                        <td>{{$product->name}}</td>
+                        <td>{{$product->category->name}}</td>
+                        <td>{{$product->price}}</td>
+                        <td><a href="{{ route('product.edit', ['id' => $product->id]) }}" class="btn btn-warning"><i class="far fa-edit"></i></a></td>
+                        <td>
+                            <form action="{{route('product.destroy', ['id' => $product->id ])}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+                            </form>
+                        </td>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
         </div>
-        {{-- Cierra .card --}}
+        {{ $products->links() }}
     </div>
-    {{-- Cierra .col-md-3 --}}
-    @endforeach
+    {{-- Cierra .col-12 --}}
 </div>
 {{-- Cierra .row --}}
 
